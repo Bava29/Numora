@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/preferences.js"></script>
+
+    <title>NUMORA Academy</title>
+
+    <meta name="description"
+        content="NUMORA Academy helps children develop calculation speed, concentration and mental maths skills through abacus learning.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body class="numora-dashboard-page">
+
+    <!-- Mobile Sidebar Overlay -->
+    <div class="dashboard-sidebar-overlay" id="dashboardSidebarOverlay"></div>
+
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+        <div class="dashboard-sidebar-logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="NUMORA Academy">
+            </a>
+
+            <button type="button" class="dashboard-sidebar-close" id="dashboardSidebarClose" aria-label="Close sidebar">
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <div class="dashboard-sidebar-content">
+
+            <nav class="dashboard-navigation">
+
+                <a href="dashboard.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard Overview</span>
+                </a>
+
+                <a href="my-programs.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>My Programs</span>
+                </a>
+
+                <a href="class-schedule.html" class="dashboard-menu-link">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <span>Class Schedule</span>
+                </a>
+
+                <a href="learning-progress.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Learning Progress</span>
+                </a>
+
+                <a href="practice-activities.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>Practice Activities</span>
+                </a>
+
+                <a href="certificates.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-award"></i>
+                    <span>Certificates</span>
+                </a>
+
+                <a href="payments.html" class="dashboard-menu-link active">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>Payments</span>
+                </a>
+
+            </nav>
+        </div>
+
+        <!-- Sidebar Bottom Logout -->
+        <div class="dashboard-sidebar-bottom">
+            <button type="button" class="dashboard-logout-button" id="dashboardLogoutButton">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Main Dashboard Area -->
+    <div class="dashboard-main-area" id="dashboardMainArea">
+
+        <!-- Fixed Header -->
+        <header class="dashboard-header">
+
+            <div class="dashboard-header-left">
+
+                <button type="button" class="dashboard-menu-toggle" id="dashboardMenuToggle" aria-label="Toggle sidebar"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="dashboard-header-title">
+                    <h1>Payments</h1>
+                </div>
+
+            </div>
+
+            <div class="dashboard-header-right">
+
+                <!-- Notifications -->
+                <div class="dashboard-notification-wrapper">
+                    <button type="button" class="dashboard-header-icon" id="dashboardNotificationButton"
+                        aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="dashboard-notification-count">3</span>
+                    </button>
+
+                    <div class="dashboard-notification-dropdown" id="dashboardNotificationDropdown">
+                        <div class="dashboard-dropdown-heading">
+                            <h3>Notifications</h3>
+                            <span>3 New</span>
+                        </div>
+
+                        <div class="dashboard-notification-item">
+                            <span class="dashboard-notification-symbol">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </span>
+                            <div>
+                                <h4>Upcoming Class</h4>
+                                <p>Your next learning session is coming up.</p>
+                                <small>Recently</small>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-notification-item">
+                            <span class="dashboard-notification-symbol">
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                            <div>
+                                <h4>Practice Reminder</h4>
+                                <p>Keep practising to improve your skills.</p>
+                                <small>Recently</small>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-notification-item">
+                            <span class="dashboard-notification-symbol">
+                                <i class="fa-solid fa-award"></i>
+                            </span>
+                            <div>
+                                <h4>Learning Update</h4>
+                                <p>Check your latest learning progress.</p>
+                                <small>Recently</small>
+                            </div>
+                        </div>
+
+                        <a href="notifications.html" class="dashboard-view-notifications">
+                            View All Notifications
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Dark Mode -->
+                <button type="button" class="dashboard-header-icon" id="dashboardThemeToggle"
+                    aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon" id="dashboardThemeIcon"></i>
+                </button>
+
+                <!-- RTL -->
+                <button type="button" class="dashboard-header-icon" id="dashboardRtlToggle" aria-label="Toggle RTL">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <!-- Member Profile -->
+                <div class="dashboard-member-wrapper">
+
+                    <button type="button" class="dashboard-member-profile" id="dashboardMemberButton"
+                        aria-expanded="false" aria-controls="dashboardMemberDropdown">
+
+                        <img src="images/member-profile.jpg" alt="Member profile">
+
+                        <span class="dashboard-member-details">
+                            <strong>Nila M</strong>
+                            <small>Student Member</small>
+                        </span>
+
+                    </button>
+
+                    <div class="dashboard-member-dropdown" id="dashboardMemberDropdown">
+                        <button type="button" id="dashboardProfileLogout">
+                            <i class="fa-solid fa-arrow-right-from-bracket" aria-hidden="true"></i>
+                            <span>Logout</span>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <main class="dashboard-page-content payments-page">
+
+            <!-- SECTION 1: PAYMENT OVERVIEW -->
+            <section class="payments-overview-section">
+                <div class="payments-section-heading">
+                    <div>
+                        <span class="payments-eyebrow">YOUR ACCOUNT</span>
+                        <h2>Payment Overview</h2>
+                        <p>Keep track of your program fees and payment status.</p>
+                    </div>
+                    <span class="payments-heading-icon">
+                        <i class="fas fa-wallet"></i>
+                    </span>
+                </div>
+
+                <div class="payments-summary-grid">
+                    <article class="payments-summary-card">
+                        <span class="payments-summary-icon total-icon">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                        </span>
+                        <div>
+                            <span class="payments-summary-label">Total Program Fee</span>
+                            <h3>₹12,000</h3>
+                            <small>Enrolled program fee</small>
+                        </div>
+                    </article>
+
+                    <article class="payments-summary-card">
+                        <span class="payments-summary-icon paid-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </span>
+                        <div>
+                            <span class="payments-summary-label">Amount Paid</span>
+                            <h3>₹8,000</h3>
+                            <small>Successfully paid</small>
+                        </div>
+                    </article>
+
+                    <article class="payments-summary-card">
+                        <span class="payments-summary-icon pending-icon">
+                            <i class="fas fa-hourglass-half"></i>
+                        </span>
+                        <div>
+                            <span class="payments-summary-label">Pending Amount</span>
+                            <h3>₹4,000</h3>
+                            <small>Remaining program fee</small>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="payments-account-card">
+                    <div class="payments-account-info">
+                        <span class="payments-account-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </span>
+                        <div>
+                            <span class="payments-account-label">CURRENT ENROLLMENT</span>
+                            <h3>Abacus Level 2</h3>
+                            <p>Student account · Sample fee record</p>
+                        </div>
+                    </div>
+
+                    <div class="payments-account-status">
+                        <span class="payments-status-badge pending-badge">
+                            <i class="fas fa-clock"></i> Partially Paid
+                        </span>
+                        <div class="payments-account-progress">
+                            <div class="payments-account-progress-track">
+                                <span style="width: 66.67%;"></span>
+                            </div>
+                            <small>66.67% of the sample fee paid</small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- SECTION 2: PAYMENT HISTORY -->
+            <section class="payments-history-section">
+                <div class="payments-section-heading">
+                    <div>
+                        <span class="payments-eyebrow">TRANSACTION RECORDS</span>
+                        <h2>Payment History</h2>
+                        <p>Review your previous transactions and payment status.</p>
+                    </div>
+                </div>
+
+                <div class="payments-history-card">
+                    <div class="payments-history-toolbar">
+                        <div class="payments-filter-tabs" role="group" aria-label="Filter payment history">
+                            <button type="button" class="payments-filter-btn active" data-payment-filter="all">All
+                                Payments</button>
+                            <button type="button" class="payments-filter-btn"
+                                data-payment-filter="success">Successful</button>
+                            <button type="button" class="payments-filter-btn"
+                                data-payment-filter="pending">Pending</button>
+                        </div>
+
+                        <span class="payments-record-count" id="paymentsRecordCount">
+                            3 records
+                        </span>
+                    </div>
+
+                    <div class="payments-table-wrapper">
+                        <table class="payments-table">
+                            <thead>
+                                <tr>
+                                    <th>Transaction</th>
+                                    <th>Program</th>
+                                    <th>Date</th>
+                                    <th>Method</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                    <th>Details</th>
+                                </tr>
+                            </thead>
+                            <tbody id="paymentsHistoryBody">
+
+                                <tr data-payment-status="success">
+                                    <td>
+                                        <strong>TXN-10021</strong>
+                                        <small>Payment reference</small>
+                                    </td>
+                                    <td>Abacus Level 2</td>
+                                    <td>10 Nov 2026</td>
+                                    <td>UPI</td>
+                                    <td class="payments-amount">₹4,000</td>
+                                    <td>
+                                        <span class="payments-status-badge success-badge">
+                                            <i class="fas fa-check-circle"></i> Successful
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="payments-view-btn" data-payment-details="txn1"
+                                            aria-label="View transaction TXN-10021">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr data-payment-status="success">
+                                    <td>
+                                        <strong>TXN-10015</strong>
+                                        <small>Payment reference</small>
+                                    </td>
+                                    <td>Abacus Level 2</td>
+                                    <td>10 Oct 2026</td>
+                                    <td>Card</td>
+                                    <td class="payments-amount">₹2,000</td>
+                                    <td>
+                                        <span class="payments-status-badge success-badge">
+                                            <i class="fas fa-check-circle"></i> Successful
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="payments-view-btn" data-payment-details="txn2"
+                                            aria-label="View transaction TXN-10015">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr data-payment-status="pending">
+                                    <td>
+                                        <strong>TXN-10008</strong>
+                                        <small>Payment reference</small>
+                                    </td>
+                                    <td>Abacus Level 2</td>
+                                    <td>01 Dec 2026</td>
+                                    <td>Not paid</td>
+                                    <td class="payments-amount">₹4,000</td>
+                                    <td>
+                                        <span class="payments-status-badge pending-badge">
+                                            <i class="fas fa-clock"></i> Pending
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="payments-view-btn" data-payment-details="txn3"
+                                            aria-label="View transaction TXN-10008">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="payments-empty-state" id="paymentsEmptyState" hidden>
+                        <i class="fas fa-receipt"></i>
+                        <h3>No payment records found</h3>
+                        <p>There are no transactions under this filter.</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- SECTION 3: UPCOMING PAYMENT -->
+            <section class="payments-upcoming-section">
+                <div class="payments-section-heading">
+                    <div>
+                        <span class="payments-eyebrow">PLAN AHEAD</span>
+                        <h2>Upcoming Payment</h2>
+                        <p>Check your remaining fee details and payment information.</p>
+                    </div>
+                </div>
+
+                <div class="payments-upcoming-grid">
+
+                    <div class="payments-due-card">
+                        <div class="payments-due-top">
+                            <span class="payments-due-label">
+                                <i class="fas fa-calendar-alt"></i> NEXT PAYMENT
+                            </span>
+                            <span class="payments-status-badge pending-badge">
+                                Pending
+                            </span>
+                        </div>
+
+                        <div class="payments-due-amount">
+                            <small>Remaining Amount</small>
+                            <h3>₹4,000</h3>
+                        </div>
+
+                        <div class="payments-due-details">
+                            <div>
+                                <span>Program</span>
+                                <strong>Abacus Level 2</strong>
+                            </div>
+                            <div>
+                                <span>Due Date</span>
+                                <strong>01 December 2026</strong>
+                            </div>
+                            <div>
+                                <span>Payment Reference</span>
+                                <strong>TXN-10008</strong>
+                            </div>
+                        </div>
+
+                        <div class="payments-due-note">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Please check the official fee details with the NUMORA team before making a payment.</p>
+                        </div>
+
+                        <a href="contact.html" class="payments-contact-btn">
+                            <i class="fas fa-headset"></i> Contact Payment Support
+                        </a>
+                    </div>
+
+                    <div class="payments-breakdown-card">
+                        <div class="payments-breakdown-heading">
+                            <span class="payments-breakdown-icon">
+                                <i class="fas fa-calculator"></i>
+                            </span>
+                            <div>
+                                <h3>Fee Breakdown</h3>
+                                <p>Sample program fee summary</p>
+                            </div>
+                        </div>
+
+                        <div class="payments-breakdown-list">
+                            <div class="payments-breakdown-row">
+                                <span>Total Program Fee</span>
+                                <strong>₹12,000</strong>
+                            </div>
+                            <div class="payments-breakdown-row">
+                                <span>First Payment</span>
+                                <strong>₹4,000</strong>
+                            </div>
+                            <div class="payments-breakdown-row">
+                                <span>Second Payment</span>
+                                <strong>₹4,000</strong>
+                            </div>
+                            <div class="payments-breakdown-row pending-row">
+                                <span>Remaining Payment</span>
+                                <strong>₹4,000</strong>
+                            </div>
+                        </div>
+
+                        <div class="payments-support-tip">
+                            <i class="fas fa-lightbulb"></i>
+                            <div>
+                                <strong>Need payment assistance?</strong>
+                                <p>Contact the team for fee clarification, transaction support, or payment confirmation.
+                                </p>
+                                <a href="contact.html">Get Support <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- PAYMENT DETAILS MODAL -->
+            <div class="payments-modal" id="paymentDetailsModal" aria-hidden="true">
+                <div class="payments-modal-content" role="dialog" aria-modal="true" aria-labelledby="paymentModalTitle">
+
+                    <button type="button" class="payments-modal-close" id="paymentModalClose" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+
+                    <span class="payments-modal-icon">
+                        <i class="fas fa-receipt"></i>
+                    </span>
+
+                    <span class="payments-eyebrow">TRANSACTION INFORMATION</span>
+                    <h3 id="paymentModalTitle">Payment Details</h3>
+
+                    <div class="payments-modal-details">
+                        <div>
+                            <span>Transaction ID</span>
+                            <strong id="paymentModalId"></strong>
+                        </div>
+                        <div>
+                            <span>Program</span>
+                            <strong id="paymentModalProgram"></strong>
+                        </div>
+                        <div>
+                            <span>Date</span>
+                            <strong id="paymentModalDate"></strong>
+                        </div>
+                        <div>
+                            <span>Payment Method</span>
+                            <strong id="paymentModalMethod"></strong>
+                        </div>
+                        <div>
+                            <span>Amount</span>
+                            <strong id="paymentModalAmount"></strong>
+                        </div>
+                        <div>
+                            <span>Status</span>
+                            <strong id="paymentModalStatus"></strong>
+                        </div>
+                    </div>
+
+                    <button type="button" class="payments-primary-btn" id="paymentModalDone">Close</button>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+
+    <!-- Logout Confirmation Modal -->
+    <div class="dashboard-logout-modal" id="dashboardLogoutModal" aria-hidden="true">
+
+        <div class="dashboard-logout-card" role="dialog" aria-modal="true" aria-labelledby="dashboardLogoutTitle">
+
+            <div class="dashboard-logout-icon">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </div>
+
+            <h2 id="dashboardLogoutTitle">Logout Confirmation</h2>
+
+            <p>Are you sure you want to log out of your NUMORA account?</p>
+
+            <div class="dashboard-logout-actions">
+                <button type="button" class="dashboard-logout-cancel" id="dashboardLogoutCancel">No, Stay</button>
+
+                <button type="button" class="dashboard-logout-confirm" id="dashboardLogoutConfirm">Yes, Logout</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

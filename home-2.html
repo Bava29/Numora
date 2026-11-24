@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/preferences.js"></script>
+
+    <title>NUMORA Academy</title>
+
+    <meta name="description"
+        content="NUMORA Academy helps children develop calculation speed, concentration and mental maths skills through abacus learning.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= HEADER START ================= -->
+
+    <header class="numora-header">
+
+        <div class="header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="header-logo">
+                <img src="images/logo.png" alt="NUMORA Academy Logo">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <ul class="nav-menu">
+
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link">
+                            <span class="nav-link-label">Home</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="about.html" class="nav-link"><span class="nav-link-label">About</span></a></li>
+
+                    <li><a href="programs.html" class="nav-link"><span class="nav-link-label">Programs</span></a></li>
+
+                    <li><a href="instructors.html" class="nav-link"><span class="nav-link-label">Instructors</span></a>
+                    </li>
+
+                    <li><a href="competitions.html" class="nav-link"><span
+                                class="nav-link-label">Competitions</span></a></li>
+
+                    <li><a href="contact.html" class="nav-link"><span class="nav-link-label">Contact</span></a></li>
+
+                </ul>
+            </nav>
+
+            <!-- Desktop Actions -->
+            <div class="header-actions desktop-actions">
+
+                <button class="header-icon-btn theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="header-icon-btn rtl-toggle" aria-label="Toggle RTL mode">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <a href="login.html" class="login-btn">
+                    <span>Login</span>
+                </a>
+
+                <a href="dashboard.html" class="dashboard-btn">
+                    <span>Dashboard</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="mobileMenu">
+                <span></span><span></span><span></span>
+            </button>
+
+        </div>
+
+        <!-- Mobile Navigation Panel -->
+        <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+
+            <nav class="mobile-nav">
+
+                <div class="mobile-nav-dropdown">
+                    <button class="mobile-nav-link mobile-nav-parent" type="button" aria-expanded="false"
+                        aria-controls="mobileHomeSubmenu">
+                        <span class="mobile-nav-label">Home</span>
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="mobile-submenu" id="mobileHomeSubmenu">
+                        <a href="index.html" class="mobile-nav-link mobile-submenu-link">Home 1</a>
+                        <a href="home-2.html" class="mobile-nav-link mobile-submenu-link">Home 2</a>
+                    </div>
+                </div>
+
+                <a href="about.html" class="mobile-nav-link">About</a>
+
+                <a href="programs.html" class="mobile-nav-link">Programs</a>
+
+                <a href="instructors.html" class="mobile-nav-link">Instructors</a>
+
+                <a href="competitions.html" class="mobile-nav-link">Competitions</a>
+
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+
+            </nav>
+
+            <!-- Mobile Settings -->
+            <div class="mobile-settings">
+
+                <button class="mobile-setting-btn theme-toggle">
+                    <span>
+                        <i class="fa-solid fa-moon"></i>
+                        Dark Mode
+                    </span>
+                </button>
+
+                <button class="mobile-setting-btn rtl-toggle">
+                    <span>
+                        <i class="fa-solid fa-right-left"></i>
+                        RTL Mode
+                    </span>
+                </button>
+
+                <a href="login.html" class="mobile-login-btn">
+                    Login
+                </a>
+
+                <a href="dashboard.html" class="mobile-dashboard-btn">
+                    Dashboard
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= HEADER END ================= -->
+
+
+    <!-- =========================================
+     HOME 2 - PREMIUM HERO SECTION
+========================================= -->
+
+    <section class="home2-hero-section">
+
+        <!-- HERO INTRO -->
+        <div class="home2-hero-intro">
+
+            <span class="home2-eyebrow">
+                <span class="home2-eyebrow-line"></span>
+                THE FUTURE OF SMART LEARNING
+                <span class="home2-eyebrow-line"></span>
+            </span>
+
+            <h1 class="home2-hero-title">
+                Where Bright Minds
+                <span>Think Beyond Numbers.</span>
+            </h1>
+
+            <p class="home2-hero-description">
+                Discover a joyful approach to Abacus and Mental Maths
+                that helps children build strong foundations through
+                guided learning, creativity and practice.
+            </p>
+
+            <div class="home2-hero-actions">
+
+                <a href="programs.html" class="btn btn-primary home2-primary-btn">
+                    Discover Our Learning
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="contact.html" class="home2-secondary-btn">
+                    <span class="home2-play-icon">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                    Find the Right Program
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PANORAMIC LEARNING IMAGE -->
+        <div class="home2-hero-showcase">
+
+            <img src="images/home2-hero-classroom.jpg"
+                alt="Children enjoying an interactive Abacus and Mental Maths learning session">
+
+            <!-- IMAGE OVERLAY -->
+            <div class="home2-image-overlay"></div>
+
+            <!-- LEFT FLOATING LABEL -->
+            <div class="home2-image-caption">
+
+                <span class="home2-caption-label">
+                    LEARN WITH PURPOSE
+                </span>
+
+                <h2>
+                    Small Steps.
+                    <span>Big Possibilities.</span>
+                </h2>
+
+            </div>
+
+            <!-- RIGHT FLOATING LABEL -->
+            <div class="home2-image-tag">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+                <div>
+                    <span>Learning Designed For</span>
+                    <strong>Growing Minds</strong>
+                </div>
+
+            </div>
+
+            <!-- DECORATIVE IMAGE MARKER -->
+            <div class="home2-image-marker">
+                <span>NUMORA</span>
+                <span>ACADEMY</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- HOME 2 HERO SECTION END -->
+
+
+    <!-- ================================
+     HOME 2 - LEARNING PHILOSOPHY
+================================= -->
+    <section class="home2-philosophy-section">
+        <div class="home2-philosophy-container">
+
+            <div class="home2-philosophy-heading">
+                <span class="home2-philosophy-subtitle">
+                    THE NUMORA DIFFERENCE
+                </span>
+
+                <h2>
+                    Building Strong Minds Through
+                    <span>Meaningful Learning</span>
+                </h2>
+
+                <p>
+                    At NUMORA, we believe every child has the ability to
+                    understand numbers, think independently and solve
+                    problems with confidence. Our learning approach makes
+                    mathematics simple, enjoyable and meaningful.
+                </p>
+            </div>
+
+            <div class="home2-philosophy-content">
+
+                <div class="home2-philosophy-intro">
+                    <div class="home2-philosophy-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+
+                    <h3>Learning Beyond the Classroom</h3>
+
+                    <p>
+                        We go beyond traditional teaching methods by
+                        encouraging children to explore, practice and
+                        develop a deeper understanding of mathematics.
+                    </p>
+
+                    <a href="about.html" class="home2-philosophy-link">
+                        Discover Our Approach
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="home2-philosophy-features">
+
+                    <div class="home2-philosophy-feature">
+                        <div class="home2-feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+
+                        <div class="home2-feature-info">
+                            <h4>Think Independently</h4>
+                            <p>
+                                Develop logical thinking and problem-solving
+                                abilities through engaging mental exercises.
+                            </p>
+                        </div>
+
+                        <span class="home2-feature-number">01</span>
+                    </div>
+
+                    <div class="home2-philosophy-feature">
+                        <div class="home2-feature-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+
+                        <div class="home2-feature-info">
+                            <h4>Learn Through Practice</h4>
+                            <p>
+                                Build numerical understanding through
+                                structured Abacus activities and regular practice.
+                            </p>
+                        </div>
+
+                        <span class="home2-feature-number">02</span>
+                    </div>
+
+                    <div class="home2-philosophy-feature">
+                        <div class="home2-feature-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+
+                        <div class="home2-feature-info">
+                            <h4>Grow with Confidence</h4>
+                            <p>
+                                Encourage children to approach challenges
+                                with confidence and a positive mindset.
+                            </p>
+                        </div>
+
+                        <span class="home2-feature-number">03</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =================================
+     HOME 2 - ABACUS LEARNING SECTION
+================================== -->
+    <section class="home2-abacus-section">
+        <div class="home2-abacus-container">
+
+            <div class="home2-abacus-heading">
+                <div class="home2-abacus-heading-content">
+                    <span class="home2-abacus-subtitle">
+                        THE POWER OF ABACUS
+                    </span>
+
+                    <h2>
+                        More Than Maths. A Skill for Life.
+                    </h2>
+                </div>
+
+                <p>
+                    Abacus learning helps children develop essential
+                    thinking skills while making numbers easier and
+                    more enjoyable to understand.
+                </p>
+            </div>
+
+            <div class="home2-abacus-showcase">
+
+                <!-- MAIN IMAGE -->
+                <div class="home2-abacus-main-image">
+                    <img src="images/home2-abacus-learning.jpg" alt="Child practising Abacus">
+
+                    <div class="home2-abacus-image-overlay">
+                        <span>LEARN • PRACTICE • PROGRESS</span>
+                        <h3>
+                            Turning Numbers Into
+                            Natural Thinking
+                        </h3>
+                    </div>
+                </div>
+
+                <!-- SIDE CONTENT -->
+                <div class="home2-abacus-benefits">
+
+                    <div class="home2-abacus-benefit">
+                        <div class="home2-abacus-benefit-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+
+                        <div>
+                            <h4>Stronger Concentration</h4>
+                            <p>
+                                Helps children improve their attention
+                                and focus during learning activities.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="home2-abacus-benefit">
+                        <div class="home2-abacus-benefit-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+
+                        <div>
+                            <h4>Visualisation Skills</h4>
+                            <p>
+                                Encourages children to visualise numbers
+                                and perform calculations mentally.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="home2-abacus-benefit">
+                        <div class="home2-abacus-benefit-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+
+                        <div>
+                            <h4>Calculation Speed</h4>
+                            <p>
+                                Regular practice supports faster and
+                                more accurate arithmetic calculations.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="home2-abacus-benefit">
+                        <div class="home2-abacus-benefit-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+
+                        <div>
+                            <h4>Logical Thinking</h4>
+                            <p>
+                                Builds problem-solving abilities and
+                                encourages independent thinking.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- BOTTOM HIGHLIGHT -->
+            <div class="home2-abacus-highlight">
+                <div class="home2-abacus-highlight-text">
+                    <span>EVERY SMALL STEP MATTERS</span>
+                    <h3>
+                        Helping Young Learners Build
+                        Skills That Last Beyond Numbers.
+                    </h3>
+                </div>
+
+                <a href="programs.html" class="home2-abacus-btn">
+                    Explore Our Programs
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================
+     HOME 2 - FUN LEARNING ACTIVITIES
+====================================== -->
+    <section class="home2-activities-section">
+        <div class="home2-activities-container">
+
+            <div class="home2-activities-header">
+                <div>
+                    <span class="home2-activities-label">
+                        LEARN • PLAY • DISCOVER
+                    </span>
+                    <h2>
+                        Every Learning Moment Can Be Fun!
+                    </h2>
+                </div>
+
+                <p>
+                    We make learning exciting through interactive
+                    activities that encourage children to explore
+                    numbers, think creatively and enjoy every step.
+                </p>
+            </div>
+
+            <div class="home2-activities-grid">
+
+                <!-- ACTIVITY 1 -->
+                <div class="home2-activity-card activity-purple">
+                    <div class="home2-activity-image">
+                        <img src="images/home2-activity-abacus.jpg" alt="Abacus practice activity">
+                        <span class="home2-activity-tag">01</span>
+                    </div>
+
+                    <div class="home2-activity-details">
+                        <span>HANDS-ON LEARNING</span>
+                        <h3>Abacus Practice</h3>
+                        <p>
+                            Explore numbers using beads and develop
+                            a strong foundation in calculation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ACTIVITY 2 -->
+                <div class="home2-activity-card activity-yellow">
+                    <div class="home2-activity-image">
+                        <img src="images/home2-activity-mental-maths.jpg" alt="Mental maths learning">
+                        <span class="home2-activity-tag">02</span>
+                    </div>
+
+                    <div class="home2-activity-details">
+                        <span>BRAIN DEVELOPMENT</span>
+                        <h3>Mental Maths</h3>
+                        <p>
+                            Practise solving calculations mentally
+                            through fun and engaging challenges.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ACTIVITY 3 -->
+                <div class="home2-activity-card activity-green">
+                    <div class="home2-activity-image">
+                        <img src="images/home2-activity-puzzles.jpg" alt="Mathematical puzzle activity">
+                        <span class="home2-activity-tag">03</span>
+                    </div>
+
+                    <div class="home2-activity-details">
+                        <span>THINKING SKILLS</span>
+                        <h3>Maths Puzzles</h3>
+                        <p>
+                            Discover patterns, solve puzzles and
+                            develop creative problem-solving skills.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ACTIVITY 4 -->
+                <div class="home2-activity-card activity-blue">
+                    <div class="home2-activity-image">
+                        <img src="images/home2-activity-competition.jpg"
+                            alt="Children participating in a maths competition">
+                        <span class="home2-activity-tag">04</span>
+                    </div>
+
+                    <div class="home2-activity-details">
+                        <span>CONFIDENCE BUILDING</span>
+                        <h3>Fun Competitions</h3>
+                        <p>
+                            Take part in friendly challenges and
+                            celebrate learning achievements.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="home2-activities-footer">
+                <div class="home2-activities-footer-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <p>
+                    <strong>Learning should feel exciting.</strong>
+                    Every activity brings children one step closer
+                    to becoming confident learners.
+                </p>
+
+                <a href="programs.html">
+                    View Learning Programs
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================
+     HOME 2 - LEARNING JOURNEY SECTION
+====================================== -->
+    <section class="home2-journey-section">
+        <div class="home2-journey-container">
+
+            <div class="home2-journey-heading">
+                <span class="home2-journey-label">GROWTH THROUGH LEARNING</span>
+                <h2>A Learning Journey That Builds Brighter Futures</h2>
+                <p>
+                    Every child progresses at their own pace. With guided
+                    practice and continuous encouragement, small steps
+                    turn into meaningful achievements.
+                </p>
+            </div>
+
+            <div class="home2-journey-content">
+
+                <div class="home2-journey-image">
+                    <img src="images/home2-learning-journey.jpg" alt="Child confidently learning mathematics">
+
+                    <div class="home2-journey-image-note">
+                        <i class="fas fa-seedling"></i>
+                        <div>
+                            <strong>Progress with Purpose</strong>
+                            <span>Every step counts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home2-journey-stages">
+
+                    <div class="home2-journey-stage">
+                        <div class="home2-stage-marker">
+                            <span>01</span>
+                        </div>
+                        <div class="home2-stage-content">
+                            <span>THE BEGINNING</span>
+                            <h3>Discover the Basics</h3>
+                            <p>
+                                Children become familiar with numbers,
+                                Abacus fundamentals and basic calculations.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="home2-journey-stage">
+                        <div class="home2-stage-marker">
+                            <span>02</span>
+                        </div>
+                        <div class="home2-stage-content">
+                            <span>BUILDING FOUNDATION</span>
+                            <h3>Develop Core Skills</h3>
+                            <p>
+                                Guided exercises help strengthen number
+                                understanding, focus and calculation skills.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="home2-journey-stage">
+                        <div class="home2-stage-marker">
+                            <span>03</span>
+                        </div>
+                        <div class="home2-stage-content">
+                            <span>GROWING INDEPENDENCE</span>
+                            <h3>Practice Mental Maths</h3>
+                            <p>
+                                Children gradually develop the ability to
+                                visualise Abacus movements and calculate mentally.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="home2-journey-stage">
+                        <div class="home2-stage-marker">
+                            <span>04</span>
+                        </div>
+                        <div class="home2-stage-content">
+                            <span>THE NEXT LEVEL</span>
+                            <h3>Apply and Achieve</h3>
+                            <p>
+                                Learners apply their skills through practice,
+                                challenges and learning assessments.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="home2-journey-bottom">
+                <i class="fas fa-heart"></i>
+                <p>
+                    <strong>Every child has their own pace.</strong>
+                    We make every learning milestone a reason to celebrate.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================
+     HOME 2 - LEARNING COMMUNITY SECTION
+====================================== -->
+    <section class="home2-community-section">
+        <div class="home2-community-container">
+
+            <div class="home2-community-heading">
+                <span class="home2-community-label">
+                    LEARNING TOGETHER
+                </span>
+
+                <h2>
+                    Great Learning Happens
+                    <span>Together.</span>
+                </h2>
+
+                <p>
+                    A positive learning environment makes every child
+                    feel encouraged, supported and excited to discover
+                    their potential.
+                </p>
+            </div>
+
+            <div class="home2-community-gallery">
+
+                <div class="home2-community-photo home2-community-photo-main">
+                    <img src="images/home2-community-classroom.jpg" alt="Children learning together in a classroom">
+
+                    <div class="home2-community-photo-caption">
+                        <span>01</span>
+                        <div>
+                            <h3>Explore Together</h3>
+                            <p>Learning becomes more enjoyable when shared.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home2-community-photo home2-community-photo-top">
+                    <img src="images/home2-community-teacher.jpg" alt="Teacher guiding a child during Abacus practice">
+
+                    <div class="home2-community-photo-caption">
+                        <span>02</span>
+                        <div>
+                            <h3>Guided by Care</h3>
+                            <p>Support that encourages every learner.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home2-community-photo home2-community-photo-bottom">
+                    <img src="images/home2-community-students.jpg" alt="Students enjoying a learning activity">
+
+                    <div class="home2-community-photo-caption">
+                        <span>03</span>
+                        <div>
+                            <h3>Celebrate Progress</h3>
+                            <p>Every achievement deserves recognition.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="home2-community-message">
+                <div class="home2-community-message-icon">
+                    <i class="fas fa-hands-helping"></i>
+                </div>
+
+                <div class="home2-community-message-content">
+                    <h3>Every Child Deserves the Right Support</h3>
+                    <p>
+                        With patient guidance, positive encouragement
+                        and meaningful practice, children can build
+                        confidence in their learning journey.
+                    </p>
+                </div>
+
+                <a href="about.html" class="home2-community-btn">
+                    Know More About Us
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================
+     HOME 2 - BRAIN CHALLENGE SECTION
+====================================== -->
+    <section class="home2-brain-section">
+        <div class="home2-brain-container">
+
+            <div class="home2-brain-heading">
+                <span class="home2-brain-label">THINK • SOLVE • SHINE</span>
+                <h2>Let's Give Your Brain a Little Workout!</h2>
+                <p>
+                    Learning can be exciting! Try this quick mental maths
+                    challenge and discover the fun of solving numbers.
+                </p>
+            </div>
+
+            <div class="home2-brain-challenge">
+
+                <!-- LEFT SIDE -->
+                <div class="home2-brain-intro">
+                    <div class="home2-brain-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+
+                    <span class="home2-brain-level">
+                        QUICK BRAIN CHALLENGE
+                    </span>
+
+                    <h3>
+                        Think Fast.
+                        <span>Answer Smart.</span>
+                    </h3>
+
+                    <p>
+                        Take a moment, focus on the numbers and choose
+                        the correct answer. Every challenge is a chance
+                        to learn something new!
+                    </p>
+
+                    <div class="home2-brain-points">
+                        <div>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Improve number confidence</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Practise mental calculation</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Make learning enjoyable</span>
+                        </div>
+                    </div>
+
+                    <div class="home2-brain-decoration">
+                        <span>+</span>
+                        <span>×</span>
+                        <span>÷</span>
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="home2-brain-quiz">
+
+                    <div class="home2-quiz-top">
+                        <span>
+                            <i class="fas fa-puzzle-piece"></i>
+                            YOUR CHALLENGE
+                        </span>
+                        <span class="home2-quiz-count">01 / 01</span>
+                    </div>
+
+                    <div class="home2-quiz-question">
+                        <span>CAN YOU SOLVE THIS?</span>
+                        <h3>25 + 17 = ?</h3>
+                        <p>Choose the correct answer below.</p>
+                    </div>
+
+                    <div class="home2-quiz-options">
+                        <button type="button" class="home2-quiz-option" data-answer="40">40</button>
+
+                        <button type="button" class="home2-quiz-option" data-answer="42">42</button>
+
+                        <button type="button" class="home2-quiz-option" data-answer="44">44</button>
+
+                        <button type="button" class="home2-quiz-option" data-answer="46">46</button>
+                    </div>
+
+                    <div class="home2-quiz-feedback" aria-live="polite">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Select your answer to see the result!</span>
+                    </div>
+
+                    <button type="button" class="home2-quiz-reset">
+                        Try Again
+                        <i class="fas fa-redo"></i>
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="home2-brain-bottom">
+                <div class="home2-brain-bottom-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>
+                    <strong>Every great thinker starts with curiosity.</strong>
+                    Keep exploring, keep practising and keep growing!
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================
+     HOME 2 - FINAL CTA SECTION
+====================================== -->
+    <section class="home2-final-cta-section">
+        <div class="home2-final-cta-container">
+
+            <div class="home2-final-cta-content">
+
+                <div class="home2-final-cta-text">
+                    <span class="home2-final-cta-label">
+                        YOUR CHILD'S NEXT BIG STEP
+                    </span>
+
+                    <h2>
+                        Every Bright Future
+                        Begins with a <span>Small Step.</span>
+                    </h2>
+
+                    <p>
+                        Give your child the opportunity to discover the joy
+                        of learning, strengthen essential skills and grow
+                        with confidence through NUMORA.
+                    </p>
+
+                    <div class="home2-final-cta-buttons">
+                        <a href="contact.html" class="home2-final-primary-btn">
+                            Enquire Now
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+
+                        <a href="programs.html" class="home2-final-secondary-btn">
+                            Explore Programs
+                        </a>
+                    </div>
+
+                    <div class="home2-final-cta-note">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Let's make learning a wonderful experience.</span>
+                    </div>
+                </div>
+
+                <div class="home2-final-cta-visual">
+
+                    <div class="home2-final-cta-image">
+                        <img src="images/home2-final-cta-child.jpg" alt="Happy child enjoying mathematics learning">
+                    </div>
+
+                    <div class="home2-final-cta-floating">
+                        <div class="home2-final-floating-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                        <div>
+                            <strong>Think Big</strong>
+                            <span>Learn with confidence</span>
+                        </div>
+                    </div>
+
+                    <div class="home2-final-cta-decoration">
+                        <span>+</span>
+                        <span>×</span>
+                        <span>÷</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="home2-final-cta-bottom">
+                <div class="home2-final-cta-brand">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>NUMORA</span>
+                </div>
+
+                <p>
+                    Building confident learners, one number at a time.
+                </p>
+
+                <a href="contact.html">
+                    Start Today
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= FOOTER START ================= -->
+
+    <footer class="numora-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-main">
+
+                <!-- Brand Column -->
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.png" alt="NUMORA Academy">
+                    </a>
+
+                    <p class="footer-about">
+                        Empowering young minds through the power of
+                        abacus and mental mathematics. Helping children
+                        build confidence, concentration and calculation
+                        skills for a brighter future.
+                    </p>
+
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+
+                    <h3 class="footer-title">Quick Links</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Our Programs</a></li>
+                        <li><a href="instructors.html">Instructors</a></li>
+                        <li><a href="competitions.html">Competitions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Programs -->
+                <div class="footer-column">
+
+                    <h3 class="footer-title">Our Programs</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="programs.html">Beginner Level</a></li>
+                        <li><a href="programs.html">Intermediate Level</a></li>
+                        <li><a href="programs.html">Advanced Level</a></li>
+                        <li><a href="programs.html">Mental Maths</a></li>
+                        <li><a href="competitions.html">Abacus Competitions</a></li>
+                        <li><a href="login.html">Parent Portal</a></li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact Column -->
+                <div class="footer-column footer-contact">
+
+                    <h3 class="footer-title">Get In Touch</h3>
+
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>NUMORA Academy, Your City, India</p>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+919876543210">+91 98765 43210</a>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:info@numoraacademy.com">
+                            info@numoraacademy.com
+                        </a>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Mon – Sat: 9:00 AM – 6:00 PM</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; 2026 <span>NUMORA Academy</span>.
+                    All Rights Reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+
+                <p class="footer-credit">
+                    Designed with <i class="fa-solid fa-heart"></i>
+                    for Brighter Minds
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= FOOTER END ================= -->
+
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

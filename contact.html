@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/preferences.js"></script>
+
+    <title>NUMORA Academy</title>
+
+    <meta name="description"
+        content="NUMORA Academy helps children develop calculation speed, concentration and mental maths skills through abacus learning.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= HEADER START ================= -->
+
+    <header class="numora-header">
+
+        <div class="header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="header-logo">
+                <img src="images/logo.png" alt="NUMORA Academy Logo">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <ul class="nav-menu">
+
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link">
+                            <span class="nav-link-label">Home</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="about.html" class="nav-link"><span class="nav-link-label">About</span></a></li>
+
+                    <li><a href="programs.html" class="nav-link"><span class="nav-link-label">Programs</span></a></li>
+
+                    <li><a href="instructors.html" class="nav-link"><span class="nav-link-label">Instructors</span></a>
+                    </li>
+
+                    <li><a href="competitions.html" class="nav-link"><span
+                                class="nav-link-label">Competitions</span></a></li>
+
+                    <li><a href="contact.html" class="nav-link"><span class="nav-link-label">Contact</span></a></li>
+
+                </ul>
+            </nav>
+
+            <!-- Desktop Actions -->
+            <div class="header-actions desktop-actions">
+
+                <button class="header-icon-btn theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="header-icon-btn rtl-toggle" aria-label="Toggle RTL mode">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <a href="login.html" class="login-btn">
+                    <span>Login</span>
+                </a>
+
+                <a href="dashboard.html" class="dashboard-btn">
+                    <span>Dashboard</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="mobileMenu">
+                <span></span><span></span><span></span>
+            </button>
+
+        </div>
+
+        <!-- Mobile Navigation Panel -->
+        <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+
+            <nav class="mobile-nav">
+
+                <div class="mobile-nav-dropdown">
+                    <button class="mobile-nav-link mobile-nav-parent" type="button" aria-expanded="false"
+                        aria-controls="mobileHomeSubmenu">
+                        <span class="mobile-nav-label">Home</span>
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="mobile-submenu" id="mobileHomeSubmenu">
+                        <a href="index.html" class="mobile-nav-link mobile-submenu-link">Home 1</a>
+                        <a href="home-2.html" class="mobile-nav-link mobile-submenu-link">Home 2</a>
+                    </div>
+                </div>
+
+                <a href="about.html" class="mobile-nav-link">About</a>
+
+                <a href="programs.html" class="mobile-nav-link">Programs</a>
+
+                <a href="instructors.html" class="mobile-nav-link">Instructors</a>
+
+                <a href="competitions.html" class="mobile-nav-link">Competitions</a>
+
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+
+            </nav>
+
+            <!-- Mobile Settings -->
+            <div class="mobile-settings">
+
+                <button class="mobile-setting-btn theme-toggle">
+                    <span>
+                        <i class="fa-solid fa-moon"></i>
+                        Dark Mode
+                    </span>
+                </button>
+
+                <button class="mobile-setting-btn rtl-toggle">
+                    <span>
+                        <i class="fa-solid fa-right-left"></i>
+                        RTL Mode
+                    </span>
+                </button>
+
+                <a href="login.html" class="mobile-login-btn">
+                    Login
+                </a>
+
+                <a href="dashboard.html" class="mobile-dashboard-btn">
+                    Dashboard
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= HEADER END ================= -->
+
+
+
+    <!-- =====================================
+     COMMON INNER PAGE HERO
+====================================== -->
+    <section class="common-page-hero">
+
+        <div class="common-page-hero-container">
+
+            <!-- LEFT CONTENT -->
+            <div class="common-page-hero-content">
+
+                <h1 class="common-page-hero-title">
+                    Contact Us
+                </h1>
+
+                <h2 class="common-page-hero-subtitle">
+                    We’re Here to Help You Get Started
+                </h2>
+
+                <p class="common-page-hero-description">
+                    Have questions about our Abacus and Mental Maths programs? We're happy to help! Connect with our
+                    team to learn more about us.
+
+                <div class="common-page-hero-divider">
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- BREADCRUMB -->
+                <nav class="common-page-breadcrumb" aria-label="Breadcrumb">
+
+                    <a href="index.html">
+                        <span>Home</span>
+                    </a>
+
+                    <i class="fas fa-chevron-right breadcrumb-arrow"></i>
+
+                    <span class="breadcrumb-current">
+                        Contact
+                    </span>
+
+                </nav>
+
+            </div>
+
+            <!-- RIGHT VISUAL -->
+            <div class="common-page-hero-visual">
+
+                <img src="images/contact.png" alt="Child enjoying Abacus learning" class="common-page-hero-image">
+
+            </div>
+
+            <!-- DECORATIVE ELEMENTS -->
+            <div class="common-page-hero-decoration hero-decoration-one">
+                <i class="fas fa-lightbulb"></i>
+            </div>
+
+            <div class="common-page-hero-decoration hero-decoration-two">
+                <i class="fas fa-star"></i>
+            </div>
+
+            <div class="common-page-hero-decoration hero-decoration-three">
+                +
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT INFORMATION CARDS -->
+    <section class="contact-info-section">
+        <div class="contact-info-container">
+
+            <div class="contact-info-heading">
+                <span class="contact-info-tag">GET IN TOUCH</span>
+                <h2>We'd Love to <span>Hear From You</span></h2>
+                <p>
+                    Have a question or need assistance? Choose the best way
+                    to connect with our team. We're happy to guide you.
+                </p>
+            </div>
+
+            <div class="contact-info-grid">
+
+                <!-- PHONE CARD -->
+                <div class="contact-info-card">
+                    <div class="contact-info-icon phone-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+
+                    <span class="contact-info-number">01</span>
+
+                    <h3>Call Us</h3>
+                    <p>
+                        Speak directly with our team for program enquiries
+                        and general assistance.
+                    </p>
+
+                    <a href="tel:+919876543210" class="contact-info-link">
+                        +91 98765 43210
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- EMAIL CARD -->
+                <div class="contact-info-card">
+                    <div class="contact-info-icon email-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+
+                    <span class="contact-info-number">02</span>
+
+                    <h3>Email Us</h3>
+                    <p>
+                        Send us your questions and we'll get back to you
+                        with the information you need.
+                    </p>
+
+                    <a href="mailto:info@yourdomain.com" class="contact-info-link">
+                        info@yourdomain.com
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- LOCATION CARD -->
+                <div class="contact-info-card">
+                    <div class="contact-info-icon location-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+
+                    <span class="contact-info-number">03</span>
+
+                    <h3>Visit Us</h3>
+                    <p>
+                        Connect with us at our learning centre to know
+                        more about our programs.
+                    </p>
+
+                    <a href="contact.html" class="contact-info-link">
+                        View Our Location
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- WORKING HOURS CARD -->
+                <div class="contact-info-card">
+                    <div class="contact-info-icon hours-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+
+                    <span class="contact-info-number">04</span>
+
+                    <h3>Working Hours</h3>
+                    <p>
+                        Reach out to our team during our available
+                        enquiry and support hours.
+                    </p>
+
+                    <span class="contact-info-hours">
+                        Monday – Saturday
+                        <small>Update your actual timings here</small>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTACT ENQUIRY FORM -->
+    <section class="contact-enquiry-section">
+        <div class="contact-enquiry-container">
+
+            <!-- LEFT CONTENT -->
+            <div class="contact-enquiry-form-wrapper">
+
+                <div class="contact-enquiry-heading">
+                    <span class="contact-enquiry-tag">SEND AN ENQUIRY</span>
+
+                    <h2>Let's Start Your Child's <span>Learning Journey</span></h2>
+
+                    <p>
+                        Fill in the details below and our team will connect
+                        with you to help find the right learning program
+                        for your child.
+                    </p>
+                </div>
+
+                <form class="contact-enquiry-form" action="#" method="post">
+
+                    <div class="contact-enquiry-field-row">
+
+                        <div class="contact-enquiry-field">
+                            <label for="parent-name">Parent's Name <span>*</span></label>
+                            <input type="text" id="parent-name" name="parent_name" placeholder="Enter your full name"
+                                required>
+                        </div>
+
+                        <div class="contact-enquiry-field">
+                            <label for="child-name">Child's Name</label>
+                            <input type="text" id="child-name" name="child_name" placeholder="Enter child's name">
+                        </div>
+
+                    </div>
+
+                    <div class="contact-enquiry-field-row">
+
+                        <div class="contact-enquiry-field">
+                            <label for="contact-phone">Phone Number <span>*</span></label>
+                            <input type="tel" id="contact-phone" name="phone" placeholder="Enter your phone number"
+                                pattern="[0-9+\-\s]{10,15}" required>
+                        </div>
+
+                        <div class="contact-enquiry-field">
+                            <label for="contact-email">Email Address</label>
+                            <input type="email" id="contact-email" name="email" placeholder="Enter your email address">
+                        </div>
+
+                    </div>
+
+                    <div class="contact-enquiry-field-row">
+
+                        <div class="contact-enquiry-field">
+                            <label for="child-age">Child's Age</label>
+                            <select id="child-age" name="child_age">
+                                <option value="">Select age</option>
+                                <option value="4-5">4 – 5 Years</option>
+                                <option value="6-7">6 – 7 Years</option>
+                                <option value="8-9">8 – 9 Years</option>
+                                <option value="10-12">10 – 12 Years</option>
+                                <option value="13+">13+ Years</option>
+                            </select>
+                        </div>
+
+                        <div class="contact-enquiry-field">
+                            <label for="program-interest">Program of Interest</label>
+                            <select id="program-interest" name="program">
+                                <option value="">Choose a program</option>
+                                <option value="foundation">Foundation Abacus</option>
+                                <option value="intermediate">Intermediate Abacus</option>
+                                <option value="advanced">Advanced Abacus</option>
+                                <option value="mental-maths">Mental Maths</option>
+                                <option value="other">Need Guidance</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="contact-enquiry-field">
+                        <label for="contact-message">Your Message</label>
+                        <textarea id="contact-message" name="message" rows="4"
+                            placeholder="Tell us how we can help you..."></textarea>
+                    </div>
+
+                    <div class="contact-enquiry-consent">
+                        <input type="checkbox" id="contact-consent" required>
+                        <label for="contact-consent">
+                            I agree to be contacted by the NUMORA team regarding
+                            my enquiry.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="contact-enquiry-submit">
+                        Submit Enquiry
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+
+                </form>
+            </div>
+
+            <!-- RIGHT VISUAL CONTENT -->
+            <div class="contact-enquiry-visual">
+
+                <div class="contact-enquiry-image-wrap">
+                    <img src="images/contact-enquiry-child.png" alt="Child enjoying a learning activity"
+                        class="contact-enquiry-image">
+
+                    <div class="contact-enquiry-image-decoration"></div>
+                </div>
+
+                <div class="contact-enquiry-note">
+                    <div class="contact-enquiry-note-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+
+                    <div>
+                        <h3>Every Question Matters</h3>
+                        <p>
+                            We're here to help you understand the learning
+                            journey and choose the right path for your child.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-enquiry-floating-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- CONTACT LOCATION MAP SECTION -->
+    <section class="contact-location-section">
+        <div class="contact-location-container">
+
+            <!-- LEFT CONTENT -->
+            <div class="contact-location-content">
+
+                <span class="contact-location-tag">FIND OUR LOCATION</span>
+
+                <h2>Come and <span>Visit Us</span></h2>
+
+                <p class="contact-location-description">
+                    We'd love to welcome you! Visit our learning centre
+                    to know more about NUMORA's Abacus and Mental Maths
+                    programs and explore learning opportunities for your child.
+                </p>
+
+                <div class="contact-location-details">
+
+                    <!-- ADDRESS -->
+                    <div class="contact-location-item">
+                        <div class="contact-location-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+
+                        <div class="contact-location-item-content">
+                            <h3>Our Address</h3>
+                            <p>
+                                Add your NUMORA learning centre address here.
+                                Include the area, city, state and PIN code.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- PHONE -->
+                    <div class="contact-location-item">
+                        <div class="contact-location-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+
+                        <div class="contact-location-item-content">
+                            <h3>Contact Number</h3>
+                            <a href="tel:+919876543210">+91 98765 43210</a>
+                        </div>
+                    </div>
+
+                    <!-- EMAIL -->
+                    <div class="contact-location-item">
+                        <div class="contact-location-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+
+                        <div class="contact-location-item-content">
+                            <h3>Email Address</h3>
+                            <a href="mailto:info@yourdomain.com">
+                                info@yourdomain.com
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=NUMORA+Learning+Centre" target="_blank"
+                    rel="noopener noreferrer" class="contact-location-directions">
+                    Get Directions
+                    <i class="fas fa-location-arrow"></i>
+                </a>
+
+            </div>
+
+            <!-- RIGHT MAP -->
+            <div class="contact-location-map-wrapper">
+
+                <div class="contact-location-map">
+                    <iframe
+                        src="https://maps.google.com/maps?q=NUMORA%20Learning%20Centre&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        title="NUMORA Learning Centre Location" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="contact-location-map-caption">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Plan your visit and connect with our team.</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= FOOTER START ================= -->
+
+    <footer class="numora-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-main">
+
+                <!-- Brand Column -->
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.png" alt="NUMORA Academy">
+                    </a>
+
+                    <p class="footer-about">
+                        Empowering young minds through the power of
+                        abacus and mental mathematics. Helping children
+                        build confidence, concentration and calculation
+                        skills for a brighter future.
+                    </p>
+
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+
+                    <h3 class="footer-title">Quick Links</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Our Programs</a></li>
+                        <li><a href="instructors.html">Instructors</a></li>
+                        <li><a href="competitions.html">Competitions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Programs -->
+                <div class="footer-column">
+
+                    <h3 class="footer-title">Our Programs</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="programs.html">Beginner Level</a></li>
+                        <li><a href="programs.html">Intermediate Level</a></li>
+                        <li><a href="programs.html">Advanced Level</a></li>
+                        <li><a href="programs.html">Mental Maths</a></li>
+                        <li><a href="competitions.html">Abacus Competitions</a></li>
+                        <li><a href="login.html">Parent Portal</a></li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact Column -->
+                <div class="footer-column footer-contact">
+
+                    <h3 class="footer-title">Get In Touch</h3>
+
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>NUMORA Academy, Your City, India</p>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+919876543210">+91 98765 43210</a>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:info@numoraacademy.com">
+                            info@numoraacademy.com
+                        </a>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Mon – Sat: 9:00 AM – 6:00 PM</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; 2026 <span>NUMORA Academy</span>.
+                    All Rights Reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+
+                <p class="footer-credit">
+                    Designed with <i class="fa-solid fa-heart"></i>
+                    for Brighter Minds
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= FOOTER END ================= -->
+
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

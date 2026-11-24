@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/preferences.js"></script>
+
+    <title>NUMORA Academy</title>
+
+    <meta name="description"
+        content="NUMORA Academy helps children develop calculation speed, concentration and mental maths skills through abacus learning.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body class="numora-dashboard-page">
+
+    <!-- Mobile Sidebar Overlay -->
+    <div class="dashboard-sidebar-overlay" id="dashboardSidebarOverlay"></div>
+
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+        <div class="dashboard-sidebar-logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="NUMORA Academy">
+            </a>
+
+            <button type="button" class="dashboard-sidebar-close" id="dashboardSidebarClose" aria-label="Close sidebar">
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <div class="dashboard-sidebar-content">
+
+            <nav class="dashboard-navigation">
+
+                <a href="dashboard.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard Overview</span>
+                </a>
+
+                <a href="my-programs.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>My Programs</span>
+                </a>
+
+                <a href="class-schedule.html" class="dashboard-menu-link">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <span>Class Schedule</span>
+                </a>
+
+                <a href="learning-progress.html" class="dashboard-menu-link active">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Learning Progress</span>
+                </a>
+
+                <a href="practice-activities.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>Practice Activities</span>
+                </a>
+
+                <a href="certificates.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-award"></i>
+                    <span>Certificates</span>
+                </a>
+
+                <a href="payments.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>Payments</span>
+                </a>
+
+            </nav>
+        </div>
+
+        <!-- Sidebar Bottom Logout -->
+        <div class="dashboard-sidebar-bottom">
+            <button type="button" class="dashboard-logout-button" id="dashboardLogoutButton">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Main Dashboard Area -->
+    <div class="dashboard-main-area" id="dashboardMainArea">
+
+        <!-- Fixed Header -->
+        <header class="dashboard-header">
+
+            <div class="dashboard-header-left">
+
+                <button type="button" class="dashboard-menu-toggle" id="dashboardMenuToggle" aria-label="Toggle sidebar"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="dashboard-header-title">
+                    <h1>Learning Progress</h1>
+                </div>
+
+            </div>
+
+            <div class="dashboard-header-right">
+
+                <!-- Notifications -->
+                <div class="dashboard-notification-wrapper">
+                    <button type="button" class="dashboard-header-icon" id="dashboardNotificationButton"
+                        aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="dashboard-notification-count">3</span>
+                    </button>
+
+                    <div class="dashboard-notification-dropdown" id="dashboardNotificationDropdown">
+                        <div class="dashboard-dropdown-heading">
+                            <h3>Notifications</h3>
+                            <span>3 New</span>
+                        </div>
+
+                        <div class="dashboard-notification-item">
+                            <span class="dashboard-notification-symbol">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </span>
+                            <div>
+                                <h4>Upcoming Class</h4>
+                                <p>Your next learning session is coming up.</p>
+                                <small>Recently</small>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-notification-item">
+                            <span class="dashboard-notification-symbol">
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                            <div>
+                                <h4>Practice Reminder</h4>
+                                <p>Keep practising to improve your skills.</p>
+                                <small>Recently</small>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-notification-item">
+                            <span class="dashboard-notification-symbol">
+                                <i class="fa-solid fa-award"></i>
+                            </span>
+                            <div>
+                                <h4>Learning Update</h4>
+                                <p>Check your latest learning progress.</p>
+                                <small>Recently</small>
+                            </div>
+                        </div>
+
+                        <a href="notifications.html" class="dashboard-view-notifications">
+                            View All Notifications
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Dark Mode -->
+                <button type="button" class="dashboard-header-icon" id="dashboardThemeToggle"
+                    aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon" id="dashboardThemeIcon"></i>
+                </button>
+
+                <!-- RTL -->
+                <button type="button" class="dashboard-header-icon" id="dashboardRtlToggle" aria-label="Toggle RTL">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <!-- Member Profile -->
+                <div class="dashboard-member-wrapper">
+
+                    <button type="button" class="dashboard-member-profile" id="dashboardMemberButton"
+                        aria-expanded="false" aria-controls="dashboardMemberDropdown">
+
+                        <img src="images/member-profile.jpg" alt="Member profile">
+
+                        <span class="dashboard-member-details">
+                            <strong>Nila M</strong>
+                            <small>Student Member</small>
+                        </span>
+
+                    </button>
+
+                    <div class="dashboard-member-dropdown" id="dashboardMemberDropdown">
+                        <button type="button" id="dashboardProfileLogout">
+                            <i class="fa-solid fa-arrow-right-from-bracket" aria-hidden="true"></i>
+                            <span>Logout</span>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <main class="dashboard-page-content">
+
+            <!-- SECTION 1: LEARNING PERFORMANCE -->
+            <section class="lp-performance-section">
+
+                <div class="lp-section-heading">
+                    <div>
+                        <span class="lp-section-label">YOUR PERFORMANCE</span>
+                        <h2>My Learning Performance</h2>
+                        <p>Track your learning progress and see how your skills improve over time.</p>
+                    </div>
+
+                    <div class="lp-period-filter" role="group" aria-label="Select progress period">
+                        <button type="button" class="lp-period-btn active" data-period="week">Week</button>
+                        <button type="button" class="lp-period-btn" data-period="month">Month</button>
+                        <button type="button" class="lp-period-btn" data-period="overall">Overall</button>
+                    </div>
+                </div>
+
+                <div class="lp-performance-card">
+
+                    <div class="lp-performance-summary">
+                        <div class="lp-performance-stat">
+                            <span>Overall Progress</span>
+                            <strong id="lpOverallValue">68%</strong>
+                            <small><i class="fa-solid fa-arrow-trend-up"></i> Keep learning consistently</small>
+                        </div>
+
+                        <div class="lp-performance-stat">
+                            <span>Practice Sessions</span>
+                            <strong id="lpSessionsValue">12</strong>
+                            <small>Sessions completed</small>
+                        </div>
+
+                        <div class="lp-performance-stat">
+                            <span>Accuracy Rate</span>
+                            <strong id="lpAccuracyValue">85%</strong>
+                            <small>Practice accuracy</small>
+                        </div>
+                    </div>
+
+                    <div class="lp-chart-area">
+                        <div class="lp-chart-heading">
+                            <div>
+                                <h3>Progress Activity</h3>
+                                <p id="lpChartPeriod">Your progress this week</p>
+                            </div>
+                            <span class="lp-chart-legend">
+                                <span></span> Progress
+                            </span>
+                        </div>
+
+                        <div class="lp-chart" id="lpProgressChart" aria-label="Learning progress chart">
+                            <div class="lp-chart-column">
+                                <div class="lp-chart-bar" style="--bar-height: 35%"></div>
+                                <span>Mon</span>
+                            </div>
+                            <div class="lp-chart-column">
+                                <div class="lp-chart-bar" style="--bar-height: 55%"></div>
+                                <span>Tue</span>
+                            </div>
+                            <div class="lp-chart-column">
+                                <div class="lp-chart-bar" style="--bar-height: 45%"></div>
+                                <span>Wed</span>
+                            </div>
+                            <div class="lp-chart-column">
+                                <div class="lp-chart-bar" style="--bar-height: 75%"></div>
+                                <span>Thu</span>
+                            </div>
+                            <div class="lp-chart-column">
+                                <div class="lp-chart-bar" style="--bar-height: 60%"></div>
+                                <span>Fri</span>
+                            </div>
+                            <div class="lp-chart-column">
+                                <div class="lp-chart-bar" style="--bar-height: 90%"></div>
+                                <span>Sat</span>
+                            </div>
+                            <div class="lp-chart-column">
+                                <div class="lp-chart-bar" style="--bar-height: 25%"></div>
+                                <span>Sun</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- SECTION 2: SKILL-WISE PROGRESS -->
+            <section class="lp-skills-section">
+
+                <div class="lp-section-heading">
+                    <div>
+                        <span class="lp-section-label">SKILL DEVELOPMENT</span>
+                        <h2>My Skill-wise Progress</h2>
+                        <p>Explore your strengths and find out which skills need more practice.</p>
+                    </div>
+                </div>
+
+                <div class="lp-skills-card">
+
+                    <div class="lp-skill-tabs" role="tablist" aria-label="Learning skills">
+                        <button type="button" class="lp-skill-tab active" data-skill="calculation" role="tab"
+                            aria-selected="true">
+                            <i class="fa-solid fa-calculator"></i>
+                            Calculation
+                        </button>
+
+                        <button type="button" class="lp-skill-tab" data-skill="concentration" role="tab"
+                            aria-selected="false">
+                            <i class="fa-solid fa-bullseye"></i>
+                            Concentration
+                        </button>
+
+                        <button type="button" class="lp-skill-tab" data-skill="speed" role="tab" aria-selected="false">
+                            <i class="fa-solid fa-stopwatch"></i>
+                            Speed
+                        </button>
+
+                        <button type="button" class="lp-skill-tab" data-skill="mental" role="tab" aria-selected="false">
+                            <i class="fa-solid fa-brain"></i>
+                            Mental Maths
+                        </button>
+                    </div>
+
+                    <div class="lp-skill-content" id="lpSkillContent" role="tabpanel" aria-live="polite">
+
+                        <div class="lp-skill-main">
+                            <div class="lp-skill-icon">
+                                <i class="fa-solid fa-calculator" id="lpSkillIcon"></i>
+                            </div>
+
+                            <div>
+                                <span class="lp-skill-caption">CURRENT SKILL LEVEL</span>
+                                <h3 id="lpSkillTitle">Calculation Skills</h3>
+                                <p id="lpSkillDescription">
+                                    Build accuracy by practising addition and subtraction using your Abacus.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="lp-skill-progress">
+                            <div class="lp-skill-progress-heading">
+                                <span>Skill Progress</span>
+                                <strong id="lpSkillPercent">80%</strong>
+                            </div>
+
+                            <div class="lp-skill-track">
+                                <div class="lp-skill-fill" id="lpSkillFill" style="width:80%"></div>
+                            </div>
+
+                            <div class="lp-skill-tip">
+                                <i class="fa-regular fa-lightbulb"></i>
+                                <div>
+                                    <strong>Recommended Focus</strong>
+                                    <p id="lpSkillTip">Practise mixed addition and subtraction problems to improve
+                                        accuracy.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- SECTION 3: LEARNING MILESTONES -->
+            <section class="lp-milestones-section">
+
+                <div class="lp-section-heading">
+                    <div>
+                        <span class="lp-section-label">YOUR LEARNING JOURNEY</span>
+                        <h2>Learning Milestones</h2>
+                        <p>See the important goals in your learning journey and what comes next.</p>
+                    </div>
+                </div>
+
+                <div class="lp-milestones-card">
+
+                    <div class="lp-milestones-top">
+                        <div>
+                            <h3>My Learning Goals</h3>
+                            <p>Keep practising and complete each learning milestone.</p>
+                        </div>
+
+                        <div class="lp-milestone-count">
+                            <strong id="lpMilestoneCount">2/5</strong>
+                            <span>Completed</span>
+                        </div>
+                    </div>
+
+                    <div class="lp-milestone-progress-track">
+                        <div class="lp-milestone-progress-fill" id="lpMilestoneProgress" style="width:40%"></div>
+                    </div>
+
+                    <div class="lp-milestone-list">
+
+                        <div class="lp-milestone-item completed">
+                            <button type="button" class="lp-milestone-toggle" aria-expanded="false">
+                                <span class="lp-milestone-status"><i class="fa-solid fa-check"></i></span>
+                                <span class="lp-milestone-text">
+                                    <strong>Understand Abacus Basics</strong>
+                                    <small>Learn the beads and their place values</small>
+                                </span>
+                                <i class="fa-solid fa-chevron-down lp-milestone-arrow"></i>
+                            </button>
+                            <div class="lp-milestone-details">
+                                <p>You have completed the introductory concepts of Abacus and understand how bead
+                                    values work.</p>
+                            </div>
+                        </div>
+
+                        <div class="lp-milestone-item completed">
+                            <button type="button" class="lp-milestone-toggle" aria-expanded="false">
+                                <span class="lp-milestone-status"><i class="fa-solid fa-check"></i></span>
+                                <span class="lp-milestone-text">
+                                    <strong>Basic Addition & Subtraction</strong>
+                                    <small>Practise basic number operations</small>
+                                </span>
+                                <i class="fa-solid fa-chevron-down lp-milestone-arrow"></i>
+                            </button>
+                            <div class="lp-milestone-details">
+                                <p>You have completed basic addition and subtraction exercises. Continue revising to
+                                    maintain accuracy.</p>
+                            </div>
+                        </div>
+
+                        <div class="lp-milestone-item current">
+                            <button type="button" class="lp-milestone-toggle" aria-expanded="false">
+                                <span class="lp-milestone-status"><i class="fa-solid fa-play"></i></span>
+                                <span class="lp-milestone-text">
+                                    <strong>Improve Calculation Accuracy</strong>
+                                    <small>Current focus · In progress</small>
+                                </span>
+                                <i class="fa-solid fa-chevron-down lp-milestone-arrow"></i>
+                            </button>
+                            <div class="lp-milestone-details">
+                                <p>Focus on solving calculation problems carefully. Check each answer before moving
+                                    to the next question.</p>
+                            </div>
+                        </div>
+
+                        <div class="lp-milestone-item">
+                            <button type="button" class="lp-milestone-toggle" aria-expanded="false">
+                                <span class="lp-milestone-status"><i class="fa-solid fa-lock"></i></span>
+                                <span class="lp-milestone-text">
+                                    <strong>Build Calculation Speed</strong>
+                                    <small>Upcoming milestone</small>
+                                </span>
+                                <i class="fa-solid fa-chevron-down lp-milestone-arrow"></i>
+                            </button>
+                            <div class="lp-milestone-details">
+                                <p>Once your accuracy improves, practise timed exercises to gradually build
+                                    calculation speed.</p>
+                            </div>
+                        </div>
+
+                        <div class="lp-milestone-item">
+                            <button type="button" class="lp-milestone-toggle" aria-expanded="false">
+                                <span class="lp-milestone-status"><i class="fa-solid fa-lock"></i></span>
+                                <span class="lp-milestone-text">
+                                    <strong>Develop Mental Visualisation</strong>
+                                    <small>Upcoming milestone</small>
+                                </span>
+                                <i class="fa-solid fa-chevron-down lp-milestone-arrow"></i>
+                            </button>
+                            <div class="lp-milestone-details">
+                                <p>Work towards visualising Abacus movements mentally and solving calculations
+                                    without a physical Abacus.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a href="practice-activities.html" class="lp-milestone-action">
+                        Continue Practising <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- Logout Confirmation Modal -->
+    <div class="dashboard-logout-modal" id="dashboardLogoutModal" aria-hidden="true">
+
+        <div class="dashboard-logout-card" role="dialog" aria-modal="true" aria-labelledby="dashboardLogoutTitle">
+
+            <div class="dashboard-logout-icon">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </div>
+
+            <h2 id="dashboardLogoutTitle">Logout Confirmation</h2>
+
+            <p>Are you sure you want to log out of your NUMORA account?</p>
+
+            <div class="dashboard-logout-actions">
+                <button type="button" class="dashboard-logout-cancel" id="dashboardLogoutCancel">No, Stay</button>
+
+                <button type="button" class="dashboard-logout-confirm" id="dashboardLogoutConfirm">Yes, Logout</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

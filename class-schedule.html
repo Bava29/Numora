@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/preferences.js"></script>
+
+    <title>NUMORA Academy</title>
+
+    <meta name="description"
+        content="NUMORA Academy helps children develop calculation speed, concentration and mental maths skills through abacus learning.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body class="numora-dashboard-page">
+
+    <!-- Mobile Sidebar Overlay -->
+    <div class="dashboard-sidebar-overlay" id="dashboardSidebarOverlay"></div>
+
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+        <div class="dashboard-sidebar-logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="NUMORA Academy">
+            </a>
+            <button type="button" class="dashboard-sidebar-close" id="dashboardSidebarClose" aria-label="Close sidebar">
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <div class="dashboard-sidebar-content">
+
+            <nav class="dashboard-navigation">
+
+                <a href="dashboard.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard Overview</span>
+                </a>
+
+                <a href="my-programs.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>My Programs</span>
+                </a>
+
+                <a href="class-schedule.html" class="dashboard-menu-link active">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <span>Class Schedule</span>
+                </a>
+
+                <a href="learning-progress.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Learning Progress</span>
+                </a>
+
+                <a href="practice-activities.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>Practice Activities</span>
+                </a>
+
+                <a href="certificates.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-award"></i>
+                    <span>Certificates</span>
+                </a>
+
+                <a href="payments.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>Payments</span>
+                </a>
+
+            </nav>
+        </div>
+
+        <!-- Sidebar Bottom Logout -->
+        <div class="dashboard-sidebar-bottom">
+            <button type="button" class="dashboard-logout-button" id="dashboardLogoutButton">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Main Dashboard Area -->
+    <div class="dashboard-main-area" id="dashboardMainArea">
+
+        <!-- Fixed Header -->
+        <header class="dashboard-header">
+
+            <div class="dashboard-header-left">
+
+                <button type="button" class="dashboard-menu-toggle" id="dashboardMenuToggle" aria-label="Toggle sidebar"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="dashboard-header-title">
+                    <h1>Class Schedule</h1>
+                </div>
+
+            </div>
+
+            <div class="dashboard-header-right">
+
+                <!-- Notifications -->
+                <div class="dashboard-notification-wrapper">
+                    <button type="button" class="dashboard-header-icon" id="dashboardNotificationButton"
+                        aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="dashboard-notification-count">3</span>
+                    </button>
+
+                    <div class="dashboard-notification-dropdown" id="dashboardNotificationDropdown">
+                        <div class="dashboard-dropdown-heading">
+                            <h3>Notifications</h3>
+                            <span>3 New</span>
+                        </div>
+
+                        <div class="dashboard-notification-item">
+                            <span class="dashboard-notification-symbol">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </span>
+                            <div>
+                                <h4>Upcoming Class</h4>
+                                <p>Your next learning session is coming up.</p>
+                                <small>Recently</small>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-notification-item">
+                            <span class="dashboard-notification-symbol">
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                            <div>
+                                <h4>Practice Reminder</h4>
+                                <p>Keep practising to improve your skills.</p>
+                                <small>Recently</small>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-notification-item">
+                            <span class="dashboard-notification-symbol">
+                                <i class="fa-solid fa-award"></i>
+                            </span>
+                            <div>
+                                <h4>Learning Update</h4>
+                                <p>Check your latest learning progress.</p>
+                                <small>Recently</small>
+                            </div>
+                        </div>
+
+                        <a href="notifications.html" class="dashboard-view-notifications">
+                            View All Notifications
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Dark Mode -->
+                <button type="button" class="dashboard-header-icon" id="dashboardThemeToggle"
+                    aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon" id="dashboardThemeIcon"></i>
+                </button>
+
+                <!-- RTL -->
+                <button type="button" class="dashboard-header-icon" id="dashboardRtlToggle" aria-label="Toggle RTL">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <!-- Member Profile -->
+                <div class="dashboard-member-wrapper">
+
+                    <button type="button" class="dashboard-member-profile" id="dashboardMemberButton"
+                        aria-expanded="false" aria-controls="dashboardMemberDropdown">
+
+                        <img src="images/member-profile.jpg" alt="Member profile">
+
+                        <span class="dashboard-member-details">
+                            <strong>Nila M</strong>
+                            <small>Student Member</small>
+                        </span>
+
+                    </button>
+
+                    <div class="dashboard-member-dropdown" id="dashboardMemberDropdown">
+                        <button type="button" id="dashboardProfileLogout">
+                            <i class="fa-solid fa-arrow-right-from-bracket" aria-hidden="true"></i>
+                            <span>Logout</span>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Dashboard Page Content -->
+        <main class="dashboard-page-content">
+
+
+            <!-- =========================================
+     SECTION 1 - WEEKLY CLASS TIMETABLE
+========================================= -->
+
+            <section class="schedule-week-section">
+
+                <div class="schedule-section-heading">
+                    <div>
+                        <span class="schedule-eyebrow">YOUR WEEK AT A GLANCE</span>
+                        <h2>Weekly Class Timetable</h2>
+                        <p>Select a day to view your scheduled learning sessions.</p>
+                    </div>
+
+                    <span class="schedule-timezone">
+                        <i class="fa-regular fa-clock"></i>
+                        Your Local Time
+                    </span>
+                </div>
+
+                <div class="schedule-week-card">
+
+                    <div class="schedule-day-tabs" role="tablist" aria-label="Select class day">
+                        <button type="button" class="schedule-day-tab active" data-day="monday"
+                            aria-selected="true">Mon</button>
+                        <button type="button" class="schedule-day-tab" data-day="tuesday"
+                            aria-selected="false">Tue</button>
+                        <button type="button" class="schedule-day-tab" data-day="wednesday"
+                            aria-selected="false">Wed</button>
+                        <button type="button" class="schedule-day-tab" data-day="thursday"
+                            aria-selected="false">Thu</button>
+                        <button type="button" class="schedule-day-tab" data-day="friday"
+                            aria-selected="false">Fri</button>
+                        <button type="button" class="schedule-day-tab" data-day="saturday"
+                            aria-selected="false">Sat</button>
+                        <button type="button" class="schedule-day-tab" data-day="sunday"
+                            aria-selected="false">Sun</button>
+                    </div>
+
+                    <div class="schedule-day-content">
+
+                        <div class="schedule-day-panel active" data-panel="monday">
+                            <div class="schedule-class-item">
+                                <div class="schedule-class-time">
+                                    <strong>10:00 AM</strong>
+                                    <span>11:00 AM</span>
+                                </div>
+                                <div class="schedule-class-color"></div>
+                                <div class="schedule-class-info">
+                                    <span class="schedule-class-category">ABACUS PROGRAM</span>
+                                    <h3>Abacus – Level 2</h3>
+                                    <p><i class="fa-solid fa-user-tie"></i> Assigned Instructor</p>
+                                </div>
+                                <span class="schedule-class-mode">
+                                    <i class="fa-solid fa-building"></i> In-person
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="schedule-day-panel" data-panel="tuesday">
+                            <div class="schedule-empty-day">
+                                <i class="fa-regular fa-calendar-check"></i>
+                                <h3>No Class Scheduled</h3>
+                                <p>Enjoy your day! You can use this time for practice.</p>
+                                <a href="practice-activities.html">Explore Practice Activities
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="schedule-day-panel" data-panel="wednesday">
+                            <div class="schedule-class-item">
+                                <div class="schedule-class-time">
+                                    <strong>10:00 AM</strong>
+                                    <span>11:00 AM</span>
+                                </div>
+                                <div class="schedule-class-color"></div>
+                                <div class="schedule-class-info">
+                                    <span class="schedule-class-category">ABACUS PROGRAM</span>
+                                    <h3>Abacus – Level 2</h3>
+                                    <p><i class="fa-solid fa-user-tie"></i> Assigned Instructor</p>
+                                </div>
+                                <span class="schedule-class-mode">
+                                    <i class="fa-solid fa-building"></i> In-person
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="schedule-day-panel" data-panel="thursday">
+                            <div class="schedule-empty-day">
+                                <i class="fa-regular fa-calendar-check"></i>
+                                <h3>No Class Scheduled</h3>
+                                <p>Use this day to revise your previous lessons.</p>
+                                <a href="practice-activities.html">Explore Practice Activities
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="schedule-day-panel" data-panel="friday">
+                            <div class="schedule-class-item">
+                                <div class="schedule-class-time">
+                                    <strong>10:00 AM</strong>
+                                    <span>11:00 AM</span>
+                                </div>
+                                <div class="schedule-class-color"></div>
+                                <div class="schedule-class-info">
+                                    <span class="schedule-class-category">ABACUS PROGRAM</span>
+                                    <h3>Weekly Practice & Revision</h3>
+                                    <p><i class="fa-solid fa-user-tie"></i> Assigned Instructor</p>
+                                </div>
+                                <span class="schedule-class-mode">
+                                    <i class="fa-solid fa-building"></i> In-person
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="schedule-day-panel" data-panel="saturday">
+                            <div class="schedule-empty-day">
+                                <i class="fa-regular fa-calendar-check"></i>
+                                <h3>No Class Scheduled</h3>
+                                <p>Take time to practise what you have learned.</p>
+                                <a href="practice-activities.html">Explore Practice Activities
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="schedule-day-panel" data-panel="sunday">
+                            <div class="schedule-empty-day">
+                                <i class="fa-regular fa-calendar-check"></i>
+                                <h3>No Class Scheduled</h3>
+                                <p>Enjoy your day and get ready for the coming week.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="schedule-week-footer">
+                        <span><i class="fa-solid fa-circle-info"></i>
+                            Your timetable is based on your assigned class schedule.</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================================
+     SECTION 2 - NEXT UPCOMING CLASS
+========================================= -->
+
+            <section class="schedule-upcoming-section">
+
+                <div class="schedule-section-heading">
+                    <div>
+                        <span class="schedule-eyebrow">DON'T MISS YOUR SESSION</span>
+                        <h2>Upcoming Class</h2>
+                        <p>Keep your next learning session in view.</p>
+                    </div>
+                </div>
+
+                <div class="schedule-upcoming-card">
+
+                    <div class="schedule-upcoming-date">
+                        <span>NEXT</span>
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <strong>Class</strong>
+                    </div>
+
+                    <div class="schedule-upcoming-details">
+                        <span class="schedule-upcoming-label">
+                            <i class="fa-solid fa-circle"></i>
+                            NEXT SCHEDULED SESSION
+                        </span>
+
+                        <h3>Abacus – Level 2</h3>
+
+                        <div class="schedule-upcoming-meta">
+                            <span>
+                                <i class="fa-regular fa-clock"></i>
+                                10:00 AM – 11:00 AM
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-user-tie"></i>
+                                Assigned Instructor
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-building"></i>
+                                In-person Class
+                            </span>
+                        </div>
+
+                        <p>
+                            Get ready to practise calculation techniques and
+                            strengthen your understanding of number concepts.
+                        </p>
+                    </div>
+
+                    <div class="schedule-upcoming-action">
+                        <span class="schedule-session-status">
+                            <i class="fa-solid fa-check-circle"></i>
+                            Scheduled
+                        </span>
+
+                        <a href="contact.html" class="schedule-help-btn">
+                            Need Help?
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="schedule-reminder-note">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p>Try to be ready a few minutes before your scheduled class begins.</p>
+                </div>
+
+            </section>
+
+
+            <!-- =========================================
+     SECTION 3 - CLASS PREPARATION CHECKLIST
+========================================= -->
+
+            <section class="schedule-preparation-section">
+
+                <div class="schedule-section-heading">
+                    <div>
+                        <span class="schedule-eyebrow">BE READY TO LEARN</span>
+                        <h2>Get Ready for Class</h2>
+                        <p>Complete this checklist before attending your next class.</p>
+                    </div>
+                </div>
+
+                <div class="schedule-preparation-card">
+
+                    <div class="schedule-preparation-top">
+                        <div class="schedule-preparation-icon">
+                            <i class="fa-solid fa-list-check"></i>
+                        </div>
+
+                        <div>
+                            <h3>My Class Preparation</h3>
+                            <p>A few simple steps for a better learning session.</p>
+                        </div>
+
+                        <div class="schedule-check-count">
+                            <strong id="scheduleCompletedCount">0/4</strong>
+                            <span>Completed</span>
+                        </div>
+                    </div>
+
+                    <div class="schedule-check-progress">
+                        <div class="schedule-check-progress-fill" id="scheduleChecklistFill"></div>
+                    </div>
+
+                    <div class="schedule-checklist">
+
+                        <label class="schedule-check-item">
+                            <input type="checkbox" class="schedule-check-input">
+                            <span class="schedule-custom-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <span class="schedule-check-text">
+                                <strong>Keep your learning materials ready</strong>
+                                <small>Arrange your abacus, notebook and pencil.</small>
+                            </span>
+                        </label>
+
+                        <label class="schedule-check-item">
+                            <input type="checkbox" class="schedule-check-input">
+                            <span class="schedule-custom-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <span class="schedule-check-text">
+                                <strong>Revise your previous lesson</strong>
+                                <small>Take a few minutes to review what you learned.</small>
+                            </span>
+                        </label>
+
+                        <label class="schedule-check-item">
+                            <input type="checkbox" class="schedule-check-input">
+                            <span class="schedule-custom-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <span class="schedule-check-text">
+                                <strong>Complete pending practice activities</strong>
+                                <small>Finish any assigned exercises before class.</small>
+                            </span>
+                        </label>
+
+                        <label class="schedule-check-item">
+                            <input type="checkbox" class="schedule-check-input">
+                            <span class="schedule-custom-check">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <span class="schedule-check-text">
+                                <strong>Be ready at your class time</strong>
+                                <small>Get settled and prepared before the session.</small>
+                            </span>
+                        </label>
+
+                    </div>
+
+                    <div class="schedule-checklist-footer" id="scheduleChecklistMessage">
+                        <i class="fa-regular fa-circle-check"></i>
+                        Complete all the steps to get ready for your class.
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- Logout Confirmation Modal -->
+    <div class="dashboard-logout-modal" id="dashboardLogoutModal" aria-hidden="true">
+
+        <div class="dashboard-logout-card" role="dialog" aria-modal="true" aria-labelledby="dashboardLogoutTitle">
+
+            <div class="dashboard-logout-icon">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </div>
+
+            <h2 id="dashboardLogoutTitle">Logout Confirmation</h2>
+
+            <p>Are you sure you want to log out of your NUMORA account?</p>
+
+            <div class="dashboard-logout-actions">
+                <button type="button" class="dashboard-logout-cancel" id="dashboardLogoutCancel">No, Stay</button>
+
+                <button type="button" class="dashboard-logout-confirm" id="dashboardLogoutConfirm">Yes, Logout</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

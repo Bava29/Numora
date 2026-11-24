@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/preferences.js"></script>
+
+    <title>NUMORA Academy</title>
+
+    <meta name="description"
+        content="NUMORA Academy helps children develop calculation speed, concentration and mental maths skills through abacus learning.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= HEADER START ================= -->
+
+    <header class="numora-header">
+
+        <div class="header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="header-logo">
+                <img src="images/logo.png" alt="NUMORA Academy Logo">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <ul class="nav-menu">
+
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link">
+                            <span class="nav-link-label">Home</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="about.html" class="nav-link"><span class="nav-link-label">About</span></a></li>
+
+                    <li><a href="programs.html" class="nav-link"><span class="nav-link-label">Programs</span></a></li>
+
+                    <li><a href="instructors.html" class="nav-link"><span class="nav-link-label">Instructors</span></a>
+                    </li>
+
+                    <li><a href="competitions.html" class="nav-link"><span
+                                class="nav-link-label">Competitions</span></a></li>
+
+                    <li><a href="contact.html" class="nav-link"><span class="nav-link-label">Contact</span></a></li>
+
+                </ul>
+            </nav>
+
+            <!-- Desktop Actions -->
+            <div class="header-actions desktop-actions">
+
+                <button class="header-icon-btn theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="header-icon-btn rtl-toggle" aria-label="Toggle RTL mode">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <a href="login.html" class="login-btn">
+                    <span>Login</span>
+                </a>
+
+                <a href="dashboard.html" class="dashboard-btn">
+                    <span>Dashboard</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="mobileMenu">
+                <span></span><span></span><span></span>
+            </button>
+
+        </div>
+
+        <!-- Mobile Navigation Panel -->
+        <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+
+            <nav class="mobile-nav">
+
+                <div class="mobile-nav-dropdown">
+                    <button class="mobile-nav-link mobile-nav-parent" type="button" aria-expanded="false"
+                        aria-controls="mobileHomeSubmenu">
+                        <span class="mobile-nav-label">Home</span>
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="mobile-submenu" id="mobileHomeSubmenu">
+                        <a href="index.html" class="mobile-nav-link mobile-submenu-link">Home 1</a>
+                        <a href="home-2.html" class="mobile-nav-link mobile-submenu-link">Home 2</a>
+                    </div>
+                </div>
+
+                <a href="about.html" class="mobile-nav-link">About</a>
+
+                <a href="programs.html" class="mobile-nav-link">Programs</a>
+
+                <a href="instructors.html" class="mobile-nav-link">Instructors</a>
+
+                <a href="competitions.html" class="mobile-nav-link">Competitions</a>
+
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+
+            </nav>
+
+            <!-- Mobile Settings -->
+            <div class="mobile-settings">
+
+                <button class="mobile-setting-btn theme-toggle">
+                    <span>
+                        <i class="fa-solid fa-moon"></i>
+                        Dark Mode
+                    </span>
+                </button>
+
+                <button class="mobile-setting-btn rtl-toggle">
+                    <span>
+                        <i class="fa-solid fa-right-left"></i>
+                        RTL Mode
+                    </span>
+                </button>
+
+                <a href="login.html" class="mobile-login-btn">
+                    Login
+                </a>
+
+                <a href="dashboard.html" class="mobile-dashboard-btn">
+                    Dashboard
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= HEADER END ================= -->
+
+
+
+    <!-- =====================================
+     COMMON INNER PAGE HERO
+====================================== -->
+    <section class="common-page-hero">
+
+        <div class="common-page-hero-container">
+
+            <!-- LEFT CONTENT -->
+            <div class="common-page-hero-content">
+
+                <h1 class="common-page-hero-title">
+                    About NUMORA
+                </h1>
+
+                <h2 class="common-page-hero-subtitle">
+                    Our Story, Our People, Our Purpose
+                </h2>
+
+                <p class="common-page-hero-description">
+                    A learning community dedicated to making
+                    Mathematics simple, engaging and empowering
+                    for every young learner.
+                </p>
+
+                <div class="common-page-hero-divider">
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- BREADCRUMB -->
+                <nav class="common-page-breadcrumb" aria-label="Breadcrumb">
+
+                    <a href="index.html">
+                        <span>Home</span>
+                    </a>
+
+                    <i class="fas fa-chevron-right breadcrumb-arrow"></i>
+
+                    <span class="breadcrumb-current">
+                        About
+                    </span>
+
+                </nav>
+
+            </div>
+
+            <!-- RIGHT VISUAL -->
+            <div class="common-page-hero-visual">
+
+                <img src="images/common-hero-child.png" alt="Child enjoying Abacus learning"
+                    class="common-page-hero-image">
+
+            </div>
+
+            <!-- DECORATIVE ELEMENTS -->
+            <div class="common-page-hero-decoration hero-decoration-one">
+                <i class="fas fa-lightbulb"></i>
+            </div>
+
+            <div class="common-page-hero-decoration hero-decoration-two">
+                <i class="fas fa-star"></i>
+            </div>
+
+            <div class="common-page-hero-decoration hero-decoration-three">
+                +
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+     ABOUT PAGE - OUR STORY SECTION
+====================================== -->
+    <section class="about-story-section">
+        <div class="about-story-container">
+
+            <div class="about-story-content">
+
+                <span class="about-story-label">
+                    <i class="fas fa-book-open"></i>
+                    OUR STORY
+                </span>
+
+                <h2>
+                    A Simple Idea That
+                    <span>Inspires Brighter Minds.</span>
+                </h2>
+
+                <p class="about-story-intro">
+                    Every meaningful journey begins with a purpose.
+                    NUMORA was built around a simple belief: learning
+                    Mathematics should be enjoyable, engaging and
+                    accessible to every child.
+                </p>
+
+                <p class="about-story-description">
+                    We believe that every child has the potential to
+                    become a confident thinker. Through Abacus and
+                    Mental Maths learning, we aim to create an
+                    environment where children can explore numbers,
+                    strengthen their understanding and enjoy the
+                    process of learning.
+                </p>
+
+                <p class="about-story-description">
+                    Our approach focuses on building strong
+                    foundations through structured learning,
+                    regular practice and encouraging guidance.
+                    We want children to develop skills that go
+                    beyond calculations and support their overall
+                    learning journey.
+                </p>
+
+                <div class="about-story-highlight">
+                    <div class="about-story-highlight-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+
+                    <div>
+                        <h4>Our Belief</h4>
+                        <p>
+                            Every child can learn, grow and achieve
+                            when given the right guidance and opportunity.
+                        </p>
+                    </div>
+                </div>
+
+                <a href="programs.html" class="about-story-button">
+                    Explore Our Learning Programs
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <!-- STORY VISUALS -->
+            <div class="about-story-visual">
+
+                <div class="about-story-main-image">
+                    <img src="images/about-story-main.jpg" alt="Child learning Abacus in classroom">
+                </div>
+
+                <div class="about-story-small-image">
+                    <img src="images/about-story-small.jpg" alt="Teacher helping a child learn mathematics">
+                </div>
+
+                <div class="about-story-image-tag">
+                    <div class="about-story-tag-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+
+                    <div>
+                        <strong>Learning with Purpose</strong>
+                        <span>Growing with Confidence</span>
+                    </div>
+                </div>
+
+                <div class="about-story-decoration">
+                    <span>+</span>
+                    <span>×</span>
+                    <span>÷</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================
+     ABOUT PAGE - MISSION & VISION SECTION
+====================================== -->
+    <section class="about-mv-section">
+        <div class="about-mv-container">
+
+            <!-- LEFT IMAGE -->
+            <div class="about-mv-visual">
+
+                <div class="about-mv-image-frame">
+                    <img src="images/about-mission-vision.jpg" alt="Child exploring Abacus learning">
+                </div>
+
+                <div class="about-mv-bulb">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+
+                <div class="about-mv-image-decoration">
+                    <span></span>
+                </div>
+
+            </div>
+
+            <!-- RIGHT CONTENT -->
+            <div class="about-mv-content">
+
+                <div class="about-mv-label">
+                    <i class="fas fa-bullseye"></i>
+                    <span>OUR MISSION & VISION</span>
+                </div>
+
+                <h2>
+                    Guiding Young Minds
+                    <span>Towards a Brighter Tomorrow</span>
+                </h2>
+
+                <p class="about-mv-intro">
+                    Our mission and vision shape everything we do,
+                    from the way we teach to the future we want
+                    to create for every learner.
+                </p>
+
+                <!-- MISSION AND VISION CARDS -->
+                <div class="about-mv-cards">
+
+                    <!-- MISSION -->
+                    <div class="about-mv-card about-mission-card">
+
+                        <div class="about-mv-card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+
+                        <h3>Our Mission</h3>
+
+                        <p>
+                            To make Mathematics learning simple,
+                            enjoyable and effective through Abacus
+                            and Mental Maths, helping children build
+                            confidence, focus and learning skills.
+                        </p>
+
+                    </div>
+
+                    <!-- VISION -->
+                    <div class="about-mv-card about-vision-card">
+
+                        <div class="about-mv-card-icon">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+
+                        <h3>Our Vision</h3>
+
+                        <p>
+                            To be a trusted and leading learning brand
+                            that empowers children everywhere to think
+                            sharply, solve confidently and reach their
+                            full potential.
+                        </p>
+
+                    </div>
+
+                    <!-- CENTER TROPHY -->
+                    <div class="about-mv-trophy">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- DECORATIVE CORNERS -->
+            <div class="about-mv-decoration about-mv-decoration-top">
+                <span></span>
+            </div>
+
+            <div class="about-mv-decoration about-mv-decoration-bottom">
+                <span></span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================
+     ABOUT PAGE - WHY CHOOSE NUMORA
+====================================== -->
+    <section class="about-why-section">
+        <div class="about-why-container">
+
+            <div class="about-why-heading">
+                <span class="about-why-label">
+                    <i class="fas fa-star"></i>
+                    THE NUMORA ADVANTAGE
+                </span>
+
+                <h2>
+                    Why Families Choose
+                    <span>NUMORA</span>
+                </h2>
+
+                <p>
+                    We create meaningful learning experiences that help
+                    children build strong mathematical foundations,
+                    develop confidence and enjoy every step of progress.
+                </p>
+            </div>
+
+            <div class="about-why-layout">
+
+                <!-- LEFT FEATURES -->
+                <div class="about-why-column">
+
+                    <div class="about-why-feature">
+                        <div class="about-why-feature-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+
+                        <div class="about-why-feature-content">
+                            <h3>Guided Learning</h3>
+                            <p>
+                                Children receive structured guidance
+                                that makes learning easier to understand
+                                and follow.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about-why-feature">
+                        <div class="about-why-feature-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+
+                        <div class="about-why-feature-content">
+                            <h3>Activity-Based Practice</h3>
+                            <p>
+                                Interactive activities make Mathematics
+                                more engaging and encourage active
+                                participation.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- CENTER VISUAL -->
+                <div class="about-why-center">
+
+                    <div class="about-why-center-circle">
+                        <div class="about-why-inner-circle">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>NUMORA</span>
+                            <small>LEARN • GROW • SHINE</small>
+                        </div>
+                    </div>
+
+                    <div class="about-why-orbit about-why-orbit-one"></div>
+                    <div class="about-why-orbit about-why-orbit-two"></div>
+
+                    <span class="about-why-floating about-why-float-one">
+                        <i class="fas fa-brain"></i>
+                    </span>
+
+                    <span class="about-why-floating about-why-float-two">
+                        <i class="fas fa-star"></i>
+                    </span>
+
+                    <span class="about-why-floating about-why-float-three">
+                        <i class="fas fa-calculator"></i>
+                    </span>
+
+                </div>
+
+                <!-- RIGHT FEATURES -->
+                <div class="about-why-column">
+
+                    <div class="about-why-feature">
+                        <div class="about-why-feature-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+
+                        <div class="about-why-feature-content">
+                            <h3>Individual Progress</h3>
+                            <p>
+                                We encourage children to learn at
+                                their own pace and build skills
+                                step by step.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about-why-feature">
+                        <div class="about-why-feature-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+
+                        <div class="about-why-feature-content">
+                            <h3>Beyond Calculations</h3>
+                            <p>
+                                Our learning approach encourages
+                                concentration, logical thinking
+                                and problem-solving.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="about-why-bottom">
+                <i class="fas fa-heart"></i>
+                <p>
+                    <strong>More than learning numbers.</strong>
+                    We help children discover what they are capable of.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================
+     ABOUT PAGE - ACHIEVEMENTS SECTION
+====================================== -->
+    <section class="about-achievements-section">
+        <div class="about-achievements-container">
+
+            <!-- SECTION HEADING -->
+            <div class="about-achievements-heading">
+
+                <span class="about-achievements-label">
+                    <i class="fas fa-trophy"></i>
+                    OUR ACHIEVEMENTS
+                </span>
+
+                <h2>
+                    Every Number Tells
+                    <span>a Story of Growth.</span>
+                </h2>
+
+                <p>
+                    Every milestone represents a learner encouraged,
+                    a skill developed and another step towards
+                    a brighter learning journey.
+                </p>
+
+            </div>
+
+            <!-- ACHIEVEMENT VISUAL -->
+            <div class="about-achievements-main">
+
+                <div class="about-achievements-trophy">
+                    <div class="about-achievements-trophy-circle">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+
+                    <span class="about-trophy-star star-one">✦</span>
+                    <span class="about-trophy-star star-two">✦</span>
+                    <span class="about-trophy-star star-three">✦</span>
+                </div>
+
+                <!-- STATISTICS -->
+                <div class="about-achievements-stats">
+
+                    <div class="about-achievement-item">
+                        <span class="about-achievement-number">800+</span>
+                        <h3>Students Guided</h3>
+                        <p>
+                            Young learners encouraged
+                            to explore their potential.
+                        </p>
+                    </div>
+
+                    <div class="about-achievement-item">
+                        <span class="about-achievement-number">50+</span>
+                        <h3>Learning Levels</h3>
+                        <p>
+                            Structured learning stages
+                            for progressive development.
+                        </p>
+                    </div>
+
+                    <div class="about-achievement-item">
+                        <span class="about-achievement-number">100+</span>
+                        <h3>Learning Sessions</h3>
+                        <p>
+                            Opportunities to practise
+                            and strengthen all skills.
+                        </p>
+                    </div>
+
+                    <div class="about-achievement-item">
+                        <span class="about-achievement-number">500+</span>
+                        <h3>Achievements</h3>
+                        <p>
+                            Milestones that celebrate
+                            learning and progress.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- BOTTOM MESSAGE -->
+            <div class="about-achievements-footer">
+
+                <div class="about-achievements-footer-icon">
+                    <i class="fas fa-medal"></i>
+                </div>
+
+                <div class="about-achievements-footer-content">
+                    <h3>Small Steps. Meaningful Milestones.</h3>
+                    <p>
+                        We believe every child's progress is an
+                        achievement worth celebrating.
+                    </p>
+                </div>
+
+                <div class="about-achievements-footer-symbol">
+                    <i class="fas fa-star"></i>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================
+     ABOUT PAGE - LEARNING PHILOSOPHY
+====================================== -->
+    <section class="about-learning-section">
+        <div class="about-learning-container">
+
+            <!-- SECTION HEADER -->
+            <div class="about-learning-header">
+
+                <span class="about-learning-label">
+                    <i class="fas fa-lightbulb"></i>
+                    OUR LEARNING PHILOSOPHY
+                </span>
+
+                <h2>
+                    Learning That Builds
+                    <span>More Than Numbers.</span>
+                </h2>
+
+                <p>
+                    We believe meaningful learning goes beyond finding
+                    the right answer. It is about helping children
+                    understand, explore and grow with confidence.
+                </p>
+
+            </div>
+
+            <!-- MAIN LEARNING VISUAL -->
+            <div class="about-learning-showcase">
+
+                <div class="about-learning-image">
+                    <img src="images/about-learning-philosophy.jpg"
+                        alt="Child practising Abacus and learning Mathematics">
+
+                    <div class="about-learning-image-overlay">
+                        <span>LEARN WITH PURPOSE</span>
+                        <h3>Every Child Has the Potential to Shine.</h3>
+                    </div>
+                </div>
+
+                <div class="about-learning-side-note">
+                    <i class="fas fa-quote-left"></i>
+                    <p>
+                        The goal is not just to calculate faster,
+                        but to think better and learn with confidence.
+                    </p>
+                    <span>THE NUMORA APPROACH</span>
+                </div>
+
+            </div>
+
+            <!-- LEARNING PILLARS -->
+            <div class="about-learning-pillars">
+
+                <div class="about-learning-pillar">
+
+                    <div class="about-learning-pillar-top">
+                        <span class="about-learning-number">01</span>
+                        <i class="fas fa-eye"></i>
+                    </div>
+
+                    <h3>Understand</h3>
+
+                    <p>
+                        Build strong foundations by helping children
+                        understand numbers and mathematical concepts
+                        through learning.
+                    </p>
+
+                    <span class="about-learning-pillar-line"></span>
+
+                </div>
+
+                <div class="about-learning-pillar">
+
+                    <div class="about-learning-pillar-top">
+                        <span class="about-learning-number">02</span>
+                        <i class="fas fa-brain"></i>
+                    </div>
+
+                    <h3>Visualise</h3>
+
+                    <p>
+                        Encourage children to develop mental images
+                        of the Abacus and strengthen their ability
+                        to work with numbers.
+                    </p>
+
+                    <span class="about-learning-pillar-line"></span>
+
+                </div>
+
+                <div class="about-learning-pillar">
+
+                    <div class="about-learning-pillar-top">
+                        <span class="about-learning-number">03</span>
+                        <i class="fas fa-seedling"></i>
+                    </div>
+
+                    <h3>Grow</h3>
+
+                    <p>
+                        Support consistent practice and gradual
+                        improvement to help children become
+                        confident independent learners.
+                    </p>
+
+                    <span class="about-learning-pillar-line"></span>
+
+                </div>
+
+            </div>
+
+            <!-- BOTTOM MESSAGE -->
+            <div class="about-learning-bottom">
+                <div class="about-learning-bottom-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <p>
+                    <strong>Understand the numbers. Imagine the possibilities.</strong>
+                    Grow into a confident learner.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================
+     ABOUT PAGE - MEET OUR TEAM
+====================================== -->
+    <section class="about-team-section">
+        <div class="about-team-container">
+
+            <!-- SECTION HEADING -->
+            <div class="about-team-heading">
+
+                <span class="about-team-label">
+                    <i class="fas fa-users"></i>
+                    THE PEOPLE BEHIND NUMORA
+                </span>
+
+                <h2>
+                    Meet Our
+                    <span>Learning Champions.</span>
+                </h2>
+
+                <p>
+                    Behind every meaningful learning experience is a
+                    passionate team dedicated to guiding, encouraging
+                    and inspiring young minds.
+                </p>
+
+            </div>
+
+            <!-- FEATURED TEAM MEMBER -->
+            <div class="about-team-featured">
+
+                <div class="about-team-featured-image">
+                    <img src="images/about-team-lead.jpg" alt="NUMORA academic team leader">
+
+                    <div class="about-team-featured-badge">
+                        <i class="fas fa-award"></i>
+                        <span>LEADING WITH PURPOSE</span>
+                    </div>
+                </div>
+
+                <div class="about-team-featured-content">
+
+                    <span class="about-team-role">
+                        OUR LEARNING LEADER
+                    </span>
+
+                    <h3>Meet the Mind Behind the Mission.</h3>
+
+                    <p class="about-team-featured-description">
+                        Great learning begins with great guidance.
+                        Our leadership team is committed to creating
+                        meaningful educational experiences that
+                        encourage children to explore their abilities
+                        and grow with confidence.
+                    </p>
+
+                    <div class="about-team-featured-divider"></div>
+
+                    <p class="about-team-featured-note">
+                        "Every child deserves an opportunity to
+                        discover their potential."
+                    </p>
+
+                    <div class="about-team-featured-signature">
+                        <strong>NUMORA Leadership Team</strong>
+                        <span>Inspiring the next generation</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- TEAM MEMBERS -->
+            <div class="about-team-members-heading">
+                <div>
+                    <span>OUR PEOPLE</span>
+                    <h3>The Team That Makes It Happen</h3>
+                </div>
+
+                <p>
+                    Passionate minds. Caring guidance.
+                    One shared purpose.
+                </p>
+            </div>
+
+            <div class="about-team-members">
+
+                <!-- MEMBER 1 -->
+                <div class="about-team-member">
+
+                    <div class="about-team-member-image">
+                        <img src="images/about-team-member-1.jpg" alt="NUMORA Abacus instructor">
+
+                        <span class="about-team-member-number">01</span>
+                    </div>
+
+                    <div class="about-team-member-info">
+                        <h4>Anitha S</h4>
+                        <span>Abacus Instructor</span>
+                        <p>
+                            Helping children understand numbers
+                            through patient and guided learning.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- MEMBER 2 -->
+                <div class="about-team-member">
+
+                    <div class="about-team-member-image">
+                        <img src="images/about-team-member-2.jpg" alt="NUMORA Mathematics educator">
+
+                        <span class="about-team-member-number">02</span>
+                    </div>
+
+                    <div class="about-team-member-info">
+                        <h4>Meena M</h4>
+                        <span>Mental Maths Educator</span>
+                        <p>
+                            Encouraging logical thinking and
+                            confidence through regular practice.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- MEMBER 3 -->
+                <div class="about-team-member">
+
+                    <div class="about-team-member-image">
+                        <img src="images/about-team-member-3.jpg" alt="NUMORA student support coordinator">
+
+                        <span class="about-team-member-number">03</span>
+                    </div>
+
+                    <div class="about-team-member-info">
+                        <h4>Serena L</h4>
+                        <span>Student Support</span>
+                        <p>
+                            Supporting learners and helping
+                            them enjoy their learning journey.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- BOTTOM MESSAGE -->
+            <div class="about-team-bottom">
+                <i class="fas fa-heart"></i>
+                <p>
+                    <strong>One Team. One Purpose.</strong>
+                    Making every learning experience count.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================
+     ABOUT PAGE - FINAL CTA SECTION
+====================================== -->
+    <section class="about-final-cta-section">
+        <div class="about-final-cta-container">
+
+            <div class="about-final-cta-main">
+
+                <!-- LEFT VISUAL -->
+                <div class="about-final-cta-visual">
+
+                    <div class="about-final-cta-image">
+                        <img src="images/about-final-cta.jpg" alt="Happy child enjoying Abacus learning">
+                    </div>
+
+                    <div class="about-final-cta-circle">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+
+                    <span class="about-final-cta-plus">+</span>
+                    <span class="about-final-cta-star">✦</span>
+
+                </div>
+
+                <!-- RIGHT CONTENT -->
+                <div class="about-final-cta-content">
+
+                    <span class="about-final-cta-label">
+                        <i class="fas fa-sparkles"></i>
+                        YOUR CHILD'S JOURNEY STARTS HERE
+                    </span>
+
+                    <h2>
+                        Every Child Has
+                        a <span>Brighter Future</span>
+                        Waiting to Begin.
+                    </h2>
+
+                    <p>
+                        Give your child the opportunity to discover
+                        the joy of Mathematics, develop essential
+                        skills and grow into a confident learner
+                        with NUMORA.
+                    </p>
+
+                    <div class="about-final-cta-actions">
+
+                        <a href="contact.html" class="about-final-primary-btn">
+                            Get in Touch
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+
+                        <a href="programs.html" class="about-final-secondary-btn">
+                            Explore Our Programs
+                        </a>
+
+                    </div>
+
+                    <div class="about-final-cta-note">
+                        <i class="fas fa-heart"></i>
+                        <span>
+                            Together, let's make learning meaningful.
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- BOTTOM BRAND MESSAGE -->
+            <div class="about-final-cta-footer">
+
+                <div class="about-final-footer-brand">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>NUMORA</span>
+                </div>
+
+                <p>
+                    Think Better. Learn Brighter. Grow Stronger.
+                </p>
+
+                <a href="contact.html">
+                    Start Your Journey
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= FOOTER START ================= -->
+
+    <footer class="numora-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-main">
+
+                <!-- Brand Column -->
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.png" alt="NUMORA Academy">
+                    </a>
+
+                    <p class="footer-about">
+                        Empowering young minds through the power of
+                        abacus and mental mathematics. Helping children
+                        build confidence, concentration and calculation
+                        skills for a brighter future.
+                    </p>
+
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+
+                    <h3 class="footer-title">Quick Links</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Our Programs</a></li>
+                        <li><a href="instructors.html">Instructors</a></li>
+                        <li><a href="competitions.html">Competitions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Programs -->
+                <div class="footer-column">
+
+                    <h3 class="footer-title">Our Programs</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="programs.html">Beginner Level</a></li>
+                        <li><a href="programs.html">Intermediate Level</a></li>
+                        <li><a href="programs.html">Advanced Level</a></li>
+                        <li><a href="programs.html">Mental Maths</a></li>
+                        <li><a href="competitions.html">Abacus Competitions</a></li>
+                        <li><a href="login.html">Parent Portal</a></li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact Column -->
+                <div class="footer-column footer-contact">
+
+                    <h3 class="footer-title">Get In Touch</h3>
+
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>NUMORA Academy, Your City, India</p>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+919876543210">+91 98765 43210</a>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:info@numoraacademy.com">
+                            info@numoraacademy.com
+                        </a>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Mon – Sat: 9:00 AM – 6:00 PM</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; 2026 <span>NUMORA Academy</span>.
+                    All Rights Reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+
+                <p class="footer-credit">
+                    Designed with <i class="fa-solid fa-heart"></i>
+                    for Brighter Minds
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= FOOTER END ================= -->
+
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

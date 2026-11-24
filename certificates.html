@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/preferences.js"></script>
+
+    <title>NUMORA Academy</title>
+
+    <meta name="description"
+        content="NUMORA Academy helps children develop calculation speed, concentration and mental maths skills through abacus learning.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body class="numora-dashboard-page">
+
+    <!-- Mobile Sidebar Overlay -->
+    <div class="dashboard-sidebar-overlay" id="dashboardSidebarOverlay"></div>
+
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+        <div class="dashboard-sidebar-logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="NUMORA Academy">
+            </a>
+
+            <button type="button" class="dashboard-sidebar-close" id="dashboardSidebarClose" aria-label="Close sidebar">
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <div class="dashboard-sidebar-content">
+
+            <nav class="dashboard-navigation">
+
+                <a href="dashboard.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard Overview</span>
+                </a>
+
+                <a href="my-programs.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>My Programs</span>
+                </a>
+
+                <a href="class-schedule.html" class="dashboard-menu-link">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <span>Class Schedule</span>
+                </a>
+
+                <a href="learning-progress.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Learning Progress</span>
+                </a>
+
+                <a href="practice-activities.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>Practice Activities</span>
+                </a>
+
+                <a href="certificates.html" class="dashboard-menu-link active">
+                    <i class="fa-solid fa-award"></i>
+                    <span>Certificates</span>
+                </a>
+
+                <a href="payments.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>Payments</span>
+                </a>
+
+            </nav>
+        </div>
+
+        <!-- Sidebar Bottom Logout -->
+        <div class="dashboard-sidebar-bottom">
+            <button type="button" class="dashboard-logout-button" id="dashboardLogoutButton">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Main Dashboard Area -->
+    <div class="dashboard-main-area" id="dashboardMainArea">
+
+        <!-- Fixed Header -->
+        <header class="dashboard-header">
+
+            <div class="dashboard-header-left">
+
+                <button type="button" class="dashboard-menu-toggle" id="dashboardMenuToggle" aria-label="Toggle sidebar"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="dashboard-header-title">
+                    <h1>Certificates</h1>
+                </div>
+
+            </div>
+
+            <div class="dashboard-header-right">
+
+                <!-- Notifications -->
+                <div class="dashboard-notification-wrapper">
+                    <button type="button" class="dashboard-header-icon" id="dashboardNotificationButton"
+                        aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="dashboard-notification-count">3</span>
+                    </button>
+
+                    <div class="dashboard-notification-dropdown" id="dashboardNotificationDropdown">
+                        <div class="dashboard-dropdown-heading">
+                            <h3>Notifications</h3>
+                            <span>3 New</span>
+                        </div>
+
+                        <div class="dashboard-notification-item">
+                            <span class="dashboard-notification-symbol">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </span>
+                            <div>
+                                <h4>Upcoming Class</h4>
+                                <p>Your next learning session is coming up.</p>
+                                <small>Recently</small>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-notification-item">
+                            <span class="dashboard-notification-symbol">
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                            <div>
+                                <h4>Practice Reminder</h4>
+                                <p>Keep practising to improve your skills.</p>
+                                <small>Recently</small>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-notification-item">
+                            <span class="dashboard-notification-symbol">
+                                <i class="fa-solid fa-award"></i>
+                            </span>
+                            <div>
+                                <h4>Learning Update</h4>
+                                <p>Check your latest learning progress.</p>
+                                <small>Recently</small>
+                            </div>
+                        </div>
+
+                        <a href="notifications.html" class="dashboard-view-notifications">
+                            View All Notifications
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Dark Mode -->
+                <button type="button" class="dashboard-header-icon" id="dashboardThemeToggle"
+                    aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon" id="dashboardThemeIcon"></i>
+                </button>
+
+                <!-- RTL -->
+                <button type="button" class="dashboard-header-icon" id="dashboardRtlToggle" aria-label="Toggle RTL">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <!-- Member Profile -->
+                <div class="dashboard-member-wrapper">
+
+                    <button type="button" class="dashboard-member-profile" id="dashboardMemberButton"
+                        aria-expanded="false" aria-controls="dashboardMemberDropdown">
+
+                        <img src="images/member-profile.jpg" alt="Member profile">
+
+                        <span class="dashboard-member-details">
+                            <strong>Nila M</strong>
+                            <small>Student Member</small>
+                        </span>
+
+                    </button>
+
+                    <div class="dashboard-member-dropdown" id="dashboardMemberDropdown">
+                        <button type="button" id="dashboardProfileLogout">
+                            <i class="fa-solid fa-arrow-right-from-bracket" aria-hidden="true"></i>
+                            <span>Logout</span>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <main class="dashboard-page-content certificates-page">
+
+            <!-- SECTION 1: MY CERTIFICATES -->
+            <section class="certificates-overview-section">
+                <div class="certificates-section-heading">
+                    <div>
+                        <span class="certificates-eyebrow">YOUR ACHIEVEMENTS</span>
+                        <h2>My Certificates</h2>
+                        <p>Celebrate your learning journey and the milestones you have achieved.</p>
+                    </div>
+                    <span class="certificates-heading-icon">
+                        <i class="fas fa-award"></i>
+                    </span>
+                </div>
+
+                <div class="certificates-summary-grid">
+                    <article class="certificates-summary-card">
+                        <span class="certificates-summary-icon earned-icon">
+                            <i class="fas fa-certificate"></i>
+                        </span>
+                        <div>
+                            <span class="certificates-summary-label">Certificates Earned</span>
+                            <h3 id="earnedCertificateCount">02</h3>
+                            <small>Your completed milestones</small>
+                        </div>
+                    </article>
+
+                    <article class="certificates-summary-card">
+                        <span class="certificates-summary-icon progress-icon">
+                            <i class="fas fa-hourglass-half"></i>
+                        </span>
+                        <div>
+                            <span class="certificates-summary-label">In Progress</span>
+                            <h3 id="progressCertificateCount">01</h3>
+                            <small>Keep learning and practising</small>
+                        </div>
+                    </article>
+
+                    <article class="certificates-summary-card">
+                        <span class="certificates-summary-icon level-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </span>
+                        <div>
+                            <span class="certificates-summary-label">Current Learning Level</span>
+                            <h3>Level 2</h3>
+                            <small>Continue your journey</small>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="certificates-featured-card">
+                    <div class="certificates-featured-content">
+                        <span class="certificates-status earned-status">
+                            <i class="fas fa-check-circle"></i> Sample Earned Certificate
+                        </span>
+                        <h3>Abacus Foundation Certificate</h3>
+                        <p>
+                            A recognition of your progress in understanding the
+                            foundational concepts of Abacus learning.
+                        </p>
+                        <div class="certificates-featured-meta">
+                            <span><i class="fas fa-book-open"></i> Foundation Level</span>
+                            <span><i class="fas fa-user-graduate"></i> Student Achievement</span>
+                        </div>
+                        <button class="certificates-primary-btn" type="button" data-certificate-details="foundation">
+                            <i class="fas fa-eye"></i> View Certificate Details
+                        </button>
+                    </div>
+                    <div class="certificates-featured-art">
+                        <div class="certificates-award-circle">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <span>LEARNING</span>
+                        <strong>ACHIEVEMENT</strong>
+                        <small>Every milestone matters</small>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- SECTION 2: NEXT CERTIFICATE PROGRESS -->
+            <section class="certificates-progress-section">
+                <div class="certificates-section-heading">
+                    <div>
+                        <span class="certificates-eyebrow">YOUR NEXT MILESTONE</span>
+                        <h2>Next Certificate Progress</h2>
+                        <p>Track the learning goals that will help you move towards your next achievement.</p>
+                    </div>
+                </div>
+
+                <div class="certificates-progress-card">
+                    <div class="certificates-progress-top">
+                        <div>
+                            <span class="certificates-status upcoming-status">IN PROGRESS</span>
+                            <h3>Abacus Intermediate Certificate</h3>
+                            <p>Complete your learning milestones to reach the next level.</p>
+                        </div>
+                        <div class="certificates-progress-number">
+                            <strong id="certificateProgressPercent">50%</strong>
+                            <span>Completed</span>
+                        </div>
+                    </div>
+
+                    <div class="certificates-progress-track">
+                        <div class="certificates-progress-fill" id="certificateProgressFill"></div>
+                    </div>
+
+                    <div class="certificates-milestone-list" id="certificateMilestoneList">
+                        <label class="certificates-milestone completed">
+                            <input type="checkbox" checked disabled>
+                            <span class="certificates-milestone-check">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span class="certificates-milestone-text">
+                                <strong>Complete Foundation Level</strong>
+                                <small>Foundation learning completed</small>
+                            </span>
+                            <span class="certificates-milestone-state">Completed</span>
+                        </label>
+
+                        <label class="certificates-milestone completed">
+                            <input type="checkbox" checked disabled>
+                            <span class="certificates-milestone-check">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span class="certificates-milestone-text">
+                                <strong>Complete Intermediate Lessons</strong>
+                                <small>Core lessons completed</small>
+                            </span>
+                            <span class="certificates-milestone-state">Completed</span>
+                        </label>
+
+                        <label class="certificates-milestone">
+                            <input type="checkbox" class="certificate-goal-checkbox">
+                            <span class="certificates-milestone-check">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span class="certificates-milestone-text">
+                                <strong>Finish Practice Activities</strong>
+                                <small>Complete the required practice tasks</small>
+                            </span>
+                            <span class="certificates-milestone-state">Pending</span>
+                        </label>
+
+                        <label class="certificates-milestone">
+                            <input type="checkbox" class="certificate-goal-checkbox">
+                            <span class="certificates-milestone-check">
+                                <i class="fas fa-check"></i>
+                            </span>
+                            <span class="certificates-milestone-text">
+                                <strong>Complete Level Assessment</strong>
+                                <small>Meet the required assessment criteria</small>
+                            </span>
+                            <span class="certificates-milestone-state">Pending</span>
+                        </label>
+                    </div>
+
+                    <div class="certificates-progress-note">
+                        <i class="fas fa-lightbulb"></i>
+                        <p>Keep practising regularly. Every completed milestone brings you closer to your next
+                            achievement.</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- SECTION 3: CERTIFICATE COLLECTION -->
+            <section class="certificates-collection-section">
+                <div class="certificates-section-heading">
+                    <div>
+                        <span class="certificates-eyebrow">YOUR LEARNING RECORD</span>
+                        <h2>Certificate Collection</h2>
+                        <p>Explore your completed and upcoming certificate milestones.</p>
+                    </div>
+                </div>
+
+                <div class="certificates-collection-toolbar">
+                    <div class="certificates-filter-tabs" role="group" aria-label="Filter certificates">
+                        <button class="certificates-filter-btn active" data-filter="all">All</button>
+                        <button class="certificates-filter-btn" data-filter="earned">Earned</button>
+                        <button class="certificates-filter-btn" data-filter="progress">In Progress</button>
+                    </div>
+                    <span class="certificates-collection-count" id="certificateCollectionCount">
+                        3 certificates
+                    </span>
+                </div>
+
+                <div class="certificates-collection-grid" id="certificatesCollectionGrid">
+
+                    <article class="certificates-collection-card" data-status="earned">
+                        <div class="certificates-card-art foundation-art">
+                            <i class="fas fa-award"></i>
+                            <span>FOUNDATION</span>
+                            <strong>ACHIEVEMENT</strong>
+                        </div>
+                        <div class="certificates-card-content">
+                            <span class="certificates-status earned-status">Earned</span>
+                            <h3>Abacus Foundation</h3>
+                            <p>Foundation learning milestone</p>
+                            <button type="button" class="certificates-text-btn" data-certificate-details="foundation">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="certificates-collection-card" data-status="earned">
+                        <div class="certificates-card-art participation-art">
+                            <i class="fas fa-star"></i>
+                            <span>LEARNING</span>
+                            <strong>PARTICIPATION</strong>
+                        </div>
+                        <div class="certificates-card-content">
+                            <span class="certificates-status earned-status">Earned</span>
+                            <h3>Learning Participation</h3>
+                            <p>Participation milestone</p>
+                            <button type="button" class="certificates-text-btn"
+                                data-certificate-details="participation">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="certificates-collection-card" data-status="progress">
+                        <div class="certificates-card-art intermediate-art">
+                            <i class="fas fa-medal"></i>
+                            <span>INTERMEDIATE</span>
+                            <strong>UPCOMING</strong>
+                        </div>
+                        <div class="certificates-card-content">
+                            <span class="certificates-status upcoming-status">In Progress</span>
+                            <h3>Abacus Intermediate</h3>
+                            <p>Complete the remaining goals</p>
+                            <button type="button" class="certificates-text-btn" data-certificate-details="intermediate">
+                                View Requirements <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="certificates-empty-state" id="certificatesEmptyState" hidden>
+                    <i class="fas fa-folder-open"></i>
+                    <h3>No certificates found</h3>
+                    <p>There are no certificates under this filter yet.</p>
+                </div>
+            </section>
+
+
+            <!-- CERTIFICATE DETAILS MODAL -->
+            <div class="certificates-modal" id="certificateDetailsModal" aria-hidden="true">
+                <div class="certificates-modal-content" role="dialog" aria-modal="true"
+                    aria-labelledby="certificateModalTitle">
+                    <button type="button" class="certificates-modal-close" id="certificateModalClose"
+                        aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <span class="certificates-modal-icon">
+                        <i class="fas fa-award"></i>
+                    </span>
+                    <span class="certificates-eyebrow">CERTIFICATE INFORMATION</span>
+                    <h3 id="certificateModalTitle">Certificate Details</h3>
+                    <p id="certificateModalDescription"></p>
+                    <span class="certificates-modal-status" id="certificateModalStatus"></span>
+                    <button type="button" class="certificates-primary-btn" id="certificateModalDone">Close</button>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <!-- Logout Confirmation Modal -->
+    <div class="dashboard-logout-modal" id="dashboardLogoutModal" aria-hidden="true">
+
+        <div class="dashboard-logout-card" role="dialog" aria-modal="true" aria-labelledby="dashboardLogoutTitle">
+
+            <div class="dashboard-logout-icon">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </div>
+
+            <h2 id="dashboardLogoutTitle">Logout Confirmation</h2>
+
+            <p>Are you sure you want to log out of your NUMORA account?</p>
+
+            <div class="dashboard-logout-actions">
+                <button type="button" class="dashboard-logout-cancel" id="dashboardLogoutCancel">No, Stay</button>
+
+                <button type="button" class="dashboard-logout-confirm" id="dashboardLogoutConfirm">Yes, Logout</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

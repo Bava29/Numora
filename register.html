@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/preferences.js"></script>
+
+    <title>NUMORA Academy</title>
+
+    <meta name="description"
+        content="NUMORA Academy helps children develop calculation speed, concentration and mental maths skills through abacus learning.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/auth.css">
+
+</head>
+
+<body>
+
+    <main class="numora-auth-page">
+
+        <!-- TOP RIGHT SETTINGS -->
+        <header class="numora-auth-topbar">
+
+            <div class="numora-auth-settings">
+
+                <button type="button" class="numora-auth-toggle" id="auth-theme-toggle" aria-label="Toggle dark mode"
+                    title="Toggle dark mode">
+                    <i class="fas fa-moon" id="auth-theme-icon"></i>
+                </button>
+
+                <button type="button" class="numora-auth-toggle" id="auth-rtl-toggle" aria-label="Toggle RTL mode"
+                    title="Toggle RTL mode">
+                    <i class="fas fa-right-left"></i>
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- REGISTER AREA -->
+        <section class="numora-login-area numora-register-area">
+
+            <div class="numora-login-card numora-register-card">
+
+                <!-- LOGO -->
+                <a href="index.html" class="numora-login-logo">
+                    <img src="images/logo.png" alt="NUMORA Logo">
+                </a>
+
+
+                <!-- HEADING -->
+                <div class="numora-login-heading numora-register-heading">
+
+                    <h1>Create Your <span>Account</span></h1>
+
+                    <p>
+                        Join NUMORA and start your child's exciting
+                        learning journey with us.
+                    </p>
+
+                </div>
+
+
+                <!-- REGISTER FORM -->
+                <form class="numora-login-form numora-register-form" id="numora-register-form">
+
+                    <!-- FULL NAME -->
+                    <div class="numora-login-field">
+
+                        <label for="register-name">Full Name</label>
+
+                        <div class="numora-login-input-wrap">
+                            <i class="far fa-user numora-login-input-icon"></i>
+
+                            <input type="text" id="register-name" name="full_name" placeholder="Enter your full name"
+                                autocomplete="name" required>
+                        </div>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+                    <div class="numora-login-field">
+
+                        <label for="register-email">Email Address</label>
+
+                        <div class="numora-login-input-wrap">
+                            <i class="far fa-envelope numora-login-input-icon"></i>
+
+                            <input type="email" id="register-email" name="email" placeholder="Enter your email address"
+                                autocomplete="email" required>
+                        </div>
+
+                    </div>
+
+
+                    <!-- PHONE -->
+                    <div class="numora-login-field">
+
+                        <label for="register-phone">Phone Number</label>
+
+                        <div class="numora-login-input-wrap">
+                            <i class="fas fa-phone numora-login-input-icon"></i>
+
+                            <input type="tel" id="register-phone" name="phone" placeholder="Enter your phone number"
+                                autocomplete="tel" pattern="[0-9+\-\s]{10,15}" required>
+                        </div>
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+                    <div class="numora-login-field">
+
+                        <label for="register-password">Password</label>
+
+                        <div class="numora-login-input-wrap">
+                            <i class="fas fa-lock numora-login-input-icon"></i>
+
+                            <input type="password" id="register-password" name="password"
+                                placeholder="Create a password" autocomplete="new-password" minlength="8" required>
+
+                            <button type="button" class="numora-login-password-toggle" id="register-password-toggle"
+                                aria-label="Show password">
+                                <i class="far fa-eye"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONFIRM PASSWORD -->
+                    <div class="numora-login-field">
+
+                        <label for="register-confirm-password">
+                            Confirm Password
+                        </label>
+
+                        <div class="numora-login-input-wrap">
+                            <i class="fas fa-lock numora-login-input-icon"></i>
+
+                            <input type="password" id="register-confirm-password" name="confirm_password"
+                                placeholder="Re-enter your password" autocomplete="new-password" minlength="8" required>
+
+                            <button type="button" class="numora-login-password-toggle" id="register-confirm-toggle"
+                                aria-label="Show confirm password">
+                                <i class="far fa-eye"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TERMS -->
+                    <div class="numora-register-terms">
+
+                        <label>
+                            <input type="checkbox" id="register-terms" name="terms" required>
+
+                            <span>
+                                I agree to the
+                                <a href="#">Terms & Conditions</a>
+                                and
+                                <a href="#">Privacy Policy</a>.
+                            </span>
+                        </label>
+
+                    </div>
+
+
+                    <!-- CREATE ACCOUNT BUTTON -->
+                    <button type="submit" class="numora-login-submit">
+                        <span>Create Account</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+
+                </form>
+
+
+                <!-- DIVIDER -->
+                <div class="numora-login-divider">
+                    <span></span>
+                    <p>Or continue with</p>
+                    <span></span>
+                </div>
+
+
+                <!-- SOCIAL REGISTER -->
+                <div class="numora-login-social">
+
+                    <button type="button" class="numora-social-button facebook-social"
+                        aria-label="Continue with Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </button>
+
+                    <button type="button" class="numora-social-button apple-social" aria-label="Continue with Apple">
+                        <i class="fab fa-apple"></i>
+                    </button>
+
+                    <button type="button" class="numora-social-button google-social" aria-label="Continue with Google">
+                        <img src="images/google-logo.svg" alt="Google">
+                    </button>
+
+                </div>
+
+
+                <!-- LOGIN LINK -->
+                <div class="numora-login-register numora-register-login-link">
+
+                    <p>
+                        Already have an account?
+                        <a href="login.html">Login</a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/auth.js"></script>
+
+</body>
+
+</html>

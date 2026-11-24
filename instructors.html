@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/preferences.js"></script>
+
+    <title>NUMORA Academy</title>
+
+    <meta name="description"
+        content="NUMORA Academy helps children develop calculation speed, concentration and mental maths skills through abacus learning.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= HEADER START ================= -->
+
+    <header class="numora-header">
+
+        <div class="header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="header-logo">
+                <img src="images/logo.png" alt="NUMORA Academy Logo">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <ul class="nav-menu">
+
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link">
+                            <span class="nav-link-label">Home</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="about.html" class="nav-link"><span class="nav-link-label">About</span></a></li>
+
+                    <li><a href="programs.html" class="nav-link"><span class="nav-link-label">Programs</span></a></li>
+
+                    <li><a href="instructors.html" class="nav-link"><span class="nav-link-label">Instructors</span></a>
+                    </li>
+
+                    <li><a href="competitions.html" class="nav-link"><span
+                                class="nav-link-label">Competitions</span></a></li>
+
+                    <li><a href="contact.html" class="nav-link"><span class="nav-link-label">Contact</span></a></li>
+
+                </ul>
+            </nav>
+
+            <!-- Desktop Actions -->
+            <div class="header-actions desktop-actions">
+
+                <button class="header-icon-btn theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="header-icon-btn rtl-toggle" aria-label="Toggle RTL mode">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <a href="login.html" class="login-btn">
+                    <span>Login</span>
+                </a>
+
+                <a href="dashboard.html" class="dashboard-btn">
+                    <span>Dashboard</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="mobileMenu">
+                <span></span><span></span><span></span>
+            </button>
+
+        </div>
+
+        <!-- Mobile Navigation Panel -->
+        <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+
+            <nav class="mobile-nav">
+
+                <div class="mobile-nav-dropdown">
+                    <button class="mobile-nav-link mobile-nav-parent" type="button" aria-expanded="false"
+                        aria-controls="mobileHomeSubmenu">
+                        <span class="mobile-nav-label">Home</span>
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="mobile-submenu" id="mobileHomeSubmenu">
+                        <a href="index.html" class="mobile-nav-link mobile-submenu-link">Home 1</a>
+                        <a href="home-2.html" class="mobile-nav-link mobile-submenu-link">Home 2</a>
+                    </div>
+                </div>
+
+                <a href="about.html" class="mobile-nav-link">About</a>
+
+                <a href="programs.html" class="mobile-nav-link">Programs</a>
+
+                <a href="instructors.html" class="mobile-nav-link">Instructors</a>
+
+                <a href="competitions.html" class="mobile-nav-link">Competitions</a>
+
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+
+            </nav>
+
+            <!-- Mobile Settings -->
+            <div class="mobile-settings">
+
+                <button class="mobile-setting-btn theme-toggle">
+                    <span>
+                        <i class="fa-solid fa-moon"></i>
+                        Dark Mode
+                    </span>
+                </button>
+
+                <button class="mobile-setting-btn rtl-toggle">
+                    <span>
+                        <i class="fa-solid fa-right-left"></i>
+                        RTL Mode
+                    </span>
+                </button>
+
+                <a href="login.html" class="mobile-login-btn">
+                    Login
+                </a>
+
+                <a href="dashboard.html" class="mobile-dashboard-btn">
+                    Dashboard
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= HEADER END ================= -->
+
+
+
+    <!-- =====================================
+     COMMON INNER PAGE HERO
+====================================== -->
+    <section class="common-page-hero">
+
+        <div class="common-page-hero-container">
+
+            <!-- LEFT CONTENT -->
+            <div class="common-page-hero-content">
+
+                <h1 class="common-page-hero-title">
+                    Our Instructors
+                </h1>
+
+                <h2 class="common-page-hero-subtitle">
+                    Learn with Guidance. Grow with Confidence.
+                </h2>
+
+                <p class="common-page-hero-description">
+                    Our instructors make learning through patient guidance, engaging teaching methods, and a
+                    supportive environment.
+                </p>
+
+                <div class="common-page-hero-divider">
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- BREADCRUMB -->
+                <nav class="common-page-breadcrumb" aria-label="Breadcrumb">
+
+                    <a href="index.html">
+                        <span>Home</span>
+                    </a>
+
+                    <i class="fas fa-chevron-right breadcrumb-arrow"></i>
+
+                    <span class="breadcrumb-current">
+                        Instructors
+                    </span>
+
+                </nav>
+
+            </div>
+
+            <!-- RIGHT VISUAL -->
+            <div class="common-page-hero-visual">
+
+                <img src="images/instructors.png" alt="Child enjoying Abacus learning" class="common-page-hero-image">
+
+            </div>
+
+            <!-- DECORATIVE ELEMENTS -->
+            <div class="common-page-hero-decoration hero-decoration-one">
+                <i class="fas fa-lightbulb"></i>
+            </div>
+
+            <div class="common-page-hero-decoration hero-decoration-two">
+                <i class="fas fa-star"></i>
+            </div>
+
+            <div class="common-page-hero-decoration hero-decoration-three">
+                +
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================
+     INSTRUCTORS SECTION
+================================= -->
+    <section class="instructors-team-section">
+        <div class="instructors-team-container">
+
+            <!-- Section Heading -->
+            <div class="instructors-team-heading">
+                <span class="instructors-team-label">THE PEOPLE WHO INSPIRE</span>
+
+                <h2>Meet Our <span>Instructors</span></h2>
+
+                <p>
+                    Behind every confident learner is a supportive guide.
+                    Get to know the passionate educators who make every
+                    learning experience meaningful.
+                </p>
+            </div>
+
+            <!-- Instructor Cards -->
+            <div class="instructors-team-grid">
+
+                <!-- Instructor 1 -->
+                <div class="instructors-team-card">
+                    <div class="instructors-team-image">
+                        <img src="images/instructor-1.jpg" alt="NUMORA Abacus Instructor">
+
+                        <span class="instructors-team-number">01</span>
+                    </div>
+
+                    <div class="instructors-team-info">
+                        <div class="instructors-team-role">
+                            LEAD INSTRUCTOR
+                        </div>
+
+                        <h3>Veena R</h3>
+
+                        <p class="instructors-team-specialty">
+                            Abacus & Foundational Learning
+                        </p>
+
+                        <p class="instructors-team-description">
+                            Passionate about helping young learners
+                            understand numbers through engaging and
+                            supportive teaching.
+                        </p>
+
+                        <a href="contact.html" class="instructors-team-link">
+                            Connect With Us
+                            <span>↗</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Instructor 2 -->
+                <div class="instructors-team-card">
+                    <div class="instructors-team-image">
+                        <img src="images/instructor-2.jpg" alt="NUMORA Mathematics Instructor">
+
+                        <span class="instructors-team-number">02</span>
+                    </div>
+
+                    <div class="instructors-team-info">
+                        <div class="instructors-team-role">
+                            ABACUS INSTRUCTOR
+                        </div>
+
+                        <h3>Maadesh L</h3>
+
+                        <p class="instructors-team-specialty">
+                            Abacus Techniques
+                        </p>
+
+                        <p class="instructors-team-description">
+                            Focuses on building strong calculation
+                            foundations through clear explanations
+                            and more guided practice.
+                        </p>
+
+                        <a href="contact.html" class="instructors-team-link">
+                            Connect With Us
+                            <span>↗</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Instructor 3 -->
+                <div class="instructors-team-card">
+                    <div class="instructors-team-image">
+                        <img src="images/instructor-3.jpg" alt="NUMORA Mental Maths Instructor">
+
+                        <span class="instructors-team-number">03</span>
+                    </div>
+
+                    <div class="instructors-team-info">
+                        <div class="instructors-team-role">
+                            MENTAL MATHS INSTRUCTOR
+                        </div>
+
+                        <h3>Karina V</h3>
+
+                        <p class="instructors-team-specialty">
+                            Mental Calculation & Visualisation
+                        </p>
+
+                        <p class="instructors-team-description">
+                            Encourages children to develop mental
+                            calculation skills and approach number
+                            challenges with confidence.
+                        </p>
+
+                        <a href="contact.html" class="instructors-team-link">
+                            Connect With Us
+                            <span>↗</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Instructor 4 -->
+                <div class="instructors-team-card">
+                    <div class="instructors-team-image">
+                        <img src="images/instructor-4.jpg" alt="NUMORA Learning Instructor">
+
+                        <span class="instructors-team-number">04</span>
+                    </div>
+
+                    <div class="instructors-team-info">
+                        <div class="instructors-team-role">
+                            LEARNING INSTRUCTOR
+                        </div>
+
+                        <h3>Joseph S</h3>
+
+                        <p class="instructors-team-specialty">
+                            Student Learning Support
+                        </p>
+
+                        <p class="instructors-team-description">
+                            Creates a positive learning environment
+                            where children feel encouraged to practise,
+                            explore, and improve.
+                        </p>
+
+                        <a href="contact.html" class="instructors-team-link">
+                            Connect With Us
+                            <span>↗</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Note -->
+            <div class="instructors-team-bottom">
+                <div class="instructors-team-bottom-icon">✦</div>
+
+                <p>
+                    Every child learns differently. Our instructors
+                    aim to make each learning experience supportive,
+                    engaging, and meaningful.
+                </p>
+
+                <a href="contact.html">Get in Touch <span>→</span></a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =================================
+     INSTRUCTOR DIFFERENCE SECTION
+================================== -->
+    <section class="instructors-difference-section">
+        <div class="instructors-difference-container">
+
+            <!-- Left Content -->
+            <div class="instructors-difference-intro">
+
+                <span class="instructors-difference-label">
+                    MORE THAN JUST TEACHING
+                </span>
+
+                <h2>
+                    What Makes Our
+                    <span>Instructors Different?</span>
+                </h2>
+
+                <p class="instructors-difference-description">
+                    Great teaching is not just about explaining concepts.
+                    It is about understanding each child, encouraging
+                    curiosity, and making every learning step count.
+                </p>
+
+                <div class="instructors-difference-highlight">
+                    <div class="instructors-difference-highlight-icon">
+                        ✦
+                    </div>
+
+                    <div>
+                        <h4>Every Child Matters</h4>
+                        <p>
+                            We believe every learner deserves patience,
+                            encouragement, and the opportunity to grow
+                            with confidence.
+                        </p>
+                    </div>
+                </div>
+
+                <a href="programs.html" class="instructors-difference-button">
+                    Explore Our Programs
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+            <!-- Right Feature Cards -->
+            <div class="instructors-difference-features">
+
+                <!-- Feature 1 -->
+                <div class="instructors-difference-card difference-card-one">
+                    <div class="instructors-difference-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <span class="instructors-difference-count">01</span>
+
+                    <h3>Supportive Guidance</h3>
+
+                    <p>
+                        Every child gets the encouragement and time
+                        needed to understand all concepts at their own understanding pace.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="instructors-difference-card difference-card-two">
+                    <div class="instructors-difference-icon">
+                        <i class="fa-solid fa-child-reaching"></i>
+                    </div>
+
+                    <span class="instructors-difference-count">02</span>
+
+                    <h3>Child-Centred Teaching</h3>
+
+                    <p>
+                        Learning experiences are designed around children's
+                        understanding, participation, and learning needs.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="instructors-difference-card difference-card-three">
+                    <div class="instructors-difference-icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+
+                    <span class="instructors-difference-count">03</span>
+
+                    <h3>Concept-Based Learning</h3>
+
+                    <p>
+                        Children are guided to understand the ideas
+                        behind every calculations instead of simply memorising the steps.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="instructors-difference-card difference-card-four">
+                    <div class="instructors-difference-icon">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+
+                    <span class="instructors-difference-count">04</span>
+
+                    <h3>Positive Progress</h3>
+
+                    <p>
+                        Small achievements are encouraged to help children
+                        stay motivated and develop learning.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================
+     INSTRUCTORS - TEACHING APPROACH
+====================================== -->
+    <section class="instructors-approach-section">
+        <div class="instructors-approach-container">
+
+            <!-- Section Heading -->
+            <div class="instructors-approach-heading">
+                <span class="instructors-approach-label">
+                    LEARNING WITH PURPOSE
+                </span>
+
+                <h2>
+                    Our Approach to
+                    <span>Meaningful Learning</span>
+                </h2>
+
+                <p>
+                    Every child deserves a learning experience that
+                    builds understanding step by step. Our teaching
+                    approach focuses on making concepts clear,
+                    practice meaningful, and progress encouraging.
+                </p>
+            </div>
+
+            <!-- Learning Process -->
+            <div class="instructors-approach-process">
+
+                <!-- Step 1 -->
+                <div class="instructors-approach-step">
+                    <div class="instructors-approach-step-top">
+                        <span class="instructors-approach-step-number">01</span>
+                        <div class="instructors-approach-step-icon">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                    </div>
+
+                    <h3>Understand the Child</h3>
+
+                    <p>
+                        Instructors begin by understanding the child's
+                        current knowledge, learning needs, and comfort level.
+                    </p>
+
+                    <span class="instructors-approach-step-caption">
+                        START WITH UNDERSTANDING
+                    </span>
+                </div>
+
+                <!-- Connector -->
+                <div class="instructors-approach-connector">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="instructors-approach-step">
+                    <div class="instructors-approach-step-top">
+                        <span class="instructors-approach-step-number">02</span>
+                        <div class="instructors-approach-step-icon">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                    </div>
+
+                    <h3>Explain the Concept</h3>
+
+                    <p>
+                        New ideas are introduced through simple
+                        explanations and easy-to-follow demonstrations.
+                    </p>
+
+                    <span class="instructors-approach-step-caption">
+                        MAKE IT CLEAR
+                    </span>
+                </div>
+
+                <!-- Connector -->
+                <div class="instructors-approach-connector">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="instructors-approach-step">
+                    <div class="instructors-approach-step-top">
+                        <span class="instructors-approach-step-number">03</span>
+                        <div class="instructors-approach-step-icon">
+                            <i class="fa-solid fa-calculator"></i>
+                        </div>
+                    </div>
+
+                    <h3>With Guidance</h3>
+
+                    <p>
+                        Children work through activities and exercises
+                        with instructor support to strengthen understanding.
+                    </p>
+
+                    <span class="instructors-approach-step-caption">
+                        LEARN BY DOING
+                    </span>
+                </div>
+
+                <!-- Connector -->
+                <div class="instructors-approach-connector">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="instructors-approach-step">
+                    <div class="instructors-approach-step-top">
+                        <span class="instructors-approach-step-number">04</span>
+                        <div class="instructors-approach-step-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                    </div>
+
+                    <h3>Review Progress</h3>
+
+                    <p>
+                        Instructors review learning progress and identify
+                        areas where additional practice may be helpful.
+                    </p>
+
+                    <span class="instructors-approach-step-caption">
+                        GROW WITH CONFIDENCE
+                    </span>
+                </div>
+
+            </div>
+
+            <!-- Bottom Message -->
+            <div class="instructors-approach-bottom">
+                <div class="instructors-approach-bottom-symbol">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+
+                <div class="instructors-approach-bottom-content">
+                    <h3>Understanding Comes Before Speed</h3>
+                    <p>
+                        We believe strong learning foundations help
+                        children approach new challenges with greater
+                        confidence and clarity.
+                    </p>
+                </div>
+
+                <a href="programs.html" class="instructors-approach-link">
+                    Discover Programs
+                    <span>↗</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================
+     INSTRUCTORS - LEARNER SUPPORT
+====================================== -->
+    <section class="instructors-support-section">
+        <div class="instructors-support-container">
+
+            <!-- Image Side -->
+            <div class="instructors-support-visual">
+
+                <div class="instructors-support-main-image">
+                    <img src="images/instructors-learner-support.jpg"
+                        alt="Instructor providing individual learning support to a child">
+                </div>
+
+                <div class="instructors-support-floating-note">
+                    <div class="instructors-support-note-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <div class="instructors-support-note-content">
+                        <h4>Learning at Their Pace</h4>
+                        <p>Every small step deserves encouragement.</p>
+                    </div>
+                </div>
+
+                <div class="instructors-support-image-decoration"></div>
+
+                <span class="instructors-support-image-caption">
+                    GUIDANCE THAT MAKES A DIFFERENCE
+                </span>
+
+            </div>
+
+            <!-- Content Side -->
+            <div class="instructors-support-content">
+
+                <span class="instructors-support-label">
+                    EVERY LEARNER IS UNIQUE
+                </span>
+
+                <h2>
+                    Helping Every Child
+                    <span>Learn with Confidence</span>
+                </h2>
+
+                <p class="instructors-support-intro">
+                    Children learn in different ways and at different
+                    speeds. Our instructors aim to create a supportive
+                    learning experience where every child feels
+                    comfortable asking questions, practising, and improving.
+                </p>
+
+                <!-- Support Point 1 -->
+                <div class="instructors-support-item">
+                    <div class="instructors-support-item-icon">
+                        <i class="fa-solid fa-user-check"></i>
+                    </div>
+
+                    <div class="instructors-support-item-content">
+                        <h3>Understanding Individual Needs</h3>
+                        <p>
+                            Instructors pay attention to each child's
+                            understanding and learning requirements.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Support Point 2 -->
+                <div class="instructors-support-item">
+                    <div class="instructors-support-item-icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+
+                    <div class="instructors-support-item-content">
+                        <h3>Clear Explanations & Guidance</h3>
+                        <p>
+                            Concepts are explained in simple ways,
+                            with additional guidance whenever needed.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Support Point 3 -->
+                <div class="instructors-support-item">
+                    <div class="instructors-support-item-icon">
+                        <i class="fa-solid fa-rotate"></i>
+                    </div>
+
+                    <div class="instructors-support-item-content">
+                        <h3>Practice & Revision</h3>
+                        <p>
+                            Regular practice opportunities help children
+                            strengthen their understanding of concepts.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Support Point 4 -->
+                <div class="instructors-support-item">
+                    <div class="instructors-support-item-icon">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+
+                    <div class="instructors-support-item-content">
+                        <h3>Encouraging Every Achievement</h3>
+                        <p>
+                            Recognising small improvements helps children
+                            stay motivated and develop confidence.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bottom Message -->
+                <div class="instructors-support-message">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>
+                        Our goal is not just to help children find answers,
+                        but to help them understand how to reach them.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================
+     INSTRUCTORS - TEACHING STANDARDS
+====================================== -->
+    <section class="instructors-standards-section">
+        <div class="instructors-standards-container">
+
+            <!-- Top Heading -->
+            <div class="instructors-standards-heading">
+                <div class="instructors-standards-heading-left">
+                    <span class="instructors-standards-label">
+                        COMMITTED TO QUALITY LEARNING
+                    </span>
+
+                    <h2>
+                        Maintaining the
+                        <span>Standards of Great Teaching</span>
+                    </h2>
+                </div>
+
+                <div class="instructors-standards-heading-right">
+                    <p>
+                        Meaningful education requires more than subject
+                        knowledge. A supportive teaching environment,
+                        clear communication, and a thoughtful approach
+                        all contribute to a child's learning experience.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Standards Content -->
+            <div class="instructors-standards-content">
+
+                <!-- Left Visual -->
+                <div class="instructors-standards-visual">
+
+                    <img src="images/instructors-teaching-standards.jpg"
+                        alt="Educators collaborating during a teaching session">
+
+                    <div class="instructors-standards-visual-overlay">
+                        <span>OUR COMMITMENT</span>
+                        <h3>Better Guidance. Meaningful Learning.</h3>
+                    </div>
+
+                    <div class="instructors-standards-vertical-text">
+                        NUMORA LEARNING EXPERIENCE
+                    </div>
+
+                </div>
+
+                <!-- Right Standards -->
+                <div class="instructors-standards-list">
+
+                    <!-- Standard 1 -->
+                    <div class="instructors-standards-item">
+                        <div class="instructors-standards-number">
+                            01
+                        </div>
+
+                        <div class="instructors-standards-item-content">
+                            <h3>Strong Subject Understanding</h3>
+                            <p>
+                                Instructors should have a clear understanding
+                                of the concepts they teach and explain them
+                                in a simple, structured way.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Standard 2 -->
+                    <div class="instructors-standards-item">
+                        <div class="instructors-standards-number">
+                            02
+                        </div>
+
+                        <div class="instructors-standards-item-content">
+                            <h3>Effective Teaching Methods</h3>
+                            <p>
+                                Concepts are presented through demonstrations,
+                                guided activities, and practice opportunities
+                                that support understanding.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Standard 3 -->
+                    <div class="instructors-standards-item">
+                        <div class="instructors-standards-number">
+                            03
+                        </div>
+
+                        <div class="instructors-standards-item-content">
+                            <h3>Positive Classroom Communication</h3>
+                            <p>
+                                Clear explanations, active listening, and
+                                respectful interaction help children feel
+                                comfortable during learning.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Standard 4 -->
+                    <div class="instructors-standards-item">
+                        <div class="instructors-standards-number">
+                            04
+                        </div>
+
+                        <div class="instructors-standards-item-content">
+                            <h3>Continuous Learning Improvement</h3>
+                            <p>
+                                Reflecting on teaching practices and
+                                strengthening subject knowledge helps
+                                instructors support learners effectively.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Bottom Statement -->
+            <div class="instructors-standards-footer">
+                <div class="instructors-standards-footer-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+
+                <div class="instructors-standards-footer-text">
+                    <h3>Quality Teaching Makes Learning Meaningful</h3>
+                    <p>
+                        We believe that thoughtful teaching and a
+                        supportive learning environment make a valuable
+                        difference in every child's learning journey.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================
+     INSTRUCTORS - FINAL CTA
+====================================== -->
+    <section class="instructors-final-cta-section">
+        <div class="instructors-final-cta-container">
+
+            <div class="instructors-final-cta-wrapper">
+
+                <!-- Left Image -->
+                <div class="instructors-final-cta-visual">
+
+                    <img src="images/instructors-final-cta.jpg"
+                        alt="Instructor guiding children during a learning session">
+
+                    <div class="instructors-final-cta-image-tag">
+                        <span class="instructors-final-cta-tag-icon">
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+
+                        <div>
+                            <strong>Inspired to Learn</strong>
+                            <span>Guided Every Step</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Content -->
+                <div class="instructors-final-cta-content">
+
+                    <span class="instructors-final-cta-label">
+                        YOUR CHILD'S LEARNING JOURNEY
+                    </span>
+
+                    <h2>
+                        Great Guidance Can
+                        <span>Make Every Step Count.</span>
+                    </h2>
+
+                    <p class="instructors-final-cta-description">
+                        Give your child the opportunity to learn,
+                        practise, and grow with confidence. Connect
+                        with NUMORA to discover our learning programs
+                        and find the right starting point.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="instructors-final-cta-buttons">
+
+                        <a href="programs.html" class="instructors-final-cta-primary">
+                            Explore Our Programs
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="contact.html" class="instructors-final-cta-secondary">
+                            Talk to Our Team
+                            <i class="fa-regular fa-message"></i>
+                        </a>
+
+                    </div>
+
+                    <!-- Supporting Points -->
+                    <div class="instructors-final-cta-points">
+
+                        <div class="instructors-final-cta-point">
+                            <i class="fa-solid fa-check-circle"></i>
+                            <span>Child-Focused Learning</span>
+                        </div>
+
+                        <div class="instructors-final-cta-point">
+                            <i class="fa-solid fa-check-circle"></i>
+                            <span>Supportive Guidance</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Decorative Element -->
+                <div class="instructors-final-cta-decoration">
+                    ✦
+                </div>
+
+            </div>
+
+            <!-- Bottom Text -->
+            <div class="instructors-final-cta-bottom">
+                <p>
+                    Every great learning journey begins with a little
+                    encouragement and the right guidance.
+                </p>
+
+                <span>NUMORA – Learn Beyond Numbers.</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= FOOTER START ================= -->
+
+    <footer class="numora-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-main">
+
+                <!-- Brand Column -->
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.png" alt="NUMORA Academy">
+                    </a>
+
+                    <p class="footer-about">
+                        Empowering young minds through the power of
+                        abacus and mental mathematics. Helping children
+                        build confidence, concentration and calculation
+                        skills for a brighter future.
+                    </p>
+
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+
+                    <h3 class="footer-title">Quick Links</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Our Programs</a></li>
+                        <li><a href="instructors.html">Instructors</a></li>
+                        <li><a href="competitions.html">Competitions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Programs -->
+                <div class="footer-column">
+
+                    <h3 class="footer-title">Our Programs</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="programs.html">Beginner Level</a></li>
+                        <li><a href="programs.html">Intermediate Level</a></li>
+                        <li><a href="programs.html">Advanced Level</a></li>
+                        <li><a href="programs.html">Mental Maths</a></li>
+                        <li><a href="competitions.html">Abacus Competitions</a></li>
+                        <li><a href="login.html">Parent Portal</a></li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact Column -->
+                <div class="footer-column footer-contact">
+
+                    <h3 class="footer-title">Get In Touch</h3>
+
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>NUMORA Academy, Your City, India</p>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+919876543210">+91 98765 43210</a>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:info@numoraacademy.com">
+                            info@numoraacademy.com
+                        </a>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Mon – Sat: 9:00 AM – 6:00 PM</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; 2026 <span>NUMORA Academy</span>.
+                    All Rights Reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+
+                <p class="footer-credit">
+                    Designed with <i class="fa-solid fa-heart"></i>
+                    for Brighter Minds
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= FOOTER END ================= -->
+
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

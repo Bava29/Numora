@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/preferences.js"></script>
+
+    <title>NUMORA Academy</title>
+
+    <meta name="description"
+        content="NUMORA Academy helps children develop calculation speed, concentration and mental maths skills through abacus learning.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body class="numora-dashboard-page">
+
+    <!-- Mobile Sidebar Overlay -->
+    <div class="dashboard-sidebar-overlay" id="dashboardSidebarOverlay"></div>
+
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+        <div class="dashboard-sidebar-logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="NUMORA Academy">
+            </a>
+
+            <button type="button" class="dashboard-sidebar-close" id="dashboardSidebarClose" aria-label="Close sidebar">
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <div class="dashboard-sidebar-content">
+
+            <nav class="dashboard-navigation">
+
+                <a href="dashboard.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard Overview</span>
+                </a>
+
+                <a href="my-programs.html" class="dashboard-menu-link active">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>My Programs</span>
+                </a>
+
+                <a href="class-schedule.html" class="dashboard-menu-link">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <span>Class Schedule</span>
+                </a>
+
+                <a href="learning-progress.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Learning Progress</span>
+                </a>
+
+                <a href="practice-activities.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>Practice Activities</span>
+                </a>
+
+                <a href="certificates.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-award"></i>
+                    <span>Certificates</span>
+                </a>
+
+                <a href="payments.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>Payments</span>
+                </a>
+
+            </nav>
+        </div>
+
+        <!-- Sidebar Bottom Logout -->
+        <div class="dashboard-sidebar-bottom">
+            <button type="button" class="dashboard-logout-button" id="dashboardLogoutButton">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Main Dashboard Area -->
+    <div class="dashboard-main-area" id="dashboardMainArea">
+
+        <!-- Fixed Header -->
+        <header class="dashboard-header">
+
+            <div class="dashboard-header-left">
+
+                <button type="button" class="dashboard-menu-toggle" id="dashboardMenuToggle" aria-label="Toggle sidebar"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="dashboard-header-title">
+                    <h1>My Programs</h1>
+                </div>
+
+            </div>
+
+            <div class="dashboard-header-right">
+
+                <!-- Notifications -->
+                <div class="dashboard-notification-wrapper">
+                    <button type="button" class="dashboard-header-icon" id="dashboardNotificationButton"
+                        aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="dashboard-notification-count">3</span>
+                    </button>
+
+                    <div class="dashboard-notification-dropdown" id="dashboardNotificationDropdown">
+                        <div class="dashboard-dropdown-heading">
+                            <h3>Notifications</h3>
+                            <span>3 New</span>
+                        </div>
+
+                        <div class="dashboard-notification-item">
+                            <span class="dashboard-notification-symbol">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </span>
+                            <div>
+                                <h4>Upcoming Class</h4>
+                                <p>Your next learning session is coming up.</p>
+                                <small>Recently</small>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-notification-item">
+                            <span class="dashboard-notification-symbol">
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                            <div>
+                                <h4>Practice Reminder</h4>
+                                <p>Keep practising to improve your skills.</p>
+                                <small>Recently</small>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-notification-item">
+                            <span class="dashboard-notification-symbol">
+                                <i class="fa-solid fa-award"></i>
+                            </span>
+                            <div>
+                                <h4>Learning Update</h4>
+                                <p>Check your latest learning progress.</p>
+                                <small>Recently</small>
+                            </div>
+                        </div>
+
+                        <a href="notifications.html" class="dashboard-view-notifications">
+                            View All Notifications
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Dark Mode -->
+                <button type="button" class="dashboard-header-icon" id="dashboardThemeToggle"
+                    aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon" id="dashboardThemeIcon"></i>
+                </button>
+
+                <!-- RTL -->
+                <button type="button" class="dashboard-header-icon" id="dashboardRtlToggle" aria-label="Toggle RTL">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <!-- Member Profile -->
+                <div class="dashboard-member-wrapper">
+
+                    <button type="button" class="dashboard-member-profile" id="dashboardMemberButton"
+                        aria-expanded="false" aria-controls="dashboardMemberDropdown">
+
+                        <img src="images/member-profile.jpg" alt="Member profile">
+
+                        <span class="dashboard-member-details">
+                            <strong>Nila M</strong>
+                            <small>Student Member</small>
+                        </span>
+
+                    </button>
+
+                    <div class="dashboard-member-dropdown" id="dashboardMemberDropdown">
+                        <button type="button" id="dashboardProfileLogout">
+                            <i class="fa-solid fa-arrow-right-from-bracket" aria-hidden="true"></i>
+                            <span>Logout</span>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Dashboard Page Content -->
+        <main class="dashboard-page-content">
+
+
+            <!-- =========================================
+     SECTION 1 - MY ENROLLED PROGRAM
+========================================= -->
+
+            <section class="myprogram-active-section">
+
+                <div class="myprogram-section-heading">
+                    <div>
+                        <span class="myprogram-eyebrow">YOUR ENROLLMENT</span>
+                        <h2>My Enrolled Program</h2>
+                        <p>Here is the program you are currently learning.</p>
+                    </div>
+                    <span class="myprogram-status">
+                        <i class="fa-solid fa-circle-check"></i>
+                        Active
+                    </span>
+                </div>
+
+                <div class="myprogram-active-card">
+
+                    <div class="myprogram-card-top">
+                        <div class="myprogram-program-icon">
+                            <i class="fa-solid fa-calculator"></i>
+                        </div>
+
+                        <span class="myprogram-program-type">ABACUS PROGRAM</span>
+                    </div>
+
+                    <h3>Abacus Learning Program</h3>
+
+                    <p class="myprogram-program-description">
+                        Build strong calculation skills through structured abacus
+                        practice, number concepts and guided learning activities.
+                    </p>
+
+                    <div class="myprogram-details-grid">
+
+                        <div class="myprogram-detail-item">
+                            <span>Enrolled Level</span>
+                            <strong>Level 2 – Intermediate</strong>
+                        </div>
+
+                        <div class="myprogram-detail-item">
+                            <span>Instructor</span>
+                            <strong>Your Assigned Instructor</strong>
+                        </div>
+
+                        <div class="myprogram-detail-item">
+                            <span>Learning Mode</span>
+                            <strong>Regular Classes</strong>
+                        </div>
+
+                        <div class="myprogram-detail-item">
+                            <span>Enrollment Status</span>
+                            <strong class="myprogram-active-text">Currently Active</strong>
+                        </div>
+
+                    </div>
+
+                    <div class="myprogram-card-footer">
+                        <span>
+                            <i class="fa-solid fa-lightbulb"></i>
+                            Keep practising to strengthen your number skills.
+                        </span>
+
+                        <a href="learning-progress.html" class="myprogram-primary-btn">
+                            View Learning Progress
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================================
+     SECTION 2 - LEARNING ROADMAP
+========================================= -->
+
+            <section class="myprogram-roadmap-section">
+
+                <div class="myprogram-section-heading">
+                    <div>
+                        <span class="myprogram-eyebrow">YOUR LEARNING JOURNEY</span>
+                        <h2>Learning Roadmap</h2>
+                        <p>Explore the levels in your Abacus learning journey.</p>
+                    </div>
+                </div>
+
+                <div class="myprogram-roadmap-card">
+
+                    <div class="myprogram-roadmap-item completed">
+
+                        <div class="myprogram-roadmap-marker">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+
+                        <div class="myprogram-roadmap-content">
+                            <div class="myprogram-roadmap-info">
+                                <div>
+                                    <span class="myprogram-level-label">LEVEL 01</span>
+                                    <h3>Foundation Level</h3>
+                                </div>
+                                <span class="myprogram-level-status">Completed</span>
+                            </div>
+
+                            <p>
+                                Introduction to abacus, number recognition and
+                                basic addition and subtraction.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="myprogram-roadmap-item current">
+
+                        <div class="myprogram-roadmap-marker">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+
+                        <div class="myprogram-roadmap-content">
+                            <div class="myprogram-roadmap-info">
+                                <div>
+                                    <span class="myprogram-level-label">LEVEL 02</span>
+                                    <h3>Intermediate Level</h3>
+                                </div>
+                                <span class="myprogram-level-status">Currently Learning</span>
+                            </div>
+
+                            <p>
+                                Strengthen calculation methods, practise number
+                                combinations and improve calculation accuracy.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="myprogram-roadmap-item upcoming">
+
+                        <div class="myprogram-roadmap-marker">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+
+                        <div class="myprogram-roadmap-content">
+                            <div class="myprogram-roadmap-info">
+                                <div>
+                                    <span class="myprogram-level-label">LEVEL 03</span>
+                                    <h3>Advanced Level</h3>
+                                </div>
+                                <span class="myprogram-level-status">Upcoming</span>
+                            </div>
+
+                            <p>
+                                Explore advanced calculations and more challenging
+                                abacus learning activities.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="myprogram-roadmap-item upcoming">
+
+                        <div class="myprogram-roadmap-marker">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+
+                        <div class="myprogram-roadmap-content">
+                            <div class="myprogram-roadmap-info">
+                                <div>
+                                    <span class="myprogram-level-label">LEVEL 04</span>
+                                    <h3>Mental Maths Level</h3>
+                                </div>
+                                <span class="myprogram-level-status">Upcoming</span>
+                            </div>
+
+                            <p>
+                                Develop mental calculation techniques and solve
+                                numerical problems through visualisation.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <p class="myprogram-roadmap-note">
+                    <i class="fa-solid fa-circle-info"></i>
+                    Your next level will be available based on your learning
+                    completion and instructor guidance.
+                </p>
+
+            </section>
+
+
+            <!-- =========================================
+     SECTION 3 - WHAT YOU WILL LEARN
+========================================= -->
+
+            <section class="myprogram-focus-section">
+
+                <div class="myprogram-section-heading">
+                    <div>
+                        <span class="myprogram-eyebrow">CURRENT LEVEL FOCUS</span>
+                        <h2>What You’ll Learn</h2>
+                        <p>Explore the important skills covered in your current level.</p>
+                    </div>
+
+                    <a href="practice-activities.html" class="myprogram-view-link">
+                        Start Practising
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="myprogram-focus-grid">
+
+                    <div class="myprogram-focus-card">
+                        <div class="myprogram-focus-icon focus-icon-one">
+                            <i class="fa-solid fa-plus-minus"></i>
+                        </div>
+                        <h3>Techniques</h3>
+                        <p>
+                            Understand number combinations and improve addition
+                            and minus techniques.
+                        </p>
+                        <span>Build Strong Basics</span>
+                    </div>
+
+                    <div class="myprogram-focus-card">
+                        <div class="myprogram-focus-icon focus-icon-two">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <h3>Accuracy & Focus</h3>
+                        <p>
+                            Learn to solve numerical problems carefully while
+                            maintaining every attention.
+                        </p>
+                        <span>Improve Concentration</span>
+                    </div>
+
+                    <div class="myprogram-focus-card">
+                        <div class="myprogram-focus-icon focus-icon-three">
+                            <i class="fa-solid fa-stopwatch"></i>
+                        </div>
+                        <h3>Calculation Speed</h3>
+                        <p>
+                            Practise solving calculations efficiently with
+                            regular guided maths exercises.
+                        </p>
+                        <span>Learn Through Practice</span>
+                    </div>
+
+                    <div class="myprogram-focus-card">
+                        <div class="myprogram-focus-icon focus-icon-four">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3>Visualisation</h3>
+                        <p>
+                            Develop the ability to imagine abacus movements
+                            and work with numbers mentally.
+                        </p>
+                        <span>Think Independently</span>
+                    </div>
+
+                </div>
+
+            </section>
+        </main>
+
+    </div>
+
+
+    <!-- Logout Confirmation Modal -->
+    <div class="dashboard-logout-modal" id="dashboardLogoutModal" aria-hidden="true">
+
+        <div class="dashboard-logout-card" role="dialog" aria-modal="true" aria-labelledby="dashboardLogoutTitle">
+
+            <div class="dashboard-logout-icon">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </div>
+
+            <h2 id="dashboardLogoutTitle">Logout Confirmation</h2>
+
+            <p>Are you sure you want to log out of your NUMORA account?</p>
+
+            <div class="dashboard-logout-actions">
+                <button type="button" class="dashboard-logout-cancel" id="dashboardLogoutCancel">No, Stay</button>
+
+                <button type="button" class="dashboard-logout-confirm" id="dashboardLogoutConfirm">Yes, Logout</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

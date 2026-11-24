@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/preferences.js"></script>
+
+    <title>NUMORA Academy</title>
+
+    <meta name="description"
+        content="NUMORA Academy helps children develop calculation speed, concentration and mental maths skills through abacus learning.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= HEADER START ================= -->
+
+    <header class="numora-header">
+
+        <div class="header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="header-logo">
+                <img src="images/logo.png" alt="NUMORA Academy Logo">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <ul class="nav-menu">
+
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link">
+                            <span class="nav-link-label">Home</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="about.html" class="nav-link"><span class="nav-link-label">About</span></a></li>
+
+                    <li><a href="programs.html" class="nav-link"><span class="nav-link-label">Programs</span></a></li>
+
+                    <li><a href="instructors.html" class="nav-link"><span class="nav-link-label">Instructors</span></a>
+                    </li>
+
+                    <li><a href="competitions.html" class="nav-link"><span
+                                class="nav-link-label">Competitions</span></a></li>
+
+                    <li><a href="contact.html" class="nav-link"><span class="nav-link-label">Contact</span></a></li>
+
+                </ul>
+            </nav>
+
+            <!-- Desktop Actions -->
+            <div class="header-actions desktop-actions">
+
+                <button class="header-icon-btn theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="header-icon-btn rtl-toggle" aria-label="Toggle RTL mode">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <a href="login.html" class="login-btn">
+                    <span>Login</span>
+                </a>
+
+                <a href="dashboard.html" class="dashboard-btn">
+                    <span>Dashboard</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="mobileMenu">
+                <span></span><span></span><span></span>
+            </button>
+
+        </div>
+
+        <!-- Mobile Navigation Panel -->
+        <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+
+            <nav class="mobile-nav">
+
+                <div class="mobile-nav-dropdown">
+                    <button class="mobile-nav-link mobile-nav-parent" type="button" aria-expanded="false"
+                        aria-controls="mobileHomeSubmenu">
+                        <span class="mobile-nav-label">Home</span>
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="mobile-submenu" id="mobileHomeSubmenu">
+                        <a href="index.html" class="mobile-nav-link mobile-submenu-link">Home 1</a>
+                        <a href="home-2.html" class="mobile-nav-link mobile-submenu-link">Home 2</a>
+                    </div>
+                </div>
+
+                <a href="about.html" class="mobile-nav-link">About</a>
+
+                <a href="programs.html" class="mobile-nav-link">Programs</a>
+
+                <a href="instructors.html" class="mobile-nav-link">Instructors</a>
+
+                <a href="competitions.html" class="mobile-nav-link">Competitions</a>
+
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+
+            </nav>
+
+            <!-- Mobile Settings -->
+            <div class="mobile-settings">
+
+                <button class="mobile-setting-btn theme-toggle">
+                    <span>
+                        <i class="fa-solid fa-moon"></i>
+                        Dark Mode
+                    </span>
+                </button>
+
+                <button class="mobile-setting-btn rtl-toggle">
+                    <span>
+                        <i class="fa-solid fa-right-left"></i>
+                        RTL Mode
+                    </span>
+                </button>
+
+                <a href="login.html" class="mobile-login-btn">
+                    Login
+                </a>
+
+                <a href="dashboard.html" class="mobile-dashboard-btn">
+                    Dashboard
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= HEADER END ================= -->
+
+
+
+    <!-- =====================================
+     COMMON INNER PAGE HERO
+====================================== -->
+    <section class="common-page-hero">
+
+        <div class="common-page-hero-container">
+
+            <!-- LEFT CONTENT -->
+            <div class="common-page-hero-content">
+
+                <h1 class="common-page-hero-title">
+                    Our Competitions
+                </h1>
+
+                <h2 class="common-page-hero-subtitle">
+                    Every Competition Is a New Opportunity to Shine.
+                </h2>
+
+                <p class="common-page-hero-description">
+                    Give children the opportunity to challenge their abilities, their calculation skills, and
+                    build confidence.
+
+                <div class="common-page-hero-divider">
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- BREADCRUMB -->
+                <nav class="common-page-breadcrumb" aria-label="Breadcrumb">
+
+                    <a href="index.html">
+                        <span>Home</span>
+                    </a>
+
+                    <i class="fas fa-chevron-right breadcrumb-arrow"></i>
+
+                    <span class="breadcrumb-current">
+                        Competitions
+                    </span>
+
+                </nav>
+
+            </div>
+
+            <!-- RIGHT VISUAL -->
+            <div class="common-page-hero-visual">
+
+                <img src="images/competitions.png" alt="Child enjoying Abacus learning" class="common-page-hero-image">
+
+            </div>
+
+            <!-- DECORATIVE ELEMENTS -->
+            <div class="common-page-hero-decoration hero-decoration-one">
+                <i class="fas fa-lightbulb"></i>
+            </div>
+
+            <div class="common-page-hero-decoration hero-decoration-two">
+                <i class="fas fa-star"></i>
+            </div>
+
+            <div class="common-page-hero-decoration hero-decoration-three">
+                +
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+     COMPETITIONS - EXPLORE CATEGORIES
+====================================== -->
+    <section class="competitions-explore-section">
+        <div class="competitions-explore-container">
+
+            <!-- Section Heading -->
+            <div class="competitions-explore-heading">
+
+                <div class="competitions-explore-heading-content">
+                    <span class="competitions-explore-label">
+                        DISCOVER YOUR CHALLENGE
+                    </span>
+
+                    <h2>
+                        Explore Our
+                        <span>Competitions</span>
+                    </h2>
+
+                    <p>
+                        Every challenge is an opportunity to learn,
+                        improve, and showcase your abilities. Explore
+                        different competition formats that encourage
+                        children to put their number skills into practice.
+                    </p>
+                </div>
+
+                <div class="competitions-explore-heading-note">
+                    <span class="competitions-explore-note-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </span>
+
+                    <p>
+                        Think boldly. Practise consistently.
+                        Celebrate every achievement.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Competition Categories -->
+            <div class="competitions-explore-grid">
+
+                <!-- Competition 1 -->
+                <article class="competitions-explore-card competition-card-main">
+
+                    <div class="competitions-explore-image">
+                        <img src="images/competition-abacus.jpg" alt="Child participating in an Abacus competition">
+
+                        <span class="competitions-explore-card-number">01</span>
+
+                        <span class="competitions-explore-image-tag">
+                            ABACUS SKILLS
+                        </span>
+                    </div>
+
+                    <div class="competitions-explore-card-content">
+
+                        <div class="competitions-explore-card-title">
+                            <span class="competitions-explore-icon">
+                                <i class="fas fa-calculator"></i>
+                            </span>
+
+                            <h3>Abacus Competition</h3>
+                        </div>
+
+                        <p>
+                            An opportunity for children to demonstrate
+                            their calculation techniques through
+                            number-based challenges and exercises.
+                        </p>
+
+                        <a href="contact.html" class="competitions-explore-link">
+                            Learn More
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Competition 2 -->
+                <article class="competitions-explore-card competition-card-secondary">
+
+                    <div class="competitions-explore-image">
+                        <img src="images/competition-mental-maths.jpg"
+                            alt="Student participating in a Mental Maths challenge">
+
+                        <span class="competitions-explore-card-number">02</span>
+
+                        <span class="competitions-explore-image-tag">
+                            MENTAL CALCULATION
+                        </span>
+                    </div>
+
+                    <div class="competitions-explore-card-content">
+
+                        <div class="competitions-explore-card-title">
+                            <span class="competitions-explore-icon">
+                                <i class="fas fa-brain"></i>
+                            </span>
+
+                            <h3>Mental Maths</h3>
+                        </div>
+
+                        <p>
+                            Children get to apply mental calculation
+                            skills and explore number challenges without
+                            relying on physical calculation tools.
+                        </p>
+
+                        <a href="contact.html" class="competitions-explore-link">
+                            Learn More
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Competition 3 -->
+                <article class="competitions-explore-card competition-card-tertiary">
+
+                    <div class="competitions-explore-image">
+                        <img src="images/competition-speed-calculation.jpg"
+                            alt="Children solving calculation challenges">
+
+                        <span class="competitions-explore-card-number">03</span>
+
+                        <span class="competitions-explore-image-tag">
+                            SPEED & ACCURACY
+                        </span>
+                    </div>
+
+                    <div class="competitions-explore-card-content">
+
+                        <div class="competitions-explore-card-title">
+                            <span class="competitions-explore-icon">
+                                <i class="fas fa-stopwatch"></i>
+                            </span>
+
+                            <h3>Speed Calculation</h3>
+                        </div>
+
+                        <p>
+                            A calculation-focused challenge that
+                            encourages children to practise accuracy
+                            while working through more timed exercises.
+                        </p>
+
+                        <a href="contact.html" class="competitions-explore-link">
+                            Learn More
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Competition 4 -->
+                <article class="competitions-explore-card competition-card-fourth">
+
+                    <div class="competitions-explore-image">
+                        <img src="images/competition-maths-quiz.jpg" alt="Children participating in a mathematics quiz">
+
+                        <span class="competitions-explore-card-number">04</span>
+
+                        <span class="competitions-explore-image-tag">
+                            THINKING & LOGIC
+                        </span>
+                    </div>
+
+                    <div class="competitions-explore-card-content">
+
+                        <div class="competitions-explore-card-title">
+                            <span class="competitions-explore-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </span>
+
+                            <h3>Mathematics Quiz</h3>
+                        </div>
+
+                        <p>
+                            An engaging opportunity to explore
+                            number-based questions, logical thinking,
+                            and mathematical problem-solving.
+                        </p>
+
+                        <a href="contact.html" class="competitions-explore-link">
+                            Learn More
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <!-- Bottom Information -->
+            <div class="competitions-explore-bottom">
+
+                <div class="competitions-explore-bottom-content">
+                    <span class="competitions-explore-bottom-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </span>
+
+                    <p>
+                        Competition categories, eligibility, and
+                        participation details may vary by event.
+                        Contact our team to learn about available opportunities.
+                    </p>
+                </div>
+
+                <a href="contact.html" class="competitions-explore-bottom-link">
+                    Enquire Now
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================
+     COMPETITIONS - JOURNEY SECTION
+====================================== -->
+    <section class="competitions-journey-section">
+        <div class="competitions-journey-container">
+
+            <!-- Section Heading -->
+            <div class="competitions-journey-heading">
+
+                <span class="competitions-journey-label">
+                    FROM INTEREST TO PARTICIPATION
+                </span>
+
+                <h2>
+                    Your Competition
+                    <span>Journey Starts Here</span>
+                </h2>
+
+                <p>
+                    Taking part in a competition can be an exciting
+                    learning experience. Follow these simple steps
+                    to understand how your child can get started.
+                </p>
+
+            </div>
+
+            <!-- Journey Timeline -->
+            <div class="competitions-journey-timeline">
+
+                <div class="competitions-journey-line"></div>
+
+                <!-- Step 1 -->
+                <div class="competitions-journey-step">
+
+                    <div class="competitions-journey-step-marker">
+                        <span>01</span>
+                    </div>
+
+                    <div class="competitions-journey-step-icon">
+                        <i class="fas fa-compass"></i>
+                    </div>
+
+                    <div class="competitions-journey-step-content">
+                        <span class="competitions-journey-step-label">
+                            STEP ONE
+                        </span>
+
+                        <h3>Discover</h3>
+
+                        <p>
+                            Explore the available competition
+                            categories and understand which
+                            challenges match your interests.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Step 2 -->
+                <div class="competitions-journey-step">
+
+                    <div class="competitions-journey-step-marker">
+                        <span>02</span>
+                    </div>
+
+                    <div class="competitions-journey-step-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+
+                    <div class="competitions-journey-step-content">
+                        <span class="competitions-journey-step-label">
+                            STEP TWO
+                        </span>
+
+                        <h3>Get Prepared</h3>
+
+                        <p>
+                            Review the event guidelines, eligibility
+                            requirements, participation format,
+                            and preparation details.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Step 3 -->
+                <div class="competitions-journey-step">
+
+                    <div class="competitions-journey-step-marker">
+                        <span>03</span>
+                    </div>
+
+                    <div class="competitions-journey-step-icon">
+                        <i class="fas fa-user-edit"></i>
+                    </div>
+
+                    <div class="competitions-journey-step-content">
+                        <span class="competitions-journey-step-label">
+                            STEP THREE
+                        </span>
+
+                        <h3>Register</h3>
+
+                        <p>
+                            Complete the registration process
+                            according to the instructions and
+                            details provided for the event.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Step 4 -->
+                <div class="competitions-journey-step">
+
+                    <div class="competitions-journey-step-marker">
+                        <span>04</span>
+                    </div>
+
+                    <div class="competitions-journey-step-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+
+                    <div class="competitions-journey-step-content">
+                        <span class="competitions-journey-step-label">
+                            STEP FOUR
+                        </span>
+
+                        <h3>Participate & Celebrate</h3>
+
+                        <p>
+                            Take part in the challenge, enjoy the
+                            experience, and celebrate the effort
+                            and learning along the way.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Journey Bottom Banner -->
+            <div class="competitions-journey-banner">
+
+                <div class="competitions-journey-banner-content">
+
+                    <div class="competitions-journey-banner-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+
+                    <div>
+                        <h3>Every Experience Is Worth Celebrating</h3>
+
+                        <p>
+                            Winning is wonderful, but learning,
+                            participating, and giving your best
+                            are achievements too.
+                        </p>
+                    </div>
+
+                </div>
+
+                <a href="contact.html" class="competitions-journey-banner-link">
+                    Know More
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================
+     COMPETITIONS - PARTICIPATION BENEFITS
+====================================== -->
+    <section class="competitions-benefits-section">
+        <div class="competitions-benefits-container">
+
+            <!-- Left Visual -->
+            <div class="competitions-benefits-visual">
+
+                <div class="competitions-benefits-main-image">
+                    <img src="images/competition-benefits-child.jpg"
+                        alt="Child confidently participating in a mathematics challenge">
+                </div>
+
+                <!-- Floating Achievement Badge -->
+                <div class="competitions-benefits-floating">
+                    <div class="competitions-benefits-floating-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+
+                    <div>
+                        <h4>Every Effort Counts</h4>
+                        <p>Celebrate progress and participation.</p>
+                    </div>
+                </div>
+
+                <!-- Decorative Shape -->
+                <div class="competitions-benefits-decoration">
+                    <span>✦</span>
+                </div>
+
+                <div class="competitions-benefits-image-caption">
+                    LEARN. CHALLENGE. GROW.
+                </div>
+
+            </div>
+
+            <!-- Right Content -->
+            <div class="competitions-benefits-content">
+
+                <span class="competitions-benefits-label">
+                    BEYOND THE COMPETITION
+                </span>
+
+                <h2>
+                    More Than Winning,
+                    <span>It's About Growing.</span>
+                </h2>
+
+                <p class="competitions-benefits-intro">
+                    Competitions give children opportunities to apply
+                    what they learn, experience new challenges, and
+                    discover their potential. Every participation
+                    experience can become a valuable learning moment.
+                </p>
+
+                <!-- Benefit 1 -->
+                <div class="competitions-benefit-item">
+
+                    <div class="competitions-benefit-icon benefit-icon-one">
+                        <i class="fas fa-medal"></i>
+                    </div>
+
+                    <div class="competitions-benefit-text">
+                        <h3>Builds Learning Confidence</h3>
+                        <p>
+                            Taking part in challenges encourages children
+                            to trust their abilities and express their skills.
+                        </p>
+                    </div>
+
+                    <span class="competitions-benefit-number">01</span>
+
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="competitions-benefit-item">
+
+                    <div class="competitions-benefit-icon benefit-icon-two">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+
+                    <div class="competitions-benefit-text">
+                        <h3>Improves Focus & Concentration</h3>
+                        <p>
+                            Competition activities encourage children
+                            to stay attentive while solving number challenges.
+                        </p>
+                    </div>
+
+                    <span class="competitions-benefit-number">02</span>
+
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="competitions-benefit-item">
+
+                    <div class="competitions-benefit-icon benefit-icon-three">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+
+                    <div class="competitions-benefit-text">
+                        <h3>Strengthens Calculation Skills</h3>
+                        <p>
+                            Applying Abacus and Mental Maths techniques
+                            gives children opportunities to practise accuracy.
+                        </p>
+                    </div>
+
+                    <span class="competitions-benefit-number">03</span>
+
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="competitions-benefit-item">
+
+                    <div class="competitions-benefit-icon benefit-icon-four">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+
+                    <div class="competitions-benefit-text">
+                        <h3>Encourages Independent Thinking</h3>
+                        <p>
+                            New questions and challenges help children
+                            explore different ways to approach problems.
+                        </p>
+                    </div>
+
+                    <span class="competitions-benefit-number">04</span>
+
+                </div>
+
+                <!-- Benefit 5 -->
+                <div class="competitions-benefit-item">
+
+                    <div class="competitions-benefit-icon benefit-icon-five">
+                        <i class="fas fa-users"></i>
+                    </div>
+
+                    <div class="competitions-benefit-text">
+                        <h3>Creates New Experiences</h3>
+                        <p>
+                            Participating alongside other learners gives
+                            children opportunities to share and learn.
+                        </p>
+                    </div>
+
+                    <span class="competitions-benefit-number">05</span>
+
+                </div>
+
+                <!-- Bottom Quote -->
+                <div class="competitions-benefits-quote">
+                    <i class="fas fa-quote-left"></i>
+
+                    <p>
+                        The real achievement is not just reaching
+                        the finish line, but growing through every challenge.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =====================================
+     COMPETITIONS - MOMENTS & ACHIEVEMENTS
+====================================== -->
+    <section class="competitions-gallery-section">
+        <div class="competitions-gallery-container">
+
+            <!-- Section Heading -->
+            <div class="competitions-gallery-heading">
+
+                <div class="competitions-gallery-heading-content">
+                    <span class="competitions-gallery-label">
+                        MOMENTS THAT INSPIRE
+                    </span>
+
+                    <h2>
+                        Every Effort Deserves
+                        <span>To Be Celebrated</span>
+                    </h2>
+
+                    <p>
+                        From exciting competition moments to proud
+                        achievements, every experience represents
+                        dedication, learning, and the courage to try.
+                    </p>
+                </div>
+
+                <div class="competitions-gallery-heading-side">
+                    <span class="competitions-gallery-heading-icon">
+                        <i class="fas fa-camera-retro"></i>
+                    </span>
+
+                    <p>
+                        A glimpse into the spirit of learning,
+                        participation, and achievement.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Masonry Gallery -->
+            <div class="competitions-gallery-grid">
+
+                <!-- Image 1 - Large -->
+                <div class="competitions-gallery-item gallery-item-large">
+
+                    <img src="images/competition-gallery-1.jpg" alt="Children participating in an Abacus competition">
+
+                    <div class="competitions-gallery-overlay">
+                        <span>COMPETITION MOMENTS</span>
+                        <h3>Learning Through Challenges</h3>
+                    </div>
+
+                    <span class="competitions-gallery-image-icon">
+                        <i class="fas fa-expand"></i>
+                    </span>
+
+                </div>
+
+                <!-- Image 2 -->
+                <div class="competitions-gallery-item gallery-item-small">
+
+                    <img src="images/competition-gallery-2.jpg" alt="Student receiving a competition certificate">
+
+                    <div class="competitions-gallery-overlay">
+                        <span>PROUD ACHIEVEMENTS</span>
+                        <h3>A Moment to Celebrate</h3>
+                    </div>
+
+                    <span class="competitions-gallery-image-icon">
+                        <i class="fas fa-expand"></i>
+                    </span>
+
+                </div>
+
+                <!-- Image 3 -->
+                <div class="competitions-gallery-item gallery-item-small">
+
+                    <img src="images/competition-gallery-3.jpg" alt="Young students taking part in a Maths challenge">
+
+                    <div class="competitions-gallery-overlay">
+                        <span>ACTIVE PARTICIPATION</span>
+                        <h3>Focused and Determined</h3>
+                    </div>
+
+                    <span class="competitions-gallery-image-icon">
+                        <i class="fas fa-expand"></i>
+                    </span>
+
+                </div>
+
+                <!-- Image 4 -->
+                <div class="competitions-gallery-item gallery-item-medium">
+
+                    <img src="images/competition-gallery-4.jpg" alt="Children celebrating an educational achievement">
+
+                    <div class="competitions-gallery-overlay">
+                        <span>CELEBRATING SUCCESS</span>
+                        <h3>Every Step Matters</h3>
+                    </div>
+
+                    <span class="competitions-gallery-image-icon">
+                        <i class="fas fa-expand"></i>
+                    </span>
+
+                </div>
+
+                <!-- Image 5 -->
+                <div class="competitions-gallery-item gallery-item-medium">
+
+                    <img src="images/competition-gallery-5.jpg" alt="Children participating together in a competition">
+
+                    <div class="competitions-gallery-overlay">
+                        <span>SHARED EXPERIENCES</span>
+                        <h3>Growing Together</h3>
+                    </div>
+
+                    <span class="competitions-gallery-image-icon">
+                        <i class="fas fa-expand"></i>
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- Bottom Message -->
+            <div class="competitions-gallery-bottom">
+
+                <div class="competitions-gallery-bottom-content">
+
+                    <div class="competitions-gallery-bottom-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <div>
+                        <h3>Every Child Has a Moment to Shine</h3>
+
+                        <p>
+                            Participation, effort, and personal progress
+                            are achievements worth celebrating.
+                        </p>
+                    </div>
+
+                </div>
+
+                <a href="contact.html" class="competitions-gallery-link">
+                    Join Our Learning Community
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- COMPETITIONS FINAL CTA -->
+    <section class="competitions-final-cta">
+        <div class="competitions-final-cta-container">
+
+            <div class="competitions-final-cta-image-wrap">
+                <img src="images/competitions-final-cta.jpg"
+                    alt="Child confidently participating in a mathematics competition"
+                    class="competitions-final-cta-image">
+
+                <div class="competitions-final-cta-image-label">
+                    <i class="fas fa-star"></i>
+                    <span>Every Effort Deserves to Be Celebrated</span>
+                </div>
+            </div>
+
+            <div class="competitions-final-cta-content">
+
+                <span class="competitions-final-cta-tag">
+                    READY FOR THE NEXT CHALLENGE?
+                </span>
+
+                <h2 class="competitions-final-cta-title">
+                    Give Your Child a
+                    <span>Chance to Shine.</span>
+                </h2>
+
+                <p class="competitions-final-cta-description">
+                    Every competition is an opportunity to learn, explore
+                    and grow. Connect with our team to discover competition
+                    opportunities and understand the participation details
+                    available for your child.
+                </p>
+
+                <div class="competitions-final-cta-highlights">
+                    <div class="competitions-final-cta-highlight">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Encouraging New Experiences</span>
+                    </div>
+
+                    <div class="competitions-final-cta-highlight">
+                        <i class="fas fa-trophy"></i>
+                        <span>Celebrating Every Effort</span>
+                    </div>
+                </div>
+
+                <div class="competitions-final-cta-actions">
+                    <a href="programs.html" class="competitions-final-cta-primary">
+                        Explore Our Programs
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                    <a href="contact.html" class="competitions-final-cta-secondary">
+                        Enquire About Competitions
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= FOOTER START ================= -->
+
+    <footer class="numora-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-main">
+
+                <!-- Brand Column -->
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.png" alt="NUMORA Academy">
+                    </a>
+
+                    <p class="footer-about">
+                        Empowering young minds through the power of
+                        abacus and mental mathematics. Helping children
+                        build confidence, concentration and calculation
+                        skills for a brighter future.
+                    </p>
+
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+
+                    <h3 class="footer-title">Quick Links</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Our Programs</a></li>
+                        <li><a href="instructors.html">Instructors</a></li>
+                        <li><a href="competitions.html">Competitions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Programs -->
+                <div class="footer-column">
+
+                    <h3 class="footer-title">Our Programs</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="programs.html">Beginner Level</a></li>
+                        <li><a href="programs.html">Intermediate Level</a></li>
+                        <li><a href="programs.html">Advanced Level</a></li>
+                        <li><a href="programs.html">Mental Maths</a></li>
+                        <li><a href="competitions.html">Abacus Competitions</a></li>
+                        <li><a href="login.html">Parent Portal</a></li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact Column -->
+                <div class="footer-column footer-contact">
+
+                    <h3 class="footer-title">Get In Touch</h3>
+
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>NUMORA Academy, Your City, India</p>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+919876543210">+91 98765 43210</a>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:info@numoraacademy.com">
+                            info@numoraacademy.com
+                        </a>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Mon – Sat: 9:00 AM – 6:00 PM</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; 2026 <span>NUMORA Academy</span>.
+                    All Rights Reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+
+                <p class="footer-credit">
+                    Designed with <i class="fa-solid fa-heart"></i>
+                    for Brighter Minds
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= FOOTER END ================= -->
+
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

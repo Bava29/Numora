@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/preferences.js"></script>
+
+    <title>NUMORA Academy</title>
+
+    <meta name="description"
+        content="NUMORA Academy helps children develop calculation speed, concentration and mental maths skills through abacus learning.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body class="numora-dashboard-page">
+
+    <!-- Mobile Sidebar Overlay -->
+    <div class="dashboard-sidebar-overlay" id="dashboardSidebarOverlay"></div>
+
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+        <div class="dashboard-sidebar-logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="NUMORA Academy">
+            </a>
+            <button type="button" class="dashboard-sidebar-close" id="dashboardSidebarClose" aria-label="Close sidebar">
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <div class="dashboard-sidebar-content">
+
+            <nav class="dashboard-navigation">
+
+                <a href="dashboard.html" class="dashboard-menu-link active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard Overview</span>
+                </a>
+
+                <a href="my-programs.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>My Programs</span>
+                </a>
+
+                <a href="class-schedule.html" class="dashboard-menu-link">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <span>Class Schedule</span>
+                </a>
+
+                <a href="learning-progress.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Learning Progress</span>
+                </a>
+
+                <a href="practice-activities.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>Practice Activities</span>
+                </a>
+
+                <a href="certificates.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-award"></i>
+                    <span>Certificates</span>
+                </a>
+
+                <a href="payments.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>Payments</span>
+                </a>
+
+            </nav>
+        </div>
+
+        <!-- Sidebar Bottom Logout -->
+        <div class="dashboard-sidebar-bottom">
+            <button type="button" class="dashboard-logout-button" id="dashboardLogoutButton">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Main Dashboard Area -->
+    <div class="dashboard-main-area" id="dashboardMainArea">
+
+        <!-- Fixed Header -->
+        <header class="dashboard-header">
+
+            <div class="dashboard-header-left">
+
+                <button type="button" class="dashboard-menu-toggle" id="dashboardMenuToggle" aria-label="Toggle sidebar"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="dashboard-header-title">
+                    <h1>Dashboard</h1>
+                    <p>Welcome back Nila!</p>
+                </div>
+
+            </div>
+
+            <div class="dashboard-header-right">
+
+                <!-- Notifications -->
+                <div class="dashboard-notification-wrapper">
+                    <button type="button" class="dashboard-header-icon" id="dashboardNotificationButton"
+                        aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="dashboard-notification-count">3</span>
+                    </button>
+
+                    <div class="dashboard-notification-dropdown" id="dashboardNotificationDropdown">
+                        <div class="dashboard-dropdown-heading">
+                            <h3>Notifications</h3>
+                            <span>3 New</span>
+                        </div>
+
+                        <div class="dashboard-notification-item">
+                            <span class="dashboard-notification-symbol">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </span>
+                            <div>
+                                <h4>Upcoming Class</h4>
+                                <p>Your next learning session is coming up.</p>
+                                <small>Recently</small>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-notification-item">
+                            <span class="dashboard-notification-symbol">
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                            <div>
+                                <h4>Practice Reminder</h4>
+                                <p>Keep practising to improve your skills.</p>
+                                <small>Recently</small>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-notification-item">
+                            <span class="dashboard-notification-symbol">
+                                <i class="fa-solid fa-award"></i>
+                            </span>
+                            <div>
+                                <h4>Learning Update</h4>
+                                <p>Check your latest learning progress.</p>
+                                <small>Recently</small>
+                            </div>
+                        </div>
+
+                        <a href="notifications.html" class="dashboard-view-notifications">
+                            View All Notifications
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Dark Mode -->
+                <button type="button" class="dashboard-header-icon" id="dashboardThemeToggle"
+                    aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon" id="dashboardThemeIcon"></i>
+                </button>
+
+                <!-- RTL -->
+                <button type="button" class="dashboard-header-icon" id="dashboardRtlToggle" aria-label="Toggle RTL">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <!-- Member Profile -->
+                <div class="dashboard-member-wrapper">
+
+                    <button type="button" class="dashboard-member-profile" id="dashboardMemberButton"
+                        aria-expanded="false" aria-controls="dashboardMemberDropdown">
+
+                        <img src="images/member-profile.jpg" alt="Member profile">
+
+                        <span class="dashboard-member-details">
+                            <strong>Nila M</strong>
+                            <small>Student Member</small>
+                        </span>
+
+                    </button>
+
+                    <div class="dashboard-member-dropdown" id="dashboardMemberDropdown">
+                        <button type="button" id="dashboardProfileLogout">
+                            <i class="fa-solid fa-arrow-right-from-bracket" aria-hidden="true"></i>
+                            <span>Logout</span>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <main class="dashboard-page-content">
+
+            <!-- SECTION 1: WELCOME & LEARNING SUMMARY -->
+            <section class="overview-welcome-section">
+
+                <div class="overview-welcome-content">
+                    <span class="overview-welcome-label">
+                        <i class="fa-solid fa-sparkles"></i> YOUR LEARNING SPACE
+                    </span>
+
+                    <h2>Welcome Back, Nila!</h2>
+
+                    <p>
+                        Every small step brings you closer to a bigger achievement.
+                        Keep learning, practising and growing every day.
+                    </p>
+
+                    <a href="my-programs.html" class="overview-welcome-btn">
+                        Explore My Program
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="overview-welcome-illustration">
+                    <div class="overview-illustration-circle"></div>
+                    <img src="images/dashboard-welcome.png" alt="Student learning illustration">
+                </div>
+
+            </section>
+
+
+            <!-- LEARNING SUMMARY CARDS -->
+            <section class="overview-summary-section">
+
+                <div class="overview-summary-grid">
+
+                    <article class="overview-summary-card">
+                        <div class="overview-summary-icon overview-icon-program">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+
+                        <div class="overview-summary-info">
+                            <span>My Program</span>
+                            <h3>Abacus 2</h3>
+                            <small>Currently Enrolled</small>
+                        </div>
+                    </article>
+
+
+                    <article class="overview-summary-card">
+                        <div class="overview-summary-icon overview-icon-class">
+                            <i class="fa-regular fa-calendar-check"></i>
+                        </div>
+
+                        <div class="overview-summary-info">
+                            <span>Next Class</span>
+                            <h3>Tomorrow</h3>
+                            <small>10:00 AM - 11:00 AM</small>
+                        </div>
+                    </article>
+
+
+                    <article class="overview-summary-card">
+                        <div class="overview-summary-icon overview-icon-attendance">
+                            <i class="fa-solid fa-user-check"></i>
+                        </div>
+
+                        <div class="overview-summary-info">
+                            <span>Attendance</span>
+                            <h3>92%</h3>
+                            <small>Class attendance</small>
+                        </div>
+                    </article>
+
+
+                    <article class="overview-summary-card">
+                        <div class="overview-summary-icon overview-icon-practice">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+
+                        <div class="overview-summary-info">
+                            <span>Practice Streak</span>
+                            <h3>5 Days</h3>
+                            <small>Keep it going!</small>
+                        </div>
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- SECTION 2: UPCOMING CLASS -->
+            <section class="overview-upcoming-section">
+
+                <div class="overview-section-heading">
+                    <div>
+                        <span class="overview-section-label">STAY ON TRACK</span>
+                        <h2>Upcoming Class</h2>
+                        <p>Get ready for your next learning session.</p>
+                    </div>
+
+                    <a href="class-schedule.html" class="overview-text-link">
+                        View Full Schedule
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+
+                <div class="overview-upcoming-card">
+
+                    <div class="overview-class-date">
+                        <span>MON</span>
+                        <strong>24</strong>
+                        <small>NOV 2026</small>
+                    </div>
+
+                    <div class="overview-class-details">
+                        <span class="overview-class-tag">
+                            <i class="fa-solid fa-circle"></i> UPCOMING SESSION
+                        </span>
+
+                        <h3>Abacus Practice Session</h3>
+
+                        <div class="overview-class-meta">
+                            <span>
+                                <i class="fa-regular fa-clock"></i>
+                                10:00 AM - 11:00 AM
+                            </span>
+
+                            <span>
+                                <i class="fa-solid fa-chalkboard-user"></i>
+                                Instructor: To be updated
+                            </span>
+                        </div>
+
+                        <p>
+                            Revise your current Abacus concepts and practise
+                            calculation techniques in your next session.
+                        </p>
+                    </div>
+
+                    <div class="overview-class-action">
+                        <a href="class-schedule.html" class="overview-class-btn">
+                            View Class Details
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- SECTION 3: LEARNING PROGRESS -->
+            <section class="overview-progress-section">
+
+                <div class="overview-section-heading">
+                    <div>
+                        <span class="overview-section-label">YOUR GROWTH</span>
+                        <h2>Learning Progress</h2>
+                        <p>Understand how your learning skills are developing.</p>
+                    </div>
+
+                    <a href="learning-progress.html" class="overview-text-link">
+                        View Detailed Progress
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+
+                <div class="overview-progress-card">
+
+                    <div class="overview-progress-main">
+
+                        <div class="overview-progress-top">
+                            <div>
+                                <span>Overall Learning Progress</span>
+                                <h3>Keep Moving Forward!</h3>
+                            </div>
+
+                            <strong>68%</strong>
+                        </div>
+
+                        <div class="overview-progress-track">
+                            <div class="overview-progress-fill" style="width: 68%;"></div>
+                        </div>
+
+                        <p>
+                            You are making steady progress. Continue practising
+                            to strengthen your understanding.
+                        </p>
+
+                    </div>
+
+
+                    <div class="overview-skill-progress">
+
+                        <div class="overview-skill-item">
+                            <div class="overview-skill-info">
+                                <span>Calculation Skills</span>
+                                <strong>75%</strong>
+                            </div>
+
+                            <div class="overview-skill-track">
+                                <div class="overview-skill-fill skill-calculation" style="width: 75%;"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="overview-skill-item">
+                            <div class="overview-skill-info">
+                                <span>Concentration</span>
+                                <strong>65%</strong>
+                            </div>
+
+                            <div class="overview-skill-track">
+                                <div class="overview-skill-fill skill-concentration" style="width: 65%;"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="overview-skill-item">
+                            <div class="overview-skill-info">
+                                <span>Calculation Speed</span>
+                                <strong>60%</strong>
+                            </div>
+
+                            <div class="overview-skill-track">
+                                <div class="overview-skill-fill skill-speed" style="width: 60%;"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="overview-skill-item">
+                            <div class="overview-skill-info">
+                                <span>Mental Maths</span>
+                                <strong>70%</strong>
+                            </div>
+
+                            <div class="overview-skill-track">
+                                <div class="overview-skill-fill skill-mental" style="width: 70%;"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- SECTION 4: PRACTICE & RECENT ACTIVITY -->
+            <section class="overview-activity-section">
+
+                <div class="overview-section-heading">
+                    <div>
+                        <span class="overview-section-label">KEEP IMPROVING</span>
+                        <h2>Practice & Recent Activity</h2>
+                        <p>Stay consistent and keep track of your learning journey.</p>
+                    </div>
+                </div>
+
+
+                <div class="overview-activity-grid">
+
+                    <!-- Daily Practice Card -->
+                    <div class="overview-practice-card">
+
+                        <div class="overview-practice-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+
+                        <span class="overview-practice-label">DAILY PRACTICE</span>
+
+                        <h3>Ready for a Brain Challenge?</h3>
+
+                        <p>
+                            Spend a few minutes practising your calculation skills
+                            and build a consistent learning habit.
+                        </p>
+
+                        <a href="practice-activities.html" class="overview-practice-btn">
+                            Start Practising
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <!-- Recent Activity Card -->
+                    <div class="overview-recent-card">
+
+                        <div class="overview-recent-heading">
+                            <h3>Recent Activity</h3>
+
+                            <a href="learning-progress.html">
+                                View All
+                            </a>
+                        </div>
+
+
+                        <div class="overview-activity-item">
+                            <div class="overview-activity-icon activity-practice-icon">
+                                <i class="fa-solid fa-pencil"></i>
+                            </div>
+
+                            <div class="overview-activity-details">
+                                <h4>Practice Session</h4>
+                                <p>Calculation practice completed</p>
+                            </div>
+
+                            <span class="overview-activity-status">Completed</span>
+                        </div>
+
+
+                        <div class="overview-activity-item">
+                            <div class="overview-activity-icon activity-class-icon">
+                                <i class="fa-solid fa-book-open"></i>
+                            </div>
+
+                            <div class="overview-activity-details">
+                                <h4>Learning Session</h4>
+                                <p>Abacus concepts revised</p>
+                            </div>
+
+                            <span class="overview-activity-status">Completed</span>
+                        </div>
+
+
+                        <div class="overview-activity-item">
+                            <div class="overview-activity-icon activity-progress-icon">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+
+                            <div class="overview-activity-details">
+                                <h4>Progress Updated</h4>
+                                <p>Your learning progress was updated</p>
+                            </div>
+
+                            <span class="overview-activity-status">Updated</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- Logout Confirmation Modal -->
+    <div class="dashboard-logout-modal" id="dashboardLogoutModal" aria-hidden="true">
+
+        <div class="dashboard-logout-card" role="dialog" aria-modal="true" aria-labelledby="dashboardLogoutTitle">
+
+            <div class="dashboard-logout-icon">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </div>
+
+            <h2 id="dashboardLogoutTitle">Logout Confirmation</h2>
+
+            <p>Are you sure you want to log out of your NUMORA account?</p>
+
+            <div class="dashboard-logout-actions">
+                <button type="button" class="dashboard-logout-cancel" id="dashboardLogoutCancel">No, Stay</button>
+
+                <button type="button" class="dashboard-logout-confirm" id="dashboardLogoutConfirm">Yes, Logout</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

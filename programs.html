@@ -1,0 +1,1957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/preferences.js"></script>
+
+    <title>NUMORA Academy</title>
+
+    <meta name="description"
+        content="NUMORA Academy helps children develop calculation speed, concentration and mental maths skills through abacus learning.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= HEADER START ================= -->
+
+    <header class="numora-header">
+
+        <div class="header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="header-logo">
+                <img src="images/logo.png" alt="NUMORA Academy Logo">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <ul class="nav-menu">
+
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link">
+                            <span class="nav-link-label">Home</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="about.html" class="nav-link"><span class="nav-link-label">About</span></a></li>
+
+                    <li><a href="programs.html" class="nav-link"><span class="nav-link-label">Programs</span></a></li>
+
+                    <li><a href="instructors.html" class="nav-link"><span class="nav-link-label">Instructors</span></a>
+                    </li>
+
+                    <li><a href="competitions.html" class="nav-link"><span
+                                class="nav-link-label">Competitions</span></a></li>
+
+                    <li><a href="contact.html" class="nav-link"><span class="nav-link-label">Contact</span></a></li>
+
+                </ul>
+            </nav>
+
+            <!-- Desktop Actions -->
+            <div class="header-actions desktop-actions">
+
+                <button class="header-icon-btn theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <button class="header-icon-btn rtl-toggle" aria-label="Toggle RTL mode">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <a href="login.html" class="login-btn">
+                    <span>Login</span>
+                </a>
+
+                <a href="dashboard.html" class="dashboard-btn">
+                    <span>Dashboard</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="mobileMenu">
+                <span></span><span></span><span></span>
+            </button>
+
+        </div>
+
+        <!-- Mobile Navigation Panel -->
+        <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+
+            <nav class="mobile-nav">
+
+                <div class="mobile-nav-dropdown">
+                    <button class="mobile-nav-link mobile-nav-parent" type="button" aria-expanded="false"
+                        aria-controls="mobileHomeSubmenu">
+                        <span class="mobile-nav-label">Home</span>
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="mobile-submenu" id="mobileHomeSubmenu">
+                        <a href="index.html" class="mobile-nav-link mobile-submenu-link">Home 1</a>
+                        <a href="home-2.html" class="mobile-nav-link mobile-submenu-link">Home 2</a>
+                    </div>
+                </div>
+
+                <a href="about.html" class="mobile-nav-link">About</a>
+
+                <a href="programs.html" class="mobile-nav-link">Programs</a>
+
+                <a href="instructors.html" class="mobile-nav-link">Instructors</a>
+
+                <a href="competitions.html" class="mobile-nav-link">Competitions</a>
+
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+
+            </nav>
+
+            <!-- Mobile Settings -->
+            <div class="mobile-settings">
+
+                <button class="mobile-setting-btn theme-toggle">
+                    <span>
+                        <i class="fa-solid fa-moon"></i>
+                        Dark Mode
+                    </span>
+                </button>
+
+                <button class="mobile-setting-btn rtl-toggle">
+                    <span>
+                        <i class="fa-solid fa-right-left"></i>
+                        RTL Mode
+                    </span>
+                </button>
+
+                <a href="login.html" class="mobile-login-btn">
+                    Login
+                </a>
+
+                <a href="dashboard.html" class="mobile-dashboard-btn">
+                    Dashboard
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= HEADER END ================= -->
+
+
+
+    <!-- =====================================
+     COMMON INNER PAGE HERO
+====================================== -->
+    <section class="common-page-hero">
+
+        <div class="common-page-hero-container">
+
+            <!-- LEFT CONTENT -->
+            <div class="common-page-hero-content">
+
+                <h1 class="common-page-hero-title">
+                    Our Programs
+                </h1>
+
+                <h2 class="common-page-hero-subtitle">
+                    Learn Numbers. Build Skills. Grow with Confidence.
+                </h2>
+
+                <p class="common-page-hero-description">
+                    Explore structured Abacus and Mental Maths learning programs designed to help children strengthen
+                    their calculation skills.
+                </p>
+
+                <div class="common-page-hero-divider">
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- BREADCRUMB -->
+                <nav class="common-page-breadcrumb" aria-label="Breadcrumb">
+
+                    <a href="index.html">
+                        <span>Home</span>
+                    </a>
+
+                    <i class="fas fa-chevron-right breadcrumb-arrow"></i>
+
+                    <span class="breadcrumb-current">
+                        Programs
+                    </span>
+
+                </nav>
+
+            </div>
+
+            <!-- RIGHT VISUAL -->
+            <div class="common-page-hero-visual">
+
+                <img src="images/programs.png" alt="Child enjoying Abacus learning" class="common-page-hero-image">
+
+            </div>
+
+            <!-- DECORATIVE ELEMENTS -->
+            <div class="common-page-hero-decoration hero-decoration-one">
+                <i class="fas fa-lightbulb"></i>
+            </div>
+
+            <div class="common-page-hero-decoration hero-decoration-two">
+                <i class="fas fa-star"></i>
+            </div>
+
+            <div class="common-page-hero-decoration hero-decoration-three">
+                +
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+     PROGRAMS PAGE - EXPLORE PROGRAMS
+====================================== -->
+
+    <section class="programs-overview-section" id="programs-overview">
+
+        <div class="programs-overview-container">
+
+            <!-- SECTION HEADING -->
+            <div class="programs-overview-heading">
+
+                <span class="programs-overview-label">
+                    <i class="fas fa-graduation-cap"></i>
+                    FIND YOUR LEARNING PATH
+                </span>
+
+                <h2>
+                    Learning Programs Designed
+                    <span>for Every Growing Mind.</span>
+                </h2>
+
+                <p>
+                    From building strong number foundations to developing
+                    advanced mental calculation skills, explore learning
+                    pathways that support your child's progress at every stage.
+                </p>
+
+            </div>
+
+
+            <!-- PROGRAMS GRID -->
+            <div class="programs-overview-grid">
+
+
+                <!-- FOUNDATION PROGRAM -->
+                <article class="programs-overview-card foundation-overview" id="foundation">
+
+                    <div class="programs-overview-image">
+
+                        <img src="images/p1.jpg" alt="Young child learning basic Abacus calculations">
+
+                        <span class="programs-overview-number">01</span>
+
+                        <span class="programs-overview-level">
+                            START HERE
+                        </span>
+
+                    </div>
+
+                    <div class="programs-overview-content">
+
+                        <div class="programs-overview-topline">
+                            <span>LEVEL 01</span>
+                            <i class="fas fa-seedling"></i>
+                        </div>
+
+                        <h3>Foundation Program</h3>
+
+                        <p class="programs-overview-description">
+                            A friendly introduction to Abacus learning,
+                            helping children become familiar with numbers
+                            and develop a strong mathematical foundation.
+                        </p>
+
+                        <div class="programs-overview-divider"></div>
+
+                        <h4>What Children Explore</h4>
+
+                        <ul class="programs-overview-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Introduction to the Abacus
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Number recognition and understanding
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Basic addition and subtraction
+                            </li>
+                        </ul>
+
+                        <a href="#learning-journey" class="programs-overview-link">
+                            Explore Learning Path
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- INTERMEDIATE PROGRAM -->
+                <article class="programs-overview-card intermediate-overview" id="intermediate">
+
+                    <div class="programs-overview-image">
+
+                        <img src="images/p2.jpg" alt="Student practising intermediate Abacus calculations">
+
+                        <span class="programs-overview-number">02</span>
+
+                        <span class="programs-overview-level">
+                            BUILD SKILLS
+                        </span>
+
+                    </div>
+
+                    <div class="programs-overview-content">
+
+                        <div class="programs-overview-topline">
+                            <span>LEVEL 02</span>
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+
+                        <h3>Intermediate Program</h3>
+
+                        <p class="programs-overview-description">
+                            Build on foundational knowledge through
+                            structured practice, helping learners improve
+                            calculation accuracy and confidence.
+                        </p>
+
+                        <div class="programs-overview-divider"></div>
+
+                        <h4>What Children Explore</h4>
+
+                        <ul class="programs-overview-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Developing Abacus techniques
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                More challenging number operations
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Speed and accuracy practice
+                            </li>
+                        </ul>
+
+                        <a href="#learning-journey" class="programs-overview-link">
+                            Explore Learning Path
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ADVANCED PROGRAM -->
+                <article class="programs-overview-card advanced-overview" id="advanced">
+
+                    <div class="programs-overview-image">
+
+                        <img src="images/p3.jpg" alt="Student practising advanced mental calculations">
+
+                        <span class="programs-overview-number">03</span>
+
+                        <span class="programs-overview-level">
+                            GO FURTHER
+                        </span>
+
+                    </div>
+
+                    <div class="programs-overview-content">
+
+                        <div class="programs-overview-topline">
+                            <span>LEVEL 03</span>
+                            <i class="fas fa-trophy"></i>
+                        </div>
+
+                        <h3>Advanced Program</h3>
+
+                        <p class="programs-overview-description">
+                            Take mathematical learning further with
+                            advanced calculation practice and opportunities
+                            to strengthen independent problem-solving.
+                        </p>
+
+                        <div class="programs-overview-divider"></div>
+
+                        <h4>What Children Explore</h4>
+
+                        <ul class="programs-overview-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Advanced Abacus calculations
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Complex number operations
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Independent calculation practice
+                            </li>
+                        </ul>
+
+                        <a href="#learning-journey" class="programs-overview-link">
+                            Explore Learning Path
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- MENTAL MATHS PROGRAM -->
+                <article class="programs-overview-card mental-overview" id="mental-maths">
+
+                    <div class="programs-overview-image">
+
+                        <img src="images/p4.jpg" alt="Child visualising Abacus beads while practising Mental Maths">
+
+                        <span class="programs-overview-number">04</span>
+
+                        <span class="programs-overview-level">
+                            THINK SMARTER
+                        </span>
+
+                    </div>
+
+                    <div class="programs-overview-content">
+
+                        <div class="programs-overview-topline">
+                            <span>SKILL DEVELOPMENT</span>
+                            <i class="fas fa-brain"></i>
+                        </div>
+
+                        <h3>Mental Maths Program</h3>
+
+                        <p class="programs-overview-description">
+                            Encourage children to visualise Abacus
+                            movements mentally and solve calculations
+                            without depending on a physical Abacus.
+                        </p>
+
+                        <div class="programs-overview-divider"></div>
+
+                        <h4>What Children Explore</h4>
+
+                        <ul class="programs-overview-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Mental visualisation techniques
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Mental calculation practice
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Concentration and number fluency
+                            </li>
+                        </ul>
+
+                        <a href="#learning-journey" class="programs-overview-link">
+                            Explore Learning Path
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- BOTTOM NOTE -->
+            <div class="programs-overview-note">
+
+                <div class="programs-overview-note-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+
+                <div class="programs-overview-note-content">
+                    <h4>Not Sure Where Your Child Should Begin?</h4>
+                    <p>
+                        Every learner is different. Connect with our team
+                        to understand the most suitable starting point
+                        based on your child's current learning level.
+                    </p>
+                </div>
+
+                <a href="contact.html" class="programs-overview-note-button">
+                    Get Guidance
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+     PROGRAMS PAGE - LEARNING JOURNEY
+====================================== -->
+
+    <section class="programs-journey-section" id="learning-journey">
+
+        <div class="programs-journey-container">
+
+            <!-- SECTION INTRO -->
+            <div class="programs-journey-heading">
+
+                <span class="programs-journey-label">
+                    <i class="fas fa-route"></i>
+                    YOUR LEARNING JOURNEY
+                </span>
+
+                <h2>
+                    Every Step Takes Your Child
+                    <span>Closer to Brighter Thinking.</span>
+                </h2>
+
+                <p>
+                    Learning is a journey, not a race. With guided practice
+                    and progressive learning stages, children can build
+                    their skills one step at a time.
+                </p>
+
+            </div>
+
+
+            <!-- JOURNEY PATH -->
+            <div class="programs-journey-path">
+
+                <div class="programs-journey-line"></div>
+
+
+                <!-- STEP 1 -->
+                <article class="programs-journey-step journey-discover">
+
+                    <div class="programs-journey-icon-wrap">
+                        <div class="programs-journey-icon">
+                            <i class="fas fa-cubes"></i>
+                        </div>
+                        <span class="programs-journey-step-number">01</span>
+                    </div>
+
+                    <div class="programs-journey-card">
+
+                        <span class="programs-journey-stage">
+                            THE BEGINNING
+                        </span>
+
+                        <h3>Discover</h3>
+
+                        <p>
+                            Get familiar with numbers and understand
+                            how the Abacus calculation works through guided and more hands-on activities.
+                        </p>
+
+                        <div class="programs-journey-focus">
+                            <strong>Learning focus</strong>
+                            <span>Number & Abacus basics</span>
+                        </div>
+
+                        <a href="#foundation" class="programs-journey-link">
+                            Foundation Program
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- STEP 2 -->
+                <article class="programs-journey-step journey-build">
+
+                    <div class="programs-journey-icon-wrap">
+                        <div class="programs-journey-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <span class="programs-journey-step-number">02</span>
+                    </div>
+
+                    <div class="programs-journey-card">
+
+                        <span class="programs-journey-stage">
+                            BUILD THE BASICS
+                        </span>
+
+                        <h3>Build</h3>
+
+                        <p>
+                            Strengthen calculation techniques through
+                            regular practice and gradually work with
+                            more challenging number operations.
+                        </p>
+
+                        <div class="programs-journey-focus">
+                            <strong>Learning focus</strong>
+                            <span>Calculation techniques & time</span>
+                        </div>
+
+                        <a href="#intermediate" class="programs-journey-link">
+                            Intermediate Program
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- STEP 3 -->
+                <article class="programs-journey-step journey-advance">
+
+                    <div class="programs-journey-icon-wrap">
+                        <div class="programs-journey-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <span class="programs-journey-step-number">03</span>
+                    </div>
+
+                    <div class="programs-journey-card">
+
+                        <span class="programs-journey-stage">
+                            TAKE IT FURTHER
+                        </span>
+
+                        <h3>Advance</h3>
+
+                        <p>
+                            Explore more complex calculations and
+                            develop confidence in solving mathematical
+                            problems independently.
+                        </p>
+
+                        <div class="programs-journey-focus">
+                            <strong>Learning focus</strong>
+                            <span>Advanced problem-solving</span>
+                        </div>
+
+                        <a href="#advanced" class="programs-journey-link">
+                            Advanced Program
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- STEP 4 -->
+                <article class="programs-journey-step journey-visualise">
+
+                    <div class="programs-journey-icon-wrap">
+                        <div class="programs-journey-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <span class="programs-journey-step-number">04</span>
+                    </div>
+
+                    <div class="programs-journey-card">
+
+                        <span class="programs-journey-stage">
+                            THINK BEYOND
+                        </span>
+
+                        <h3>Visualise</h3>
+
+                        <p>
+                            Practise mental visualisation and learn
+                            to perform calculations by imagining
+                            Abacus movements in the power mind.
+                        </p>
+
+                        <div class="programs-journey-focus">
+                            <strong>Learning focus</strong>
+                            <span>Mental Maths & visualisation</span>
+                        </div>
+
+                        <a href="#mental-maths" class="programs-journey-link">
+                            Mental Maths Program
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- BOTTOM MESSAGE -->
+            <div class="programs-journey-bottom">
+
+                <div class="programs-journey-bottom-icon">
+                    <i class="fas fa-seedling"></i>
+                </div>
+
+                <div class="programs-journey-bottom-content">
+                    <h3>Progress at Your Child's Own Pace</h3>
+                    <p>
+                        Each learner develops differently. The next learning
+                        stage should be based on individual progress,
+                        understanding and readiness.
+                    </p>
+                </div>
+
+                <a href="contact.html" class="programs-journey-cta">
+                    Talk to Our Team
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+     PROGRAMS PAGE - SKILLS DEVELOPMENT
+====================================== -->
+
+    <section class="programs-skills-section">
+
+        <div class="programs-skills-container">
+
+            <!-- LEFT VISUAL AREA -->
+            <div class="programs-skills-visual">
+
+                <div class="programs-skills-image-wrap">
+
+                    <img src="images/programs-skills-child.jpg"
+                        alt="Child practising Abacus and developing mathematical skills">
+
+                    <div class="programs-skills-image-tag">
+                        <i class="fas fa-brain"></i>
+                        <span>Learning Beyond Numbers</span>
+                    </div>
+
+                </div>
+
+
+                <!-- DECORATIVE SHAPES -->
+                <span class="programs-skills-decoration skills-decoration-one"></span>
+                <span class="programs-skills-decoration skills-decoration-two"></span>
+
+            </div>
+
+
+            <!-- RIGHT CONTENT -->
+            <div class="programs-skills-content">
+
+                <span class="programs-skills-label">
+                    <i class="fas fa-star"></i>
+                    MORE THAN MATHS
+                </span>
+
+                <h2>
+                    Building Skills That
+                    <span>Last a Lifetime.</span>
+                </h2>
+
+                <p class="programs-skills-intro">
+                    Every learning activity creates an opportunity to
+                    develop important thinking abilities. Through guided
+                    Abacus and Mental Maths practice, children can work
+                    towards strengthening these essential skills.
+                </p>
+
+
+                <!-- SKILL LIST -->
+                <div class="programs-skills-list">
+
+
+                    <!-- SKILL 1 -->
+                    <div class="programs-skill-item">
+
+                        <div class="programs-skill-icon skill-calculation">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+
+                        <div class="programs-skill-text">
+                            <h3>Calculation Skills</h3>
+                            <p>
+                                Practise number operations and build
+                                greater calculation fluency.
+                            </p>
+                        </div>
+
+                        <span class="programs-skill-index">01</span>
+
+                    </div>
+
+
+                    <!-- SKILL 2 -->
+                    <div class="programs-skill-item">
+
+                        <div class="programs-skill-icon skill-concentration">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+
+                        <div class="programs-skill-text">
+                            <h3>Concentration</h3>
+                            <p>
+                                Stay focused while following number
+                                patterns and solving calculations.
+                            </p>
+                        </div>
+
+                        <span class="programs-skill-index">02</span>
+
+                    </div>
+
+
+                    <!-- SKILL 3 -->
+                    <div class="programs-skill-item">
+
+                        <div class="programs-skill-icon skill-memory">
+                            <i class="fas fa-brain"></i>
+                        </div>
+
+                        <div class="programs-skill-text">
+                            <h3>Memory Development</h3>
+                            <p>
+                                Practise remembering number patterns,
+                                steps and calculation techniques.
+                            </p>
+                        </div>
+
+                        <span class="programs-skill-index">03</span>
+
+                    </div>
+
+
+                    <!-- SKILL 4 -->
+                    <div class="programs-skill-item">
+
+                        <div class="programs-skill-icon skill-visualisation">
+                            <i class="fas fa-eye"></i>
+                        </div>
+
+                        <div class="programs-skill-text">
+                            <h3>Visualisation</h3>
+                            <p>
+                                Learn to imagine Abacus movements
+                                and work with numbers mentally.
+                            </p>
+                        </div>
+
+                        <span class="programs-skill-index">04</span>
+
+                    </div>
+
+
+                    <!-- SKILL 5 -->
+                    <div class="programs-skill-item">
+
+                        <div class="programs-skill-icon skill-logical">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+
+                        <div class="programs-skill-text">
+                            <h3>Logical Thinking</h3>
+                            <p>
+                                Explore number relationships and
+                                approach calculations step by step.
+                            </p>
+                        </div>
+
+                        <span class="programs-skill-index">05</span>
+
+                    </div>
+
+
+                    <!-- SKILL 6 -->
+                    <div class="programs-skill-item">
+
+                        <div class="programs-skill-icon skill-confidence">
+                            <i class="fas fa-award"></i>
+                        </div>
+
+                        <div class="programs-skill-text">
+                            <h3>Learning Confidence</h3>
+                            <p>
+                                Gain confidence through regular
+                                practice and gradual progress.
+                            </p>
+                        </div>
+
+                        <span class="programs-skill-index">06</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BOTTOM NOTE -->
+                <div class="programs-skills-note">
+                    <i class="fas fa-heart"></i>
+                    <p>
+                        Small learning steps can create meaningful
+                        progress over time.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================
+     PROGRAMS PAGE - SKILLS END
+====================================== -->
+
+
+    <!-- =====================================
+     PROGRAMS PAGE - HOW CLASSES WORK
+====================================== -->
+
+    <section class="programs-classwork-section">
+
+        <div class="programs-classwork-container">
+
+            <!-- SECTION HEADING -->
+            <div class="programs-classwork-heading">
+
+                <span class="programs-classwork-label">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    THE NUMORA EXPERIENCE
+                </span>
+
+                <h2>
+                    Simple Steps. Meaningful
+                    <span>Learning Experiences.</span>
+                </h2>
+
+                <p>
+                    We make the learning process easy to understand
+                    for both parents and children, from the first
+                    interaction to ongoing learning progress.
+                </p>
+
+            </div>
+
+
+            <!-- MAIN PROCESS LAYOUT -->
+            <div class="programs-classwork-layout">
+
+                <!-- LEFT PROCESS STEPS -->
+                <div class="programs-classwork-steps">
+
+
+                    <!-- STEP 1 -->
+                    <div class="programs-classwork-step">
+
+                        <div class="programs-classwork-step-icon">
+                            <i class="fas fa-clipboard-list"></i>
+                        </div>
+
+                        <div class="programs-classwork-step-content">
+
+                            <span class="programs-classwork-step-number">
+                                STEP 01
+                            </span>
+
+                            <h3>Connect & Enquire</h3>
+
+                            <p>
+                                Get in touch with our team to learn
+                                about available programs and understand
+                                the learning options for your child.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- STEP 2 -->
+                    <div class="programs-classwork-step">
+
+                        <div class="programs-classwork-step-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+
+                        <div class="programs-classwork-step-content">
+
+                            <span class="programs-classwork-step-number">
+                                STEP 02
+                            </span>
+
+                            <h3>Find the Right Starting Level</h3>
+
+                            <p>
+                                Discuss your child's current learning
+                                experience and identify a suitable
+                                starting point with guidance from our team.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- STEP 3 -->
+                    <div class="programs-classwork-step">
+
+                        <div class="programs-classwork-step-icon">
+                            <i class="fas fa-book-reader"></i>
+                        </div>
+
+                        <div class="programs-classwork-step-content">
+
+                            <span class="programs-classwork-step-number">
+                                STEP 03
+                            </span>
+
+                            <h3>Learn & Practise</h3>
+
+                            <p>
+                                Take part in guided lessons, Abacus
+                                activities and regular practice to
+                                strengthen mathematical understanding.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- STEP 4 -->
+                    <div class="programs-classwork-step">
+
+                        <div class="programs-classwork-step-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+
+                        <div class="programs-classwork-step-content">
+
+                            <span class="programs-classwork-step-number">
+                                STEP 04
+                            </span>
+
+                            <h3>Review & Progress</h3>
+
+                            <p>
+                                Review completed learning activities
+                                and discuss the child's progress and
+                                suitable next learning goals.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT VISUAL -->
+                <div class="programs-classwork-visual">
+
+                    <div class="programs-classwork-image-frame">
+
+                        <img src="images/programs-classroom-learning.jpg"
+                            alt="Teacher guiding children during an Abacus learning class">
+
+                        <div class="programs-classwork-image-overlay"></div>
+
+                        <div class="programs-classwork-image-caption">
+
+                            <span>
+                                <i class="fas fa-heart"></i>
+                                LEARN WITH PURPOSE
+                            </span>
+
+                            <h3>
+                                Every Child Deserves
+                                a Confident Start.
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DECORATIVE ELEMENT -->
+                    <div class="programs-classwork-decoration">
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOTTOM PARENT NOTE -->
+            <div class="programs-classwork-footer">
+
+                <div class="programs-classwork-footer-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+
+                <div class="programs-classwork-footer-content">
+
+                    <h3>Parents Are Part of the Journey</h3>
+
+                    <p>
+                        Stay connected with our team to understand
+                        your child's learning experience and discuss
+                        their progress along the way.
+                    </p>
+
+                </div>
+
+                <a href="contact.html" class="programs-classwork-footer-link">
+                    Enquire About Classes
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================
+     PROGRAMS PAGE - HOW CLASSES WORK END
+====================================== -->
+
+
+    <!-- =====================================
+     PROGRAMS PAGE - FIND THE RIGHT PROGRAM
+====================================== -->
+
+    <section class="programs-finder-section">
+
+        <div class="programs-finder-container">
+
+            <!-- SECTION HEADING -->
+            <div class="programs-finder-heading">
+
+                <span class="programs-finder-label">
+                    <i class="fas fa-compass"></i>
+                    A GUIDE FOR PARENTS
+                </span>
+
+                <h2>
+                    Which Learning Path Is
+                    <span>Right for Your Child?</span>
+                </h2>
+
+                <p>
+                    Every child has a different starting point.
+                    Explore these learning situations to understand
+                    which NUMORA program may be worth considering.
+                </p>
+
+            </div>
+
+
+            <!-- LEARNING CHOICES -->
+            <div class="programs-finder-options">
+
+
+                <!-- OPTION 1 -->
+                <article class="programs-finder-option finder-beginner">
+
+                    <div class="programs-finder-option-top">
+
+                        <span class="programs-finder-number">01</span>
+
+                        <div class="programs-finder-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+
+                    </div>
+
+                    <span class="programs-finder-tag">
+                        STARTING OUT
+                    </span>
+
+                    <h3>My Child Is New to Abacus</h3>
+
+                    <p>
+                        Your child is beginning their Abacus learning
+                        experience and needs to understand numbers
+                        and techniques.
+                    </p>
+
+                    <div class="programs-finder-divider"></div>
+
+                    <div class="programs-finder-recommendation">
+
+                        <span>PROGRAM TO EXPLORE</span>
+
+                        <strong>Foundation Program</strong>
+
+                        <a href="#foundation">
+                            View Program
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- OPTION 2 -->
+                <article class="programs-finder-option finder-progress">
+
+                    <div class="programs-finder-option-top">
+
+                        <span class="programs-finder-number">02</span>
+
+                        <div class="programs-finder-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+
+                    </div>
+
+                    <span class="programs-finder-tag">
+                        BUILDING SKILLS
+                    </span>
+
+                    <h3>My Child Knows the Basics</h3>
+
+                    <p>
+                        Your child has some experience with Abacus
+                        and is ready to practise more challenging
+                        calculations and techniques.
+                    </p>
+
+                    <div class="programs-finder-divider"></div>
+
+                    <div class="programs-finder-recommendation">
+
+                        <span>PROGRAMS TO EXPLORE</span>
+
+                        <strong>Intermediate / Advanced</strong>
+
+                        <a href="#intermediate">
+                            View Programs
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- OPTION 3 -->
+                <article class="programs-finder-option finder-mental">
+
+                    <div class="programs-finder-option-top">
+
+                        <span class="programs-finder-number">03</span>
+
+                        <div class="programs-finder-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+
+                    </div>
+
+                    <span class="programs-finder-tag">
+                        THINKING BEYOND
+                    </span>
+
+                    <h3>Wants Improved Maths</h3>
+
+                    <p>
+                        Your child wants to practise visualising
+                        Abacus calculation movements and performing calculations
+                        mentally.
+                    </p>
+
+                    <div class="programs-finder-divider"></div>
+
+                    <div class="programs-finder-recommendation">
+
+                        <span>PROGRAM TO EXPLORE</span>
+
+                        <strong>Mental Maths Program</strong>
+
+                        <a href="#mental-maths">
+                            View Program
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- GUIDANCE CTA -->
+            <div class="programs-finder-guidance">
+
+                <div class="programs-finder-guidance-icon">
+                    <i class="fas fa-hands-helping"></i>
+                </div>
+
+                <div class="programs-finder-guidance-content">
+
+                    <h3>Still Not Sure Which Program to Choose?</h3>
+
+                    <p>
+                        Tell us about your child's current learning
+                        experience. Our team can help you understand
+                        the available program options.
+                    </p>
+
+                </div>
+
+                <a href="contact.html" class="programs-finder-guidance-btn">
+                    Get Personal Guidance
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================
+     PROGRAM FINDER SECTION END
+====================================== -->
+
+
+    <!-- =====================================
+     PROGRAMS PAGE - FAQ SECTION
+====================================== -->
+
+    <section class="programs-faq-section">
+
+        <div class="programs-faq-container">
+
+            <!-- SECTION HEADING -->
+            <div class="programs-faq-heading">
+
+                <span class="programs-faq-label">
+                    <i class="fas fa-comments"></i>
+                    WE'RE HERE TO HELP
+                </span>
+
+                <h2>
+                    Common Questions
+                    <span>from Parents.</span>
+                </h2>
+
+                <p>
+                    Find helpful answers to common questions about
+                    our learning programs, classes and your child's
+                    learning experience.
+                </p>
+
+            </div>
+
+
+            <!-- FAQ MAIN LAYOUT -->
+            <div class="programs-faq-layout">
+
+                <!-- LEFT FAQ ACCORDION -->
+                <div class="programs-faq-list">
+
+
+                    <!-- FAQ 1 -->
+                    <div class="programs-faq-item">
+
+                        <button class="programs-faq-question" type="button" aria-expanded="true">
+
+                            <span class="programs-faq-question-icon">
+                                <i class="fas fa-child"></i>
+                            </span>
+
+                            <span class="programs-faq-question-text">
+                                What is the right age to start Abacus learning?
+                            </span>
+
+                            <span class="programs-faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+
+                        </button>
+
+                        <div class="programs-faq-answer">
+                            <div class="programs-faq-answer-inner">
+                                <p>
+                                    The suitable starting age can depend on
+                                    a child's readiness, number familiarity
+                                    and ability to participate in guided
+                                    learning activities. Contact our team
+                                    to understand the appropriate starting
+                                    option for your child.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 2 -->
+                    <div class="programs-faq-item">
+
+                        <button class="programs-faq-question" type="button" aria-expanded="false">
+
+                            <span class="programs-faq-question-icon">
+                                <i class="fas fa-calculator"></i>
+                            </span>
+
+                            <span class="programs-faq-question-text">
+                                Does my child need prior Abacus knowledge?
+                            </span>
+
+                            <span class="programs-faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+
+                        </button>
+
+                        <div class="programs-faq-answer">
+                            <div class="programs-faq-answer-inner">
+                                <p>
+                                    No previous Abacus experience is needed
+                                    to explore the Foundation Program.
+                                    Children can begin with the basics and
+                                    gradually become familiar with Abacus
+                                    techniques through guided practice.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 3 -->
+                    <div class="programs-faq-item">
+
+                        <button class="programs-faq-question" type="button" aria-expanded="false">
+
+                            <span class="programs-faq-question-icon">
+                                <i class="fas fa-clock"></i>
+                            </span>
+
+                            <span class="programs-faq-question-text">
+                                How long does it take to complete a program?
+                            </span>
+
+                            <span class="programs-faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+
+                        </button>
+
+                        <div class="programs-faq-answer">
+                            <div class="programs-faq-answer-inner">
+                                <p>
+                                    The learning duration may vary depending
+                                    on the program structure, practice
+                                    requirements and individual progress.
+                                    Please contact our team for the current
+                                    course schedule and duration details.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 4 -->
+                    <div class="programs-faq-item">
+
+                        <button class="programs-faq-question" type="button" aria-expanded="false">
+
+                            <span class="programs-faq-question-icon">
+                                <i class="fas fa-book-open"></i>
+                            </span>
+
+                            <span class="programs-faq-question-text">
+                                Does my child need to practise at home?
+                            </span>
+
+                            <span class="programs-faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+
+                        </button>
+
+                        <div class="programs-faq-answer">
+                            <div class="programs-faq-answer-inner">
+                                <p>
+                                    Regular practice can help children
+                                    reinforce what they learn during
+                                    lessons. The recommended practice
+                                    activities and frequency can be
+                                    discussed with the instructor.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 5 -->
+                    <div class="programs-faq-item">
+
+                        <button class="programs-faq-question" type="button" aria-expanded="false">
+
+                            <span class="programs-faq-question-icon">
+                                <i class="fas fa-layer-group"></i>
+                            </span>
+
+                            <span class="programs-faq-question-text">
+                                How do I choose the right program level?
+                            </span>
+
+                            <span class="programs-faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+
+                        </button>
+
+                        <div class="programs-faq-answer">
+                            <div class="programs-faq-answer-inner">
+                                <p>
+                                    The right starting level depends on
+                                    your child's existing Abacus knowledge
+                                    and learning experience. Our team can
+                                    help you understand the available
+                                    program options.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 6 -->
+                    <div class="programs-faq-item">
+
+                        <button class="programs-faq-question" type="button" aria-expanded="false">
+
+                            <span class="programs-faq-question-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </span>
+
+                            <span class="programs-faq-question-text">
+                                How can parents understand their child's progress?
+                            </span>
+
+                            <span class="programs-faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+
+                        </button>
+
+                        <div class="programs-faq-answer">
+                            <div class="programs-faq-answer-inner">
+                                <p>
+                                    Parents can discuss their child's
+                                    learning progress, completed activities
+                                    and next learning goals with the
+                                    instructor or NUMORA team.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 7 -->
+                    <div class="programs-faq-item">
+
+                        <button class="programs-faq-question" type="button" aria-expanded="false">
+
+                            <span class="programs-faq-question-icon">
+                                <i class="fas fa-laptop"></i>
+                            </span>
+
+                            <span class="programs-faq-question-text">
+                                Are online and offline classes available?
+                            </span>
+
+                            <span class="programs-faq-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+
+                        </button>
+
+                        <div class="programs-faq-answer">
+                            <div class="programs-faq-answer-inner">
+                                <p>
+                                    Class availability and learning formats
+                                    depend on the current offerings at
+                                    NUMORA. Please contact our team to
+                                    confirm the available options.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- RIGHT VISUAL -->
+                <div class="programs-faq-visual">
+
+                    <div class="programs-faq-image-wrap">
+
+                        <img src="images/programs-faq-child.jpg"
+                            alt="Child thinking and exploring new learning questions">
+
+                        <div class="programs-faq-image-decoration">
+                            <i class="fas fa-question"></i>
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONTACT CARD -->
+                    <div class="programs-faq-contact-card">
+
+                        <div class="programs-faq-contact-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+
+                        <div class="programs-faq-contact-content">
+
+                            <span>NEED MORE HELP?</span>
+
+                            <h3>We're Happy to Help!</h3>
+
+                            <p>
+                                Have another question? Talk to our team
+                                and get the information you need.
+                            </p>
+
+                            <a href="contact.html">
+                                Contact Our Team
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================
+     PROGRAMS FAQ SECTION END
+====================================== -->
+
+
+    <!-- =====================================
+     PROGRAMS PAGE - FINAL CTA
+====================================== -->
+
+    <section class="programs-final-cta-section">
+
+        <div class="programs-final-cta-container">
+
+            <div class="programs-final-cta-panel">
+
+                <!-- LEFT IMAGE -->
+                <div class="programs-final-cta-visual">
+
+                    <div class="programs-final-cta-image-wrap">
+
+                        <img src="images/programs-final-cta-child.jpg" alt="Happy child enjoying Abacus learning">
+
+                    </div>
+
+                    <!-- FLOATING DECORATION -->
+                    <div class="programs-final-cta-floating-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <div class="programs-final-cta-image-note">
+                        <i class="fas fa-heart"></i>
+                        <span>Every Mind Has Potential</span>
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT CONTENT -->
+                <div class="programs-final-cta-content">
+
+                    <span class="programs-final-cta-label">
+                        <i class="fas fa-graduation-cap"></i>
+                        YOUR CHILD'S NEXT STEP STARTS HERE
+                    </span>
+
+                    <h2>
+                        Ready to Make
+                        <span>Learning More Meaningful?</span>
+                    </h2>
+
+                    <p>
+                        Give your child the opportunity to explore
+                        Abacus and Mental Maths learning. Connect
+                        with our team to discover the right program
+                        and take the first step towards a confident
+                        learning experience.
+                    </p>
+
+
+                    <!-- CTA BUTTONS -->
+                    <div class="programs-final-cta-buttons">
+
+                        <a href="contact.html" class="programs-final-cta-primary">
+
+                            Enquire About Programs
+
+                            <i class="fas fa-arrow-right"></i>
+
+                        </a>
+
+                        <a href="tel:+910000000000" class="programs-final-cta-secondary">
+
+                            <i class="fas fa-phone"></i>
+
+                            Talk to Our Team
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- TRUST NOTE -->
+                    <div class="programs-final-cta-trust">
+
+                        <span>
+                            <i class="fas fa-check-circle"></i>
+                            Guided Learning
+                        </span>
+
+                        <span>
+                            <i class="fas fa-check-circle"></i>
+                            Progressive Practice
+                        </span>
+
+                        <span>
+                            <i class="fas fa-check-circle"></i>
+                            Individual Growth
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================
+     PROGRAMS PAGE - FINAL CTA END
+====================================== -->
+
+
+    <!-- ================= FOOTER START ================= -->
+
+    <footer class="numora-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-main">
+
+                <!-- Brand Column -->
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.png" alt="NUMORA Academy">
+                    </a>
+
+                    <p class="footer-about">
+                        Empowering young minds through the power of
+                        abacus and mental mathematics. Helping children
+                        build confidence, concentration and calculation
+                        skills for a brighter future.
+                    </p>
+
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+
+                    <h3 class="footer-title">Quick Links</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Our Programs</a></li>
+                        <li><a href="instructors.html">Instructors</a></li>
+                        <li><a href="competitions.html">Competitions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Programs -->
+                <div class="footer-column">
+
+                    <h3 class="footer-title">Our Programs</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="programs.html">Beginner Level</a></li>
+                        <li><a href="programs.html">Intermediate Level</a></li>
+                        <li><a href="programs.html">Advanced Level</a></li>
+                        <li><a href="programs.html">Mental Maths</a></li>
+                        <li><a href="competitions.html">Abacus Competitions</a></li>
+                        <li><a href="login.html">Parent Portal</a></li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact Column -->
+                <div class="footer-column footer-contact">
+
+                    <h3 class="footer-title">Get In Touch</h3>
+
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>NUMORA Academy, Your City, India</p>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+919876543210">+91 98765 43210</a>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:info@numoraacademy.com">
+                            info@numoraacademy.com
+                        </a>
+                    </div>
+
+                    <div class="footer-contact-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Mon – Sat: 9:00 AM – 6:00 PM</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; 2026 <span>NUMORA Academy</span>.
+                    All Rights Reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+
+                <p class="footer-credit">
+                    Designed with <i class="fa-solid fa-heart"></i>
+                    for Brighter Minds
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= FOOTER END ================= -->
+
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

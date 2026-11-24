@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/preferences.js"></script>
+
+    <title>NUMORA Academy</title>
+
+    <meta name="description"
+        content="NUMORA Academy helps children develop calculation speed, concentration and mental maths skills through abacus learning.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/auth.css">
+
+</head>
+
+<body>
+
+    <main class="numora-auth-page">
+
+
+        <!-- TOP RIGHT SETTINGS -->
+        <header class="numora-auth-topbar">
+            <div class="numora-auth-settings">
+
+                <button type="button" class="numora-auth-toggle" id="auth-theme-toggle" aria-label="Toggle dark mode"
+                    title="Toggle dark mode">
+                    <i class="fas fa-moon" id="auth-theme-icon"></i>
+                </button>
+
+                <button type="button" class="numora-auth-toggle" id="auth-rtl-toggle" aria-label="Toggle RTL mode"
+                    title="Toggle RTL mode">
+                    <i class="fas fa-right-left"></i>
+                </button>
+
+            </div>
+        </header>
+
+
+        <!-- LOGIN CARD -->
+        <section class="numora-login-area">
+
+            <div class="numora-login-card">
+
+                <!-- LOGO -->
+                <a href="index.html" class="numora-login-logo">
+                    <img src="images/logo.png" alt="NUMORA Logo">
+                </a>
+
+                <!-- HEADING -->
+                <div class="numora-login-heading">
+
+                    <h1>Welcome <span>Back!</span></h1>
+
+                    <p>
+                        Sign in to continue your learning journey with NUMORA.
+                    </p>
+                </div>
+
+
+                <!-- LOGIN FORM -->
+                <form class="numora-login-form" id="numora-login-form">
+
+                    <div class="numora-login-field">
+                        <label for="login-email">Email Address</label>
+
+                        <div class="numora-login-input-wrap">
+                            <i class="far fa-envelope numora-login-input-icon"></i>
+
+                            <input type="email" id="login-email" name="email" placeholder="Enter your email address"
+                                autocomplete="email" required>
+                        </div>
+                    </div>
+
+
+                    <div class="numora-login-field">
+                        <label for="login-password">Password</label>
+
+                        <div class="numora-login-input-wrap">
+                            <i class="fas fa-lock numora-login-input-icon"></i>
+
+                            <input type="password" id="login-password" name="password" placeholder="Enter your password"
+                                autocomplete="current-password" required>
+
+                            <button type="button" class="numora-login-password-toggle" id="login-password-toggle"
+                                aria-label="Show password">
+                                <i class="far fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <!-- REMEMBER & FORGOT -->
+                    <div class="numora-login-options">
+
+                        <label class="numora-login-remember">
+                            <input type="checkbox" name="remember">
+                            <span>Remember me</span>
+                        </label>
+
+                        <a href="forgot-password.html" class="numora-login-forgot">
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+
+                    <!-- LOGIN BUTTON -->
+                    <button type="submit" class="numora-login-submit">
+                        <span>Login to Your Account</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+
+                </form>
+
+
+                <!-- DIVIDER -->
+                <div class="numora-login-divider">
+                    <span></span>
+                    <p>Or continue with</p>
+                    <span></span>
+                </div>
+
+
+                <!-- SOCIAL LOGIN -->
+                <div class="numora-login-social">
+
+                    <button type="button" class="numora-social-button facebook-social"
+                        aria-label="Continue with Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </button>
+
+                    <button type="button" class="numora-social-button apple-social" aria-label="Continue with Apple">
+                        <i class="fab fa-apple"></i>
+                    </button>
+
+                    <button type="button" class="numora-social-button google-social" aria-label="Continue with Google">
+                        <img src="images/google-logo.svg" alt="Google">
+                    </button>
+
+                </div>
+
+
+                <!-- REGISTER LINK -->
+                <div class="numora-login-register">
+                    <p>
+                        Don't have an account?
+                        <a href="register.html">Create an Account</a>
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/auth.js"></script>
+
+</body>
+
+</html>

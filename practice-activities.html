@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/preferences.js"></script>
+
+    <title>NUMORA Academy</title>
+
+    <meta name="description"
+        content="NUMORA Academy helps children develop calculation speed, concentration and mental maths skills through abacus learning.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body class="numora-dashboard-page">
+
+    <!-- Mobile Sidebar Overlay -->
+    <div class="dashboard-sidebar-overlay" id="dashboardSidebarOverlay"></div>
+
+    <!-- Sidebar -->
+    <aside class="dashboard-sidebar" id="dashboardSidebar">
+
+        <div class="dashboard-sidebar-logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="NUMORA Academy">
+            </a>
+
+            <button type="button" class="dashboard-sidebar-close" id="dashboardSidebarClose" aria-label="Close sidebar">
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <div class="dashboard-sidebar-content">
+
+            <nav class="dashboard-navigation">
+
+                <a href="dashboard.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard Overview</span>
+                </a>
+
+                <a href="my-programs.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>My Programs</span>
+                </a>
+
+                <a href="class-schedule.html" class="dashboard-menu-link">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <span>Class Schedule</span>
+                </a>
+
+                <a href="learning-progress.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Learning Progress</span>
+                </a>
+
+                <a href="practice-activities.html" class="dashboard-menu-link active">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>Practice Activities</span>
+                </a>
+
+                <a href="certificates.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-award"></i>
+                    <span>Certificates</span>
+                </a>
+
+                <a href="payments.html" class="dashboard-menu-link">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>Payments</span>
+                </a>
+
+            </nav>
+        </div>
+
+        <!-- Sidebar Bottom Logout -->
+        <div class="dashboard-sidebar-bottom">
+            <button type="button" class="dashboard-logout-button" id="dashboardLogoutButton">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Main Dashboard Area -->
+    <div class="dashboard-main-area" id="dashboardMainArea">
+
+        <!-- Fixed Header -->
+        <header class="dashboard-header">
+
+            <div class="dashboard-header-left">
+
+                <button type="button" class="dashboard-menu-toggle" id="dashboardMenuToggle" aria-label="Toggle sidebar"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="dashboard-header-title">
+                    <h1>Practice Activities</h1>
+                </div>
+
+            </div>
+
+            <div class="dashboard-header-right">
+
+                <!-- Notifications -->
+                <div class="dashboard-notification-wrapper">
+                    <button type="button" class="dashboard-header-icon" id="dashboardNotificationButton"
+                        aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="dashboard-notification-count">3</span>
+                    </button>
+
+                    <div class="dashboard-notification-dropdown" id="dashboardNotificationDropdown">
+                        <div class="dashboard-dropdown-heading">
+                            <h3>Notifications</h3>
+                            <span>3 New</span>
+                        </div>
+
+                        <div class="dashboard-notification-item">
+                            <span class="dashboard-notification-symbol">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </span>
+                            <div>
+                                <h4>Upcoming Class</h4>
+                                <p>Your next learning session is coming up.</p>
+                                <small>Recently</small>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-notification-item">
+                            <span class="dashboard-notification-symbol">
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                            <div>
+                                <h4>Practice Reminder</h4>
+                                <p>Keep practising to improve your skills.</p>
+                                <small>Recently</small>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-notification-item">
+                            <span class="dashboard-notification-symbol">
+                                <i class="fa-solid fa-award"></i>
+                            </span>
+                            <div>
+                                <h4>Learning Update</h4>
+                                <p>Check your latest learning progress.</p>
+                                <small>Recently</small>
+                            </div>
+                        </div>
+
+                        <a href="notifications.html" class="dashboard-view-notifications">
+                            View All Notifications
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Dark Mode -->
+                <button type="button" class="dashboard-header-icon" id="dashboardThemeToggle"
+                    aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon" id="dashboardThemeIcon"></i>
+                </button>
+
+                <!-- RTL -->
+                <button type="button" class="dashboard-header-icon" id="dashboardRtlToggle" aria-label="Toggle RTL">
+                    <i class="fa-solid fa-right-left"></i>
+                </button>
+
+                <!-- Member Profile -->
+                <div class="dashboard-member-wrapper">
+
+                    <button type="button" class="dashboard-member-profile" id="dashboardMemberButton"
+                        aria-expanded="false" aria-controls="dashboardMemberDropdown">
+
+                        <img src="images/member-profile.jpg" alt="Member profile">
+
+                        <span class="dashboard-member-details">
+                            <strong>Nila M</strong>
+                            <small>Student Member</small>
+                        </span>
+
+                    </button>
+
+                    <div class="dashboard-member-dropdown" id="dashboardMemberDropdown">
+                        <button type="button" id="dashboardProfileLogout">
+                            <i class="fa-solid fa-arrow-right-from-bracket" aria-hidden="true"></i>
+                            <span>Logout</span>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <main class="dashboard-page-content">
+
+            <!-- SECTION 1: DAILY PRACTICE CHALLENGE -->
+            <section class="pa-challenge-section">
+
+                <div class="pa-section-heading">
+                    <div>
+                        <span class="pa-section-label">DAILY LEARNING</span>
+                        <h2>Daily Practice Challenge</h2>
+                        <p>Solve a quick calculation question and strengthen your number skills.</p>
+                    </div>
+                    <span class="pa-daily-badge"><i class="fa-solid fa-star"></i> Daily Challenge</span>
+                </div>
+
+                <div class="pa-challenge-card">
+
+                    <div class="pa-challenge-top">
+                        <div>
+                            <span class="pa-challenge-tag">QUESTION OF THE DAY</span>
+                            <h3 id="paQuestionNumber">Question 1</h3>
+                        </div>
+                        <span class="pa-challenge-type">
+                            <i class="fa-solid fa-calculator"></i> Calculation
+                        </span>
+                    </div>
+
+                    <div class="pa-question-area">
+                        <p id="paQuestionText">What is 25 + 17?</p>
+
+                        <div class="pa-answer-row">
+                            <label class="pa-answer-label" for="paAnswerInput">Your Answer</label>
+                            <input type="number" id="paAnswerInput" placeholder="Enter your answer">
+                            <button type="button" id="paCheckAnswer" class="pa-check-btn">
+                                Check Answer <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+
+                        <p class="pa-answer-feedback" id="paAnswerFeedback" aria-live="polite"></p>
+                    </div>
+
+                    <div class="pa-challenge-bottom">
+                        <span><i class="fa-solid fa-lightbulb"></i> Take your time and check your answer.</span>
+                        <button type="button" id="paNextQuestion" class="pa-next-btn" disabled>
+                            Next Question <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- SECTION 2: MENTAL MATHS QUIZ -->
+            <section class="pa-quiz-section">
+
+                <div class="pa-section-heading">
+                    <div>
+                        <span class="pa-section-label">THINK QUICKLY</span>
+                        <h2>Mental Maths Quiz</h2>
+                        <p>Choose the correct answer and test your mental calculation skills.</p>
+                    </div>
+                </div>
+
+                <div class="pa-quiz-card">
+
+                    <div class="pa-quiz-header">
+                        <div>
+                            <span class="pa-quiz-label">QUICK QUIZ</span>
+                            <h3>Number Skills Challenge</h3>
+                        </div>
+
+                        <div class="pa-quiz-score">
+                            <i class="fa-solid fa-trophy"></i>
+                            <span>Score</span>
+                            <strong id="paQuizScore">0 / 5</strong>
+                        </div>
+                    </div>
+
+                    <div class="pa-quiz-progress-info">
+                        <span id="paQuizQuestionCount">Question 1 of 5</span>
+                        <span id="paQuizProgressText">0% completed</span>
+                    </div>
+
+                    <div class="pa-quiz-progress-track">
+                        <div class="pa-quiz-progress-fill" id="paQuizProgressFill"></div>
+                    </div>
+
+                    <div class="pa-quiz-question-area">
+                        <span class="pa-quiz-question-label">SOLVE THIS</span>
+                        <h3 id="paQuizQuestion">What is 12 × 3?</h3>
+
+                        <div class="pa-quiz-options" id="paQuizOptions">
+
+                            <button type="button" class="pa-quiz-option" data-answer="24">24</button>
+                            <button type="button" class="pa-quiz-option" data-answer="36">36</button>
+                            <button type="button" class="pa-quiz-option" data-answer="42">42</button>
+                            <button type="button" class="pa-quiz-option" data-answer="32">32</button>
+
+                        </div>
+
+                        <p class="pa-quiz-feedback" id="paQuizFeedback" aria-live="polite"></p>
+
+                        <div class="pa-quiz-actions">
+                            <button type="button" class="pa-quiz-next-btn" id="paQuizNext" disabled>
+                                Next Question <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="pa-quiz-result" id="paQuizResult" hidden>
+                        <div class="pa-quiz-result-icon">
+                            <i class="fa-solid fa-medal"></i>
+                        </div>
+                        <span>QUIZ COMPLETED</span>
+                        <h3 id="paQuizResultTitle">Great Effort!</h3>
+                        <p id="paQuizResultText">You completed the mental maths challenge.</p>
+                        <button type="button" id="paQuizRestart" class="pa-quiz-restart-btn">
+                            <i class="fa-solid fa-rotate-right"></i> Try Again
+                        </button>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- SECTION 3: PRACTICE PLANNER -->
+            <section class="pa-planner-section">
+
+                <div class="pa-section-heading">
+                    <div>
+                        <span class="pa-section-label">BUILD A ROUTINE</span>
+                        <h2>My Practice Planner</h2>
+                        <p>Complete your practice tasks and build a consistent learning habit.</p>
+                    </div>
+                </div>
+
+                <div class="pa-planner-card">
+
+                    <div class="pa-planner-header">
+                        <div>
+                            <h3>Today's Practice Goals</h3>
+                            <p>Mark each task when you finish it.</p>
+                        </div>
+
+                        <div class="pa-planner-count">
+                            <strong id="paPlannerCount">0 / 4</strong>
+                            <span>Tasks completed</span>
+                        </div>
+                    </div>
+
+                    <div class="pa-planner-progress-track">
+                        <div class="pa-planner-progress-fill" id="paPlannerProgress"></div>
+                    </div>
+
+                    <div class="pa-planner-progress-text" id="paPlannerProgressText">
+                        Let's get started! Complete your first practice task.
+                    </div>
+
+                    <div class="pa-planner-task-list">
+
+                        <label class="pa-planner-task">
+                            <input type="checkbox" class="pa-task-checkbox">
+                            <span class="pa-task-custom"></span>
+                            <span class="pa-task-icon"><i class="fa-solid fa-calculator"></i></span>
+                            <span class="pa-task-details">
+                                <strong>Abacus Practice</strong>
+                                <small>Practise addition and subtraction</small>
+                            </span>
+                            <span class="pa-task-duration">10 min</span>
+                        </label>
+
+                        <label class="pa-planner-task">
+                            <input type="checkbox" class="pa-task-checkbox">
+                            <span class="pa-task-custom"></span>
+                            <span class="pa-task-icon"><i class="fa-solid fa-brain"></i></span>
+                            <span class="pa-task-details">
+                                <strong>Mental Maths</strong>
+                                <small>Solve calculations mentally</small>
+                            </span>
+                            <span class="pa-task-duration">10 min</span>
+                        </label>
+
+                        <label class="pa-planner-task">
+                            <input type="checkbox" class="pa-task-checkbox">
+                            <span class="pa-task-custom"></span>
+                            <span class="pa-task-icon"><i class="fa-solid fa-bullseye"></i></span>
+                            <span class="pa-task-details">
+                                <strong>Accuracy Practice</strong>
+                                <small>Check your answers carefully</small>
+                            </span>
+                            <span class="pa-task-duration">5 min</span>
+                        </label>
+
+                        <label class="pa-planner-task">
+                            <input type="checkbox" class="pa-task-checkbox">
+                            <span class="pa-task-custom"></span>
+                            <span class="pa-task-icon"><i class="fa-solid fa-book-open"></i></span>
+                            <span class="pa-task-details">
+                                <strong>Revise Today's Lesson</strong>
+                                <small>Review the concepts learnt in class</small>
+                            </span>
+                            <span class="pa-task-duration">5 min</span>
+                        </label>
+
+                    </div>
+
+                    <div class="pa-planner-complete" id="paPlannerComplete" hidden>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Excellent! You completed all your practice goals today.
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+    </div>
+
+
+    <!-- Logout Confirmation Modal -->
+    <div class="dashboard-logout-modal" id="dashboardLogoutModal" aria-hidden="true">
+
+        <div class="dashboard-logout-card" role="dialog" aria-modal="true" aria-labelledby="dashboardLogoutTitle">
+
+            <div class="dashboard-logout-icon">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </div>
+
+            <h2 id="dashboardLogoutTitle">Logout Confirmation</h2>
+
+            <p>Are you sure you want to log out of your NUMORA account?</p>
+
+            <div class="dashboard-logout-actions">
+                <button type="button" class="dashboard-logout-cancel" id="dashboardLogoutCancel">No, Stay</button>
+
+                <button type="button" class="dashboard-logout-confirm" id="dashboardLogoutConfirm">Yes, Logout</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
