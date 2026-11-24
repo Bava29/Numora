@@ -23276,6 +23276,10 @@ html[dir="rtl"] .contact-location-directions:hover i {
     }
 
     .programs-faq-answer-inner {
+        padding: 0;
+    }
+
+    .programs-faq-item.active .programs-faq-answer-inner {
         padding: 0 15px 17px;
     }
 
@@ -23287,15 +23291,24 @@ html[dir="rtl"] .contact-location-directions:hover i {
     .programs-faq-visual {
         width: 100%;
         max-width: 100%;
+        padding-left: 10px;
+    }
+
+    .programs-faq-image-wrap {
+        height: auto;
     }
 
     .programs-faq-image-wrap img {
         width: 100%;
-        height: 300px;
+        height: auto;
+        aspect-ratio: 3 / 2;
         object-fit: cover;
     }
 
-    .programs-faq-contact-card {
+    .programs-faq-contact-card,
+    html[dir="rtl"] .programs-faq-contact-card {
+        width: calc(100% - 30px);
+        margin: -5px auto 0;
         gap: 12px;
         padding: 17px;
     }
@@ -23503,7 +23516,7 @@ html[dir="rtl"] .contact-location-directions:hover i {
     }
 
     .programs-faq-image-wrap img {
-        height: 260px;
+        height: auto;
     }
 
     .programs-final-cta-panel {
@@ -27779,4 +27792,33 @@ html[dir="rtl"] .why-learn-btn i {
         margin-top: 22px;
         gap: 10px;
     }
+}
+
+/* FIX: Programs Final CTA Image - Mobile View */
+@media (max-width: 480px) {
+
+    .programs-final-cta-image-wrap {
+        height: 320px !important;
+        overflow: hidden;
+    }
+
+    .programs-final-cta-image-wrap img {
+        width: 100%;
+        height: 100% !important;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+}
+
+/* Center the last trust point - Mobile View */
+@media (max-width: 480px) {
+
+    .programs-final-cta-trust span:last-child {
+        flex-basis: 100%;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
 }
