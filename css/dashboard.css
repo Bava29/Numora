@@ -5626,7 +5626,7 @@ html[dir="rtl"] .pa-quiz-next-btn i {
     border-radius: 6px;
     background: var(--dashboard-header-bg);
     color: var(--dashboard-muted);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     cursor: pointer;
     transition: .2s ease;
@@ -6842,5 +6842,77 @@ html.dark-mode .dashboard-sidebar-logo img {
     .payments-table th:nth-child(5),
     .payments-table td:nth-child(5) {
         min-width: 130px;
+    }
+}
+
+/* Certificate Filter Alignment - Mobile View */
+@media (max-width: 600px) {
+
+    .certificates-filter-tabs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        gap: 8px;
+    }
+
+    .certificates-filter-btn {
+        flex: 0 0 calc(50% - 4px) !important;
+        width: calc(50% - 4px);
+        text-align: center;
+    }
+
+    .certificates-filter-btn:last-child {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+/* Mobile - Increase Program Column Width */
+@media (max-width: 600px) {
+
+    .payments-table {
+        min-width: 820px !important;
+        table-layout: fixed;
+    }
+
+    .payments-table th:nth-child(1),
+    .payments-table td:nth-child(1) {
+        width: 135px;
+    }
+
+    .payments-table th:nth-child(2),
+    .payments-table td:nth-child(2) {
+        width: 170px !important;
+        min-width: 170px !important;
+    }
+
+    .payments-table th:nth-child(3),
+    .payments-table td:nth-child(3) {
+        width: 125px;
+    }
+
+    .payments-table th:nth-child(4),
+    .payments-table td:nth-child(4) {
+        width: 100px;
+    }
+
+    .payments-table th:nth-child(5),
+    .payments-table td:nth-child(5) {
+        width: 100px;
+    }
+
+    .payments-table th:nth-child(6),
+    .payments-table td:nth-child(6) {
+
+        width: 130px;
+
+    }
+
+    .payments-table-wrapper {
+        width: 100%;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
     }
 }
