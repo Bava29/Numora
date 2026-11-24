@@ -308,6 +308,14 @@ document.addEventListener("DOMContentLoaded", function () {
         ".programs-faq-item"
     );
 
+    if (window.matchMedia("(max-width: 480px)").matches) {
+        faqItems.forEach(function (item) {
+            item.classList.remove("active");
+            item.querySelector(".programs-faq-question")
+                .setAttribute("aria-expanded", "false");
+        });
+    }
+
     faqItems.forEach(function (item) {
 
         const question = item.querySelector(
