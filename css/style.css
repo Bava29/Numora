@@ -27687,3 +27687,96 @@ html[dir="rtl"] .why-learn-btn i {
     }
 
 }
+
+/* =========================================
+   MOBILE - TESTIMONIAL SECTION SPACING FIX
+========================================= */
+
+@media (max-width: 480px) {
+
+    .numora-testimonials-section {
+        padding: 55px 0 60px;
+    }
+
+    .testimonials-container {
+        width: 100%;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+    .testimonials-heading {
+        margin-bottom: 28px;
+        padding: 0 8px;
+        text-align: center;
+    }
+
+    .testimonials-subtitle {
+        margin-bottom: 12px;
+    }
+
+    .testimonials-title {
+        font-size: 25px;
+        line-height: 1.35;
+        margin: 0;
+    }
+
+    .testimonial-slider-wrapper {
+        width: 100%;
+        padding: 0 32px;
+        margin: 0 auto;
+        gap: 8px;
+    }
+
+    .testimonial-slider {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .testimonial-slide {
+        width: 100%;
+        min-height: 0;
+        padding: 22px 15px;
+        gap: 15px;
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+
+    .testimonial-profile {
+        width: 108px;
+        height: 108px;
+        margin: 0 auto;
+    }
+
+    .testimonial-content {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .testimonial-text {
+        margin: 0 0 16px;
+        line-height: 1.65;
+    }
+
+    .testimonial-author {
+        margin-top: 10px;
+    }
+
+    .testimonial-rating {
+        position: static;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .testimonial-arrow {
+        width: 29px;
+        height: 29px;
+        min-width: 29px;
+        font-size: 12px;
+    }
+
+    .testimonial-dots {
+        margin-top: 22px;
+        gap: 10px;
+    }
+}
