@@ -27822,3 +27822,9 @@ html[dir="rtl"] .why-learn-btn i {
     }
 
 }
+
+/* FOOTER - WHITE LOGO IN DARK MODE */
+
+html.dark-mode .footer-logo img {
+    content: url("../images/logo-white.png");
+}
