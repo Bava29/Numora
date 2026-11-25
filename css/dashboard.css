@@ -6916,3 +6916,19 @@ html.dark-mode .dashboard-sidebar-logo img {
         -webkit-overflow-scrolling: touch;
     }
 }
+
+/* Always Show Number Input Spinner Arrows */
+
+.pa-answer-row input[type="number"]::-webkit-inner-spin-button,
+.pa-answer-row input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: inner-spin-button !important;
+    opacity: 1 !important;
+    display: block !important;
+    cursor: pointer;
+}
+
+/* Firefox */
+.pa-answer-row input[type="number"] {
+    appearance: auto;
+    -moz-appearance: number-input;
+}
