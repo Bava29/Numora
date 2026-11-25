@@ -2857,6 +2857,400 @@ html[dir="rtl"] .process-spark {
 }
 
 
+/* ==========================================
+   INSIDE A NUMORA CLASS SECTION
+========================================== */
+
+.numora-class-experience {
+    position: relative;
+    width: 100%;
+    padding: 90px 0;
+    background: #F4EBDD;
+    overflow: hidden;
+}
+
+.class-experience-container {
+    width: 90%;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+/* SECTION HEADER */
+
+.class-experience-header {
+    max-width: 760px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.class-experience-subtitle {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: #A94F38;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.class-experience-title {
+    margin: 0 0 18px;
+    color: #252525;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.class-experience-title span {
+    color: #A94F38;
+}
+
+.class-experience-description {
+    margin: 0;
+    color: #687477;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+/* LEARNING CARDS */
+
+.class-experience-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.class-experience-card {
+    position: relative;
+    padding: 30px 25px;
+    min-height: 270px;
+    background: #FFFFFF;
+    border: 1px solid rgba(36, 91, 87, 0.10);
+    border-radius: 18px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.class-experience-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 35px rgba(36, 91, 87, 0.12);
+}
+
+.class-experience-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.class-experience-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    color: #A94F38;
+    background: rgba(169, 79, 56, 0.11);
+    border-radius: 14px;
+    font-size: 24px;
+}
+
+.class-experience-card:nth-child(2) .class-experience-icon {
+    color: #245B57;
+    background: rgba(36, 91, 87, 0.11);
+}
+
+.class-experience-card:nth-child(3) .class-experience-icon {
+    color: #C18A20;
+    background: rgba(217, 164, 65, 0.17);
+}
+
+.class-experience-card:nth-child(4) .class-experience-icon {
+    color: #A94F38;
+    background: rgba(169, 79, 56, 0.11);
+}
+
+.class-experience-number {
+    color: rgba(169, 79, 56, 0.25);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.class-experience-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 6px 10px;
+    color: #245B57;
+    background: rgba(36, 91, 87, 0.09);
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
+
+.class-experience-card h3 {
+    margin: 0 0 12px;
+    color: #252525;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.class-experience-card p {
+    margin: 0;
+    color: #687477;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+/* BOTTOM MESSAGE */
+
+.class-experience-footer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 35px;
+    padding: 25px 30px;
+    background: #245B57;
+    border-radius: 14px;
+}
+
+.class-experience-footer-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    color: #245B57;
+    background: #D9A441;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.class-experience-footer-content {
+    flex: 1;
+}
+
+.class-experience-footer-content h3 {
+    margin: 0 0 6px;
+    color: #FFFFFF;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.class-experience-footer-content p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.class-experience-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-shrink: 0;
+    padding: 15px 22px;
+    color: #252525;
+    background: #D9A441;
+    border: 1px solid #D9A441;
+    border-radius: 6px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.class-experience-btn:hover {
+    color: #245B57;
+    background: #F4EBDD;
+    border-color: #F4EBDD;
+}
+
+/* DARK MODE */
+
+html.dark-mode .numora-class-experience {
+    background: #1F2B29;
+}
+
+html.dark-mode .class-experience-title,
+html.dark-mode .class-experience-card h3 {
+    color: #F4EBDD;
+}
+
+html.dark-mode .class-experience-description,
+html.dark-mode .class-experience-card p {
+    color: #C2CBC7;
+}
+
+html.dark-mode .class-experience-card {
+    background: #262B2A;
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+html.dark-mode .class-experience-number {
+    color: rgba(217, 164, 65, 0.45);
+}
+
+/* RTL SUPPORT */
+
+html[dir="rtl"] .class-experience-card-top {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .class-experience-footer {
+    direction: rtl;
+}
+
+html[dir="rtl"] .class-experience-btn {
+    direction: rtl;
+}
+
+
+/* ==========================================
+   RESPONSIVE - INSIDE A NUMORA CLASS
+========================================== */
+
+@media (max-width: 1024px) {
+
+    .class-experience-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .class-experience-card {
+        min-height: 250px;
+    }
+
+    .class-experience-footer {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .numora-class-experience {
+        padding: 70px 0;
+    }
+
+    .class-experience-container {
+        width: 90%;
+    }
+
+    .class-experience-header {
+        margin-bottom: 38px;
+    }
+
+    .class-experience-title {
+        font-size: 34px;
+    }
+
+    .class-experience-description {
+        font-size: 17px;
+    }
+
+    .class-experience-card {
+        padding: 25px 22px;
+    }
+
+    .class-experience-footer {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .class-experience-footer-content {
+        min-width: 0;
+    }
+
+    .class-experience-btn {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .numora-class-experience {
+        padding: 60px 0;
+    }
+
+    .class-experience-container {
+        width: 90%;
+    }
+
+    .class-experience-header {
+        margin-bottom: 32px;
+    }
+
+    .class-experience-subtitle {
+        font-size: 14px;
+    }
+
+    .class-experience-title {
+        font-size: 30px;
+    }
+
+    .class-experience-description {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .class-experience-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .class-experience-card {
+        min-height: auto;
+        padding: 25px 22px;
+    }
+
+    .class-experience-card-top {
+        margin-bottom: 22px;
+    }
+
+    .class-experience-card h3 {
+        font-size: 20px;
+    }
+
+    .class-experience-footer {
+        padding: 22px;
+    }
+
+    .class-experience-footer-content h3 {
+        font-size: 18px;
+    }
+
+}
+
+/* DARK MODE – CLASS EXPERIENCE LABEL VISIBILITY */
+
+html.dark-mode .class-experience-label {
+    color: #75D8C9 !important;
+    background: rgba(117, 216, 201, 0.14) !important;
+    border: 1px solid rgba(117, 216, 201, 0.25);
+}
+
+/* RTL – CLASS EXPERIENCE ICON & NUMBER ALIGNMENT */
+
+html[dir="rtl"] .class-experience-card-top {
+    direction: ltr !important;
+    flex-direction: row-reverse !important;
+    justify-content: space-between;
+}
+
 /* =========================================
    NUMORA - ACHIEVEMENTS / STATS SECTION
 ========================================= */
@@ -3506,6 +3900,741 @@ html[dir="rtl"] .testimonial-dots {
     direction: ltr;
 }
 
+
+/* ==========================================
+   PARENT LEARNING JOURNEY
+========================================== */
+
+.parent-journey-section {
+    padding: 100px 5%;
+    background: #F4EBDD;
+    overflow: hidden;
+}
+
+.parent-journey-container {
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 85px;
+    align-items: center;
+}
+
+/* LEFT INTRO */
+
+.parent-journey-intro {
+    position: relative;
+}
+
+.parent-journey-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: #A94F38;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 22px;
+}
+
+.parent-journey-intro h2 {
+    color: #252525;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 22px;
+}
+
+.parent-journey-intro h2 span {
+    display: block;
+    color: #A94F38;
+}
+
+.parent-journey-intro>p {
+    color: #687477;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 510px;
+    margin-bottom: 30px;
+}
+
+/* VISUAL */
+
+.parent-journey-visual {
+    position: relative;
+    height: 260px;
+    max-width: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0 30px;
+    background: #EADBC6;
+    border-radius: 45% 55% 48% 52%;
+}
+
+.journey-visual-circle {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    background: #245B57;
+    border: 10px solid #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    box-shadow: 0 10px 30px rgba(36, 91, 87, 0.15);
+}
+
+.journey-visual-circle i {
+    color: #D9A441;
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+.journey-visual-circle strong {
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.journey-visual-circle span {
+    font-size: 11px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+.journey-decor {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #D9A441;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.journey-decor-one {
+    top: 25px;
+    right: 55px;
+}
+
+.journey-decor-two {
+    bottom: 35px;
+    left: 45px;
+    background: #A94F38;
+}
+
+.journey-visual-caption {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    color: #245B57;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* CTA */
+
+.parent-journey-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px 25px;
+    background: #A94F38;
+    color: #FFFFFF;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.parent-journey-cta:hover {
+    background: #245B57;
+    color: #FFFFFF;
+}
+
+/* RIGHT TIMELINE */
+
+.parent-journey-steps {
+    position: relative;
+    padding-left: 35px;
+}
+
+.parent-journey-steps::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    bottom: 35px;
+    left: 58px;
+    width: 2px;
+    background: #D9A441;
+}
+
+.journey-step {
+    position: relative;
+    display: flex;
+    gap: 25px;
+    padding-bottom: 38px;
+}
+
+.journey-step:last-child {
+    padding-bottom: 0;
+}
+
+.journey-step-number {
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #A94F38;
+    border: 5px solid #F4EBDD;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.journey-step-content {
+    flex: 1;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(36, 91, 87, 0.16);
+}
+
+.journey-step:last-child .journey-step-content {
+    border-bottom: none;
+}
+
+.journey-step-tag {
+    display: block;
+    color: #A94F38;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    margin-bottom: 8px;
+}
+
+.journey-step-content h3 {
+    color: #252525;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.journey-step-content p {
+    color: #687477;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* BOTTOM MESSAGE */
+
+.parent-journey-message {
+    max-width: 1350px;
+    margin: 55px auto 0;
+    padding: 24px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    background: #245B57;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.parent-journey-message>i {
+    color: #D9A441;
+    font-size: 27px;
+}
+
+.parent-journey-message p {
+    color: #FFFFFF;
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.parent-journey-message strong {
+    color: #D9A441;
+}
+
+/* RTL SUPPORT */
+
+html[dir="rtl"] .parent-journey-container {
+    direction: rtl;
+}
+
+html[dir="rtl"] .parent-journey-steps {
+    padding-left: 0;
+    padding-right: 35px;
+}
+
+html[dir="rtl"] .parent-journey-steps::before {
+    left: auto;
+    right: 58px;
+}
+
+html[dir="rtl"] .journey-step {
+    flex-direction: row;
+}
+
+html[dir="rtl"] .journey-decor-one {
+    right: auto;
+    left: 55px;
+}
+
+html[dir="rtl"] .journey-decor-two {
+    left: auto;
+    right: 45px;
+}
+
+html[dir="rtl"] .journey-visual-caption {
+    right: auto;
+    left: 0;
+}
+
+html[dir="rtl"] .parent-journey-cta i {
+    transform: rotate(180deg);
+}
+
+/* ==========================================
+   PARENT LEARNING JOURNEY - DARK MODE
+========================================== */
+
+html.dark-mode .parent-journey-section {
+    background: #172725;
+}
+
+html.dark-mode .parent-journey-eyebrow {
+    color: #E5B653;
+}
+
+html.dark-mode .parent-journey-intro h2,
+html.dark-mode .journey-step-content h3 {
+    color: #F5F2EA;
+}
+
+html.dark-mode .parent-journey-intro h2 span {
+    color: #D9A441;
+}
+
+html.dark-mode .parent-journey-intro>p,
+html.dark-mode .journey-step-content p {
+    color: #C0CECA;
+}
+
+html.dark-mode .parent-journey-visual {
+    background: #263E39;
+}
+
+html.dark-mode .journey-visual-circle {
+    background: #A94F38;
+    border-color: #344C46;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+html.dark-mode .journey-visual-circle i {
+    color: #F2C35E;
+}
+
+html.dark-mode .journey-visual-caption {
+    color: #D9A441;
+}
+
+html.dark-mode .journey-decor-one {
+    background: #D9A441;
+    color: #252525;
+}
+
+html.dark-mode .journey-decor-two {
+    background: #B95D45;
+    color: #FFFFFF;
+}
+
+html.dark-mode .parent-journey-cta {
+    background: #B95D45;
+    color: #FFFFFF;
+}
+
+html.dark-mode .parent-journey-cta:hover {
+    background: #D9A441;
+    color: #172725;
+}
+
+html.dark-mode .parent-journey-steps::before {
+    background: #D9A441;
+}
+
+html.dark-mode .journey-step-number {
+    background: #B95D45;
+    border-color: #172725;
+    color: #FFFFFF;
+}
+
+html.dark-mode .journey-step-content {
+    border-color: rgba(217, 164, 65, 0.2);
+}
+
+html.dark-mode .journey-step-tag {
+    color: #E5B653;
+}
+
+html.dark-mode .parent-journey-message {
+    background: #245B57;
+}
+
+html.dark-mode .parent-journey-message p {
+    color: #FFFFFF;
+}
+
+html.dark-mode .parent-journey-message strong {
+    color: #F2C35E;
+}
+
+html.dark-mode .parent-journey-message>i {
+    color: #F2C35E;
+}
+
+/* ==========================================
+   IPAD PRO
+========================================== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .parent-journey-section {
+        padding: 75px 4%;
+    }
+
+    .parent-journey-container {
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 40px;
+    }
+
+    .parent-journey-intro h2 {
+        font-size: 34px;
+    }
+
+    .parent-journey-intro>p {
+        font-size: 17px;
+    }
+
+    .parent-journey-visual {
+        max-width: 100%;
+        height: 235px;
+    }
+
+    .journey-visual-circle {
+        width: 155px;
+        height: 155px;
+    }
+
+    .journey-step {
+        gap: 18px;
+        padding-bottom: 28px;
+    }
+
+    .journey-step-content h3 {
+        font-size: 19px;
+    }
+
+    .journey-step-content p {
+        font-size: 15px;
+    }
+
+    .parent-journey-steps {
+        padding-left: 20px;
+    }
+
+    .parent-journey-steps::before {
+        left: 43px;
+    }
+
+    .parent-journey-message {
+        margin-top: 40px;
+    }
+}
+
+/* ==========================================
+   IPAD MINI
+========================================== */
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .parent-journey-section {
+        padding: 65px 5%;
+    }
+
+    .parent-journey-container {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+    .parent-journey-intro {
+        text-align: center;
+    }
+
+    .parent-journey-intro h2 {
+        font-size: 36px;
+    }
+
+    .parent-journey-intro>p {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .parent-journey-visual {
+        max-width: 430px;
+        width: 100%;
+        margin: 25px auto 30px;
+    }
+
+    .parent-journey-steps {
+        max-width: 620px;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 35px;
+    }
+
+    .parent-journey-steps::before {
+        left: 58px;
+    }
+
+    .journey-step {
+        gap: 22px;
+    }
+
+    .journey-step-content h3 {
+        font-size: 21px;
+    }
+
+    .journey-step-content p {
+        font-size: 16px;
+    }
+
+    .parent-journey-message {
+        margin-top: 45px;
+        padding: 22px;
+    }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .parent-journey-section {
+        padding: 55px 20px;
+    }
+
+    .parent-journey-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .parent-journey-intro {
+        text-align: center;
+    }
+
+    .parent-journey-eyebrow {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .parent-journey-intro h2 {
+        font-size: 30px;
+        line-height: 1.3;
+        margin-bottom: 16px;
+    }
+
+    .parent-journey-intro>p {
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 22px;
+    }
+
+    .parent-journey-visual {
+        width: 100%;
+        max-width: 350px;
+        height: 225px;
+        margin: 20px auto 28px;
+    }
+
+    .journey-visual-circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .journey-visual-circle i {
+        font-size: 30px;
+    }
+
+    .journey-visual-circle strong {
+        font-size: 21px;
+    }
+
+    .journey-decor {
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+    }
+
+    .journey-decor-one {
+        right: 30px;
+    }
+
+    .journey-decor-two {
+        left: 25px;
+    }
+
+    .journey-visual-caption {
+        bottom: 3px;
+        right: 5px;
+        font-size: 13px;
+    }
+
+    .parent-journey-cta {
+        padding: 14px 20px;
+        font-size: 16px;
+    }
+
+    .parent-journey-steps {
+        padding-left: 0;
+        max-width: 100%;
+    }
+
+    .parent-journey-steps::before {
+        left: 23px;
+        top: 25px;
+        bottom: 30px;
+    }
+
+    .journey-step {
+        gap: 15px;
+        padding-bottom: 28px;
+    }
+
+    .journey-step-number {
+        width: 48px;
+        height: 48px;
+        font-size: 13px;
+    }
+
+    .journey-step-content {
+        padding-bottom: 22px;
+    }
+
+    .journey-step-tag {
+        font-size: 12px;
+    }
+
+    .journey-step-content h3 {
+        font-size: 19px;
+        line-height: 1.4;
+    }
+
+    .journey-step-content p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .parent-journey-message {
+        margin-top: 30px;
+        padding: 20px 16px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .parent-journey-message p {
+        font-size: 15px;
+    }
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 360px) {
+
+    .parent-journey-section {
+        padding: 45px 15px;
+    }
+
+    .parent-journey-intro h2 {
+        font-size: 27px;
+    }
+
+    .parent-journey-visual {
+        height: 205px;
+    }
+
+    .journey-visual-circle {
+        width: 135px;
+        height: 135px;
+    }
+
+    .journey-step {
+        gap: 12px;
+    }
+
+    .journey-step-content h3 {
+        font-size: 18px;
+    }
+
+    .journey-step-content p {
+        font-size: 14px;
+    }
+
+    .parent-journey-message {
+        padding: 18px 12px;
+    }
+}
+
+/* FIX: Journey Circle Text Spacing - Mobile Only */
+@media (max-width: 767px) {
+
+    .parent-journey-visual .journey-visual-circle {
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .parent-journey-visual .journey-visual-circle span {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        padding-left: 14px;
+        padding-right: 14px;
+        box-sizing: border-box;
+        text-align: center;
+        white-space: nowrap;
+        font-size: 11px;
+        letter-spacing: 0.5px;
+        line-height: 1.4;
+    }
+
+}
+
+/* Increase Journey Circle Size - Mobile Only */
+@media (max-width: 767px) {
+
+    .parent-journey-visual .journey-visual-circle {
+        width: 140px;
+        height: 140px;
+        min-width: 140px;
+        min-height: 140px;
+    }
+
+}
 
 /* =========================================
    NUMORA - EVENTS & COMPETITIONS SECTION
@@ -4273,387 +5402,560 @@ html[dir="rtl"] .cta-lightbulb {
 /**************************************************Home page 2********************************************************/
 
 
-/* =========================================
-   NUMORA - HOME PAGE 2 PREMIUM HERO
-========================================= */
+/* ==========================================
+   NUMORA HOME 2 - BACKGROUND BANNER HERO
+========================================== */
 
-.home2-hero-section {
+.home2-banner-hero {
     position: relative;
+    min-height: 650px;
     width: 100%;
-    padding: 85px 35px 75px;
-    background: var(--background-color);
+    display: flex;
+    align-items: center;
+    padding: 95px 6% 85px;
     overflow: hidden;
+
+    background-image: url("../images/home2-hero-classroom.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
+/* DARK OVERLAY */
 
-/* =========================================
-   HERO INTRO
-========================================= */
-
-.home2-hero-intro {
-    max-width: 1050px;
-    margin: 0 auto 55px;
-    text-align: center;
-    position: relative;
-    z-index: 2;
-}
-
-
-/* EYEBROW */
-
-.home2-eyebrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-
-    margin-bottom: 25px;
-
-    font-family: var(--heading-font);
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 2px;
-
-    color: var(--primary-color);
-}
-
-.home2-eyebrow-line {
-    width: 38px;
-    height: 2px;
-    background: var(--secondary-color);
-}
-
-
-/* MAIN HEADING */
-
-.home2-hero-title {
-    max-width: 1050px;
-    margin: 0 auto 23px;
-
-    font-family: var(--heading-font);
-    font-size: 66px;
-    font-weight: 800;
-    line-height: 1.2;
-    letter-spacing: -2px;
-
-    color: var(--support-color);
-}
-
-.home2-hero-title span {
-    display: block;
-    color: var(--primary-color);
-}
-
-
-/* DESCRIPTION */
-
-.home2-hero-description {
-    max-width: 750px;
-    margin: 0 auto 32px;
-
-    font-family: var(--body-font);
-    font-size: 19px;
-    font-weight: 500;
-    line-height: 1.75;
-
-    color: var(--light-text);
-}
-
-
-/* =========================================
-   HERO ACTION BUTTONS
-========================================= */
-
-.home2-hero-actions {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    flex-wrap: wrap;
-}
-
-.home2-primary-btn {
-    min-height: 57px;
-    padding: 16px 30px;
-    font-size: 18px;
-}
-
-
-/* SECONDARY BUTTON */
-
-.home2-secondary-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-
-    font-family: var(--heading-font);
-    font-size: 17px;
-    font-weight: 700;
-
-    color: var(--support-color);
-    transition: all 0.3s ease;
-}
-
-.home2-play-icon {
-    width: 43px;
-    height: 43px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border: 1px solid var(--support-color);
-    border-radius: 50%;
-
-    transition: all 0.3s ease;
-}
-
-.home2-secondary-btn:hover {
-    color: var(--primary-color);
-}
-
-.home2-secondary-btn:hover .home2-play-icon {
-    background: var(--support-color);
-    color: #FFFFFF;
-    transform: translateX(4px);
-}
-
-
-/* =========================================
-   PANORAMIC IMAGE SHOWCASE
-========================================= */
-
-.home2-hero-showcase {
-    position: relative;
-
-    width: 100%;
-    max-width: 1500px;
-    height: 475px;
-
-    margin: 0 auto;
-
-    overflow: hidden;
-    border-radius: 6px;
-
-    background: var(--support-color);
-}
-
-
-/* MAIN IMAGE */
-
-.home2-hero-showcase>img {
+.home2-banner-overlay {
     position: absolute;
     inset: 0;
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-    object-position: center 45%;
-
-    transition: transform 0.8s ease;
-}
-
-.home2-hero-showcase:hover>img {
-    transform: scale(1.025);
-}
-
-
-/* IMAGE OVERLAY */
-
-.home2-image-overlay {
-    position: absolute;
-    inset: 0;
-
     background: linear-gradient(90deg,
-            rgba(15, 48, 43, 0.82) 0%,
-            rgba(15, 48, 43, 0.48) 35%,
-            rgba(15, 48, 43, 0.05) 75%,
-            rgba(15, 48, 43, 0.12) 100%);
-
+            rgba(25, 39, 36, 0.94) 0%,
+            rgba(25, 39, 36, 0.83) 42%,
+            rgba(25, 39, 36, 0.42) 75%,
+            rgba(25, 39, 36, 0.20) 100%);
     z-index: 1;
 }
 
+/* CONTENT CONTAINER */
 
-/* =========================================
-   IMAGE CAPTION
-========================================= */
-
-.home2-image-caption {
-    position: absolute;
-    left: 65px;
-    bottom: 65px;
-
-    max-width: 440px;
+.home2-banner-container {
+    position: relative;
     z-index: 2;
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
 }
 
-.home2-caption-label {
-    display: inline-block;
-    margin-bottom: 16px;
+/* MAIN CONTENT */
 
-    font-family: var(--heading-font);
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 2px;
-
-    color: var(--secondary-color);
+.home2-banner-content {
+    max-width: 760px;
 }
 
-.home2-image-caption h2 {
+/* EYEBROW */
+
+.home2-banner-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 25px;
+
+    color: #F3C45F;
     font-family: var(--heading-font);
-    font-size: 39px;
+    font-size: 17px;
     font-weight: 700;
-    line-height: 1.3;
+    letter-spacing: 1.8px;
+}
+
+.home2-banner-eyebrow i {
+    font-size: 19px;
+    color: #D9A441;
+}
+
+/* HEADING */
+
+.home2-banner-content h1 {
+    max-width: 760px;
+    margin-bottom: 25px;
 
     color: #FFFFFF;
+    font-family: var(--heading-font);
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
 }
 
-.home2-image-caption h2 span {
+.home2-banner-content h1 span {
     display: block;
-    color: #F2DFAF;
+    color: #F0BC50;
 }
 
+/* DESCRIPTION */
 
-/* =========================================
-   FLOATING LEARNING LABEL
-========================================= */
+.home2-banner-content>p {
+    max-width: 650px;
+    margin-bottom: 35px;
 
-.home2-image-tag {
+    color: #F1EDE4;
+    font-family: var(--body-font);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+/* BUTTONS */
+
+.home2-banner-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 48px;
+}
+
+.home2-banner-primary,
+.home2-banner-secondary {
+    min-height: 55px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px 25px;
+
+    border-radius: 6px;
+    font-family: var(--heading-font);
+    font-size: 18px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.home2-banner-primary {
+    background: #D9A441;
+    color: #202A28;
+    border: 1px solid #D9A441;
+}
+
+.home2-banner-primary:hover {
+    background: #F4EBDD;
+    color: #202A28;
+    border-color: #F4EBDD;
+    transform: translateY(-3px);
+}
+
+.home2-banner-secondary {
+    background: rgba(255, 255, 255, 0.08);
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.65);
+}
+
+.home2-banner-secondary:hover {
+    background: #FFFFFF;
+    color: #245B57;
+    transform: translateY(-3px);
+}
+
+/* LEARNING HIGHLIGHTS */
+
+.home2-banner-highlights {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+.home2-banner-highlight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #FFFFFF;
+    font-family: var(--body-font);
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.home2-banner-highlight i {
+    color: #F0BC50;
+    font-size: 20px;
+}
+
+/* FLOATING SIDE NOTE */
+
+.home2-banner-side-note {
     position: absolute;
-    right: 45px;
-    bottom: 45px;
+    right: 0;
+    bottom: 5px;
 
     display: flex;
     align-items: center;
     gap: 15px;
 
-    padding: 19px 24px;
-
-    background: rgba(244, 235, 221, 0.95);
-    border-left: 4px solid var(--secondary-color);
-
-    z-index: 3;
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.13);
+    padding: 17px 23px;
+    background: #F4EBDD;
+    border-radius: 10px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
 }
 
-.home2-image-tag>i {
-    font-size: 32px;
-    color: var(--primary-color);
-}
-
-.home2-image-tag div {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-}
-
-.home2-image-tag div span {
-    font-family: var(--body-font);
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--light-text);
-}
-
-.home2-image-tag div strong {
-    font-family: var(--heading-font);
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--support-color);
-}
-
-
-/* =========================================
-   IMAGE BRAND MARKER
-========================================= */
-
-.home2-image-marker {
-    position: absolute;
-    top: 30px;
-    left: 30px;
+.home2-banner-note-icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
 
     display: flex;
-    flex-direction: column;
-    gap: 2px;
+    align-items: center;
+    justify-content: center;
 
-    font-family: var(--heading-font);
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 3px;
-
+    background: #245B57;
     color: #FFFFFF;
-    opacity: 0.8;
+    border-radius: 50%;
+    font-size: 22px;
+}
 
+.home2-banner-side-note div {
+    display: flex;
+    flex-direction: column;
+}
+
+.home2-banner-side-note strong {
+    color: #245B57;
+    font-family: var(--heading-font);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.home2-banner-side-note div span {
+    color: #687477;
+    font-size: 14px;
+}
+
+/* BOTTOM MESSAGE */
+
+.home2-banner-bottom-line {
+    position: absolute;
     z-index: 2;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: max-content;
+    max-width: 90%;
+}
+
+.home2-banner-bottom-line span {
+    width: 35px;
+    height: 2px;
+    background: #D9A441;
+}
+
+.home2-banner-bottom-line p {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
 }
 
 
-/* =========================================
+/* ==========================================
    DARK MODE
-========================================= */
+========================================== */
 
-html.dark-mode .home2-hero-section {
-    background: #202A28;
+html.dark-mode .home2-banner-hero {
+    background-color: #202A28;
 }
 
-html.dark-mode .home2-hero-title {
+html.dark-mode .home2-banner-overlay {
+    background: linear-gradient(90deg,
+            rgba(20, 32, 29, 0.96) 0%,
+            rgba(20, 32, 29, 0.88) 45%,
+            rgba(20, 32, 29, 0.55) 100%);
+}
+
+html.dark-mode .home2-banner-content h1 {
+    color: #FFFFFF;
+}
+
+html.dark-mode .home2-banner-content h1 span,
+html.dark-mode .home2-banner-eyebrow,
+html.dark-mode .home2-banner-highlight i {
+    color: #F0BC50;
+}
+
+html.dark-mode .home2-banner-content>p {
+    color: #E0E5DF;
+}
+
+html.dark-mode .home2-banner-side-note {
+    background: #263B36;
+}
+
+html.dark-mode .home2-banner-side-note strong {
     color: #F4EBDD;
 }
 
-html.dark-mode .home2-hero-title span {
-    color: #D9A441;
+html.dark-mode .home2-banner-side-note div span {
+    color: #D1D8D1;
 }
 
-html.dark-mode .home2-hero-description {
-    color: #C2C1B9;
-}
-
-html.dark-mode .home2-eyebrow {
-    color: #D9A441;
-}
-
-html.dark-mode .home2-secondary-btn {
-    color: #D9A441;
-}
-
-html.dark-mode .home2-play-icon {
-    border-color: #D9A441;
-}
-
-html.dark-mode .home2-secondary-btn:hover .home2-play-icon {
-    background: #D9A441;
-    color: #202A28;
+html.dark-mode .home2-banner-bottom-line p {
+    color: #F4EBDD;
 }
 
 
-/* =========================================
-   RTL SUPPORT
-========================================= */
+/* ==========================================
+   RTL MODE
+========================================== */
 
-html[dir="rtl"] .home2-image-caption {
-    left: auto;
-    right: 65px;
+html[dir="rtl"] .home2-banner-content {
     text-align: right;
 }
 
-html[dir="rtl"] .home2-image-tag {
+html[dir="rtl"] .home2-banner-actions {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+html[dir="rtl"] .home2-banner-highlights {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+html[dir="rtl"] .home2-banner-highlight {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .home2-banner-side-note {
     right: auto;
-    left: 45px;
-    border-left: none;
-    border-right: 4px solid var(--secondary-color);
+    left: 0;
 }
 
-html[dir="rtl"] .home2-image-marker {
-    left: auto;
-    right: 30px;
+html[dir="rtl"] .home2-banner-primary,
+html[dir="rtl"] .home2-banner-secondary {
+    flex-direction: row-reverse;
 }
 
-html[dir="rtl"] .home2-image-overlay {
-    background: linear-gradient(270deg,
-            rgba(15, 48, 43, 0.82) 0%,
-            rgba(15, 48, 43, 0.48) 35%,
-            rgba(15, 48, 43, 0.05) 75%,
-            rgba(15, 48, 43, 0.12) 100%);
+html[dir="rtl"] .home2-banner-primary i {
+    transform: rotate(180deg);
+}
+
+
+/* ==========================================
+   IPAD PRO - 769px TO 1024px
+========================================== */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .home2-banner-hero {
+        min-height: 620px;
+        padding: 85px 5% 95px;
+        background-position: 60% center;
+    }
+
+    .home2-banner-content {
+        max-width: 680px;
+    }
+
+    .home2-banner-content h1 {
+        font-size: 49px;
+    }
+
+    .home2-banner-content>p {
+        max-width: 580px;
+        font-size: 19px;
+    }
+
+    .home2-banner-side-note {
+        bottom: -10px;
+    }
+
+}
+
+
+/* ==========================================
+   IPAD MINI - 481px TO 768px
+========================================== */
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .home2-banner-hero {
+        min-height: 650px;
+        padding: 85px 35px 105px;
+        background-position: 58% center;
+    }
+
+    .home2-banner-overlay {
+        background: linear-gradient(90deg,
+                rgba(25, 39, 36, 0.94),
+                rgba(25, 39, 36, 0.72));
+    }
+
+    .home2-banner-content {
+        max-width: 100%;
+    }
+
+    .home2-banner-content h1 {
+        font-size: 44px;
+    }
+
+    .home2-banner-content>p {
+        max-width: 580px;
+        font-size: 18px;
+    }
+
+    .home2-banner-highlights {
+        gap: 18px;
+    }
+
+    .home2-banner-highlight {
+        font-size: 16px;
+    }
+
+    .home2-banner-side-note {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        width: fit-content;
+        margin-top: 35px;
+    }
+
+    .home2-banner-bottom-line {
+        bottom: 20px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE - UP TO 480px
+========================================== */
+
+@media (max-width: 480px) {
+
+    .home2-banner-hero {
+        min-height: auto;
+        padding: 75px 22px 85px;
+        background-position: 58% center;
+    }
+
+    .home2-banner-overlay {
+        background: linear-gradient(180deg,
+                rgba(25, 39, 36, 0.80) 0%,
+                rgba(25, 39, 36, 0.94) 55%,
+                rgba(25, 39, 36, 0.97) 100%);
+    }
+
+    .home2-banner-content {
+        max-width: 100%;
+    }
+
+    .home2-banner-eyebrow {
+        font-size: 14px;
+        letter-spacing: 1px;
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+
+    .home2-banner-content h1 {
+        font-size: 36px;
+        line-height: 1.25;
+        letter-spacing: -0.5px;
+        margin-bottom: 20px;
+    }
+
+    .home2-banner-content>p {
+        font-size: 17px;
+        line-height: 1.7;
+        margin-bottom: 27px;
+    }
+
+    .home2-banner-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 13px;
+        margin-bottom: 32px;
+    }
+
+    .home2-banner-primary,
+    .home2-banner-secondary {
+        width: 100%;
+        min-height: 54px;
+        font-size: 17px;
+    }
+
+    .home2-banner-highlights {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .home2-banner-highlight {
+        font-size: 16px;
+    }
+
+    .home2-banner-side-note {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        width: 100%;
+        margin-top: 32px;
+        padding: 15px;
+    }
+
+    .home2-banner-bottom-line {
+        bottom: 18px;
+        gap: 8px;
+    }
+
+    .home2-banner-bottom-line span {
+        width: 18px;
+    }
+
+    .home2-banner-bottom-line p {
+        font-size: 12px;
+        white-space: normal;
+        text-align: center;
+    }
+
+    /* RTL MOBILE */
+
+    html[dir="rtl"] .home2-banner-actions,
+    html[dir="rtl"] .home2-banner-highlights {
+        align-items: stretch;
+    }
+
+    html[dir="rtl"] .home2-banner-side-note {
+        left: auto;
+    }
+
+}
+
+
+/* ==========================================
+   EXTRA SMALL MOBILE - 360px
+========================================== */
+
+@media (max-width: 360px) {
+
+    .home2-banner-hero {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    .home2-banner-content h1 {
+        font-size: 32px;
+    }
+
+    .home2-banner-content>p {
+        font-size: 16px;
+    }
+
+    .home2-banner-side-note strong {
+        font-size: 16px;
+    }
+
 }
 
 
@@ -6614,7 +7916,7 @@ html[dir="rtl"] .home2-final-cta-bottom>a {
     position: relative;
     z-index: 3;
     width: 54%;
-    padding: 65px 35px 65px 5%;
+    padding: 65px 35px;
 }
 
 /* EYEBROW LABEL */
@@ -6833,6 +8135,12 @@ html[dir="rtl"] .common-page-hero-content {
     text-align: right;
     padding-right: 5%;
     padding-left: 35px;
+}
+
+@media (min-width: 769px) {
+    html[dir="rtl"] .common-page-hero-content {
+        width: 46%;
+    }
 }
 
 html[dir="rtl"] .common-page-hero-visual {
@@ -20062,7 +21370,7 @@ html[dir="rtl"] .contact-location-directions:hover i {
 
     .common-page-hero-content {
         width: 54%;
-        padding: 55px 25px 55px 4%;
+        padding: 55px 25px;
     }
 
     .common-page-hero-title {
@@ -27827,4 +29135,184 @@ html[dir="rtl"] .why-learn-btn i {
 
 html.dark-mode .footer-logo img {
     content: url("../images/logo-white.png");
+}
+
+/* ==========================================
+   CLASS EXPERIENCE ICON - DARK MODE FIX
+========================================== */
+
+html.dark-mode .class-experience-icon {
+    color: #F0A18B;
+    background: rgba(169, 79, 56, 0.24);
+}
+
+html.dark-mode .class-experience-card:nth-child(2) .class-experience-icon {
+    color: #83D0C4;
+    background: rgba(36, 91, 87, 0.32);
+}
+
+html.dark-mode .class-experience-card:nth-child(3) .class-experience-icon {
+    color: #F0CA72;
+    background: rgba(217, 164, 65, 0.25);
+}
+
+html.dark-mode .class-experience-card:nth-child(4) .class-experience-icon {
+    color: #F0A18B;
+    background: rgba(169, 79, 56, 0.24);
+}
+
+/* HOME 2 - THINKING SKILLS DARK MODE */
+
+html.dark-mode .home2-activity-card.activity-green .home2-activity-details>span {
+    color: #55A994 !important;
+    opacity: 1 !important;
+    font-weight: 800;
+    text-shadow: none;
+}
+
+/* PROGRAMS JOURNEY - DARK MODE GREEN VISIBILITY FIX */
+
+html.dark-mode .journey-build .programs-journey-icon i {
+    color: #63C6A8 !important;
+}
+
+html.dark-mode .journey-build .programs-journey-stage {
+    color: #63C6A8 !important;
+    opacity: 1 !important;
+    font-weight: 800;
+}
+
+/* PROGRAMS CLASSWORK - DARK MODE TEXT VISIBILITY FIX */
+
+html.dark-mode .programs-classwork-step-number {
+    color: #55BFA0 !important;
+    opacity: 1 !important;
+    font-weight: 800;
+}
+
+html.dark-mode .programs-classwork-step-content h3 {
+    color: #FFFFFF !important;
+    opacity: 1 !important;
+}
+
+html.dark-mode .programs-classwork-step-content p {
+    color: #D8E2DE !important;
+    opacity: 1 !important;
+}
+
+/* ==========================================
+   PROGRAMS FINDER - DARK MODE VISIBILITY
+========================================== */
+
+/* All Finder Card Labels */
+html.dark-mode .programs-finder-option .programs-finder-tag {
+    color: #63C7B4 !important;
+    background: rgba(99, 199, 180, 0.15) !important;
+    opacity: 1 !important;
+}
+
+/* Center Card Icon Only */
+html.dark-mode .programs-finder-option.finder-progress .programs-finder-icon {
+    color: #63D6C0 !important;
+    opacity: 1 !important;
+}
+
+html.dark-mode .programs-finder-option.finder-progress .programs-finder-icon i {
+    color: #63D6C0 !important;
+    opacity: 1 !important;
+}
+
+/* ==========================================
+   PROGRAMS FINDER - DARK MODE VISIBILITY
+========================================== */
+
+/* All Finder Card Labels */
+html.dark-mode .programs-finder-option .programs-finder-tag {
+    color: #63C7B4 !important;
+    background: rgba(99, 199, 180, 0.15) !important;
+    opacity: 1 !important;
+}
+
+/* Center Card - Icon Box Background */
+html.dark-mode .programs-finder-option.finder-progress .programs-finder-icon {
+    background: rgba(99, 199, 180, 0.22) !important;
+    color: #63D6C0 !important;
+    opacity: 1 !important;
+}
+
+/* Center Card - Icon Color */
+html.dark-mode .programs-finder-option.finder-progress .programs-finder-icon i {
+    color: #63D6C0 !important;
+    opacity: 1 !important;
+}
+
+/* ==========================================
+   INSTRUCTORS PAGE - DARK MODE LABEL VISIBILITY
+========================================== */
+
+html.dark-mode .instructors-team-label,
+html.dark-mode .instructors-difference-label,
+html.dark-mode .instructors-approach-label,
+html.dark-mode .instructors-support-label,
+html.dark-mode .instructors-standards-label,
+html.dark-mode .instructors-final-cta-label {
+    color: #3FAE98 !important;
+    opacity: 1 !important;
+}
+
+/* Image Caption */
+html.dark-mode .instructors-support-image-caption {
+    color: #3FAE98 !important;
+    opacity: 1 !important;
+}
+
+/* NUMORA Brand Text */
+html.dark-mode .instructors-final-cta-content>span {
+    color: #3FAE98 !important;
+    opacity: 1 !important;
+}
+
+/* FIX: NUMORA BRAND SLOGAN - DARK MODE */
+
+html.dark-mode body .instructors-final-cta-bottom>span {
+    color: #65CDB8 !important;
+    -webkit-text-fill-color: #65CDB8 !important;
+    opacity: 1 !important;
+    filter: none !important;
+    text-shadow: none !important;
+}
+
+/* ==========================================
+   COMPETITIONS PAGE - DARK MODE TEXT VISIBILITY
+========================================== */
+
+html.dark-mode body .competitions-explore-label,
+html.dark-mode body .competitions-journey-label,
+html.dark-mode body .competitions-benefits-label,
+html.dark-mode body .competitions-gallery-label,
+html.dark-mode body .competitions-benefits-image-caption {
+    color: #65CDB8 !important;
+    -webkit-text-fill-color: #65CDB8 !important;
+    opacity: 1 !important;
+    filter: none !important;
+    text-shadow: none !important;
+}
+
+/* Dark Mode - Only Screenshot Elements */
+
+html.dark-mode .competitions-explore-icon i.fa-stopwatch {
+    color: #65D6C0 !important;
+    opacity: 1 !important;
+}
+
+html.dark-mode .competitions-journey-step-label {
+    color: #65D6C0 !important;
+    opacity: 1 !important;
+    -webkit-text-fill-color: #65D6C0 !important;
+}
+
+/* Speed Calculation Icon Background - Dark Mode Only */
+
+html.dark-mode .competitions-explore-icon:has(i.fa-stopwatch) {
+    background: rgba(101, 205, 184, 0.28) !important;
 }
